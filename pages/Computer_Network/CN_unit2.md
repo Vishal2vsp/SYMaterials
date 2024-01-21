@@ -1,7 +1,4 @@
-unit 2
-unit 2
-
-
+# UNIT 2
 
 > #   Optimality Principle in Network Topology
 # Classification of Routing Algorithms
