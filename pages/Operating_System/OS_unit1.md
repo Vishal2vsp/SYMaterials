@@ -1,4 +1,4 @@
-# UNIT 1
+
 ## Evolution of Operating Systems
 
 Operating Systems have evolved in past years. It went through several changes before getting its original form. These changes in the operating system are known as the ****evolution of operating systems****.OS improve itself with the invention of new technology. Basically , OS added the feature of new technology and making itself more powerful. Let us see the evolution of operating system year-wise in detail:
