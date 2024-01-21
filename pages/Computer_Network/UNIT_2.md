@@ -1641,7 +1641,7 @@ There are two ways when Time Exceeded message can be generated:
 
 Sometimes packet discarded due to some bad routing implementation, and this causes the looping issue and network congestion. Due to the looping issue, the value of TTL keeps on decrementing, and when it reaches zero, the router discards the datagram. However, when the datagram is discarded by the router, the time exceeded message will be sent by the router to the source host.
 
-When destination host does not receive all the fragments in a certain time limit, then the received fragments are also discarded, and the destination host sends time Exceeded message to the source host.
+When destination host does not receive all the fragment in a certain time limit, then the received fragments are also discarded, and the destination host sends time Exceeded message to the source host.
 
 Parameter problems: When a router or host discovers any missing value in the IP datagram, the router discards the datagram, and the “parameter problem” message is sent back to the source host.
 Redirection: Redirection message is generated when host consists of a small routing table. When the host consists of a limited number of entries due to which it sends the datagram to a wrong router. The router that receives a datagram will forward a datagram to a correct router and also sends the “Redirection message” to the host to update its routing table.

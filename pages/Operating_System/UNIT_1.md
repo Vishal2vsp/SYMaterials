@@ -23,7 +23,7 @@ The development of the operating system was developed to serve multiple users at
 
 ### Fourth Generation (1980-Now)
 
-In this generation the operating system is used for computer networks where users are aware of the existence of computers that are connected to one another.
+In this generation the operating system is used for computer network where users are aware of the existence of computers that are connected to one another.
 
 At this generation users are also comforted with a  [Graphical User Interface (GUI)](https://www.tutorialspoint.com/graphical-user-interface-gui), which is an extremely comfortable graphical computer interface, and the era of distributed computing has also begun.
 

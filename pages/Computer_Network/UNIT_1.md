@@ -524,7 +524,7 @@ The following diagram shows datagram packets being send by host H1 to host H2. T
     Private Autonomous System Number are 16-bit values that range from 64512 to 65535. The service provider will provide a private autonomous system number to the customer when the customer wants multi-connection to a single ISP (single home or dual home network) but not to more than one ISPs. These are provided in order to conserve the autonomous system numbers.  
     
 -   **Assigning of AS numbers –**  
-    The Autonomous numbers are first assigned by IANA (Internet Assign Number Authority) to the respective regional registries. Further, the regional registry distributes these autonomous numbers (from the block of autonomous numbers provided by IANA) to entities within their designated area.  
+    The Autonomous numbers are first assigned by IANA (Internet Assign Number Authority) to the respective regional registries. Further, the regional registry distribute these autonomous numbers (from the block of autonomous numbers provided by IANA) to entities within their designated area.  
     
 
 

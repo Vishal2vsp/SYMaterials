@@ -44,7 +44,7 @@ All this information is required and must be saved when the process is switched 
 2.  ****Process state:**** It stores the respective state of the process.
 3.  ****Process number:**** Every process is assigned a unique id known as process ID or PID which stores the process identifier.
 4.  ****Program counter:**** It stores the counter,****:**** which contains the address of the next instruction that is to be executed for the process.
-5.  ****Register:**** These are the CPU registers which include the accumulator, base, registers, and general-purpose registers.
+5.  ****Register:**** These are the CPU register which include the accumulator, base, registers, and general-purpose registers.
 6.  ****Memory limits:**** This field contains the information about memory management system used by the operating system. This may include page tables, segment tables, etc.
 7.  ****Open files list****  ****:**** This information includes the list of files opened for a process.
 
