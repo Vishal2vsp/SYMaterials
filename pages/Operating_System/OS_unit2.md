@@ -1,5 +1,5 @@
 # UNIT 2
-## Definition of Process vishal
+## Definition of Process 
 
 Basically, a process is a simple program.
 
