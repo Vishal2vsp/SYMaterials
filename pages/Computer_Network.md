@@ -1,8 +1,8 @@
 # COMPUTER NETWORK 
 
-Certainly! Here is the content converted into a markdown table:
 
-```markdown
+
+
 | Unit               | Topic                                                            | Duration |
 |---------------------|------------------------------------------------------------------|----------|
 | Unit I              | Introduction to Computer Networks and Logical Link Medium Access Control | 8        |
@@ -22,5 +22,5 @@ Certainly! Here is the content converted into a markdown table:
 |                     | Domain Name System (DNS), Naming and Address Schemes, DNS servers, Email: MIME, SMTP and POP3. Remote login, File Transfer Protocol (FTP), SNMP, DHCP and BOOTP. World Wide Web, HTTP |          |
 | Unit V              | WIRELESS LAN, MAN, WAN                                           | 6        |
 |                     | Introduction (Infrastructure and Ad-hoc Networks), Fundamentals of WLAN – technical issues, Network Architecture, IEEE 802.11- physical layer, Mac Layer Mechanism, CSMA/CA, Bluetooth - Specification, Transport Layer, Middleware Protocol Group, Bluetooth Profiles of IEEE 802.16, Sensor Node Architecture (hardware components), Sensor Network Architectures |          |
-```
+
 
