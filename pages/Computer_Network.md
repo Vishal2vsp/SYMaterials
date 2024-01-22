@@ -24,3 +24,6 @@
 |                     | Introduction (Infrastructure and Ad-hoc Networks), Fundamentals of WLAN – technical issues, Network Architecture, IEEE 802.11- physical layer, Mac Layer Mechanism, CSMA/CA, Bluetooth - Specification, Transport Layer, Middleware Protocol Group, Bluetooth Profiles of IEEE 802.16, Sensor Node Architecture (hardware components), Sensor Network Architectures |          |
 
 
+# Lab Manual
+
+<iframe src="https://drive.google.com/file/d/1zgRv7tgLa1vsHV-aoUw0EeG-DelKvPRY/preview" width="640" height="880" allow="autoplay"></iframe>

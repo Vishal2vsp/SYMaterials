@@ -12,3 +12,9 @@
 |                     | Deadlock definitions, Prevention, Avoidance, detection and Recovery, Goals of Protection, access matrix, Deadlock implementation |          |
 | UNIT V              | File systems                                                     | 8        |
 |                     | File systems: File concept, Access methods space allocation strategies, disk arm scheduling strategies. Contiguous allocation, Relocation, Paging, Segmentation, Segmentation with paging, demand paging, Virtual Memory Concepts, page faults and instruction restart, page replacement algorithms, working sets, Locality of reference, Thrashing, Garbage Collection |          |
+
+
+
+# Lab Manual
+
+<iframe src="https://drive.google.com/file/d/1xWqx9gNd0II6NFJVhZKdXTWyCfpzpoIX/preview" width="640" height="880" allow="autoplay"></iframe>

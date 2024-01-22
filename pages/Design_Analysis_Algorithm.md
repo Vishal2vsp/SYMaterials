@@ -15,3 +15,7 @@
 | Unit V              | Traversal And Search Techniques                                    | 6        |
 |                     | Basic Traversal and Search Techniques, breadth first search and depth first search, Backtracking basic strategy, 8--Queen’s problem, graph colouring, Hamiltonian cycles. NP, P Problems, Optimization Algorithms |          |
 
+
+# Lab Manual
+
+<iframe src="https://drive.google.com/file/d/16g7s6EYl0ifPDwBNffcSWFdgWXxwiWGH/preview" width="640" height="880" allow="autoplay"></iframe>
