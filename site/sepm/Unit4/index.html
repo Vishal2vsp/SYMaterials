@@ -1,0 +1,2359 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Unit3/">
+      
+      
+        <link rel="next" href="../Unit5/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+    
+    
+      
+        <title>Unit4 - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-4-testing-implementation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-testing-fundamentals" class="md-nav__link">
+    Software Testing Fundamentals
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Testing Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-testing-can-be-broadly-classified-into-two-types" class="md-nav__link">
+    Software Testing can be broadly classified into two types:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#different-software-testing-techniques" class="md-nav__link">
+    Different Software Testing Techniques
+  </a>
+  
+    <nav class="md-nav" aria-label="Different Software Testing Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levels-of-software-testing" class="md-nav__link">
+    Levels of Software Testing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internal-external-testing" class="md-nav__link">
+    Internal &amp; External Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Internal & External Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internal-testing" class="md-nav__link">
+    INTERNAL TESTING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-testing" class="md-nav__link">
+    EXTERNAL TESTING
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#white-box-testing" class="md-nav__link">
+    White Box Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="White Box Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-testing" class="md-nav__link">
+    Path testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-testing" class="md-nav__link">
+    Loop testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-testing" class="md-nav__link">
+    Condition testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-based-on-the-memory-size-perspective" class="md-nav__link">
+    Testing based on the memory (size) perspective
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-performance-speed-response-time-of-the-program" class="md-nav__link">
+    Test the performance (Speed, response time) of the program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#black-box-testing" class="md-nav__link">
+    Black box testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-steps-of-black-box-testing" class="md-nav__link">
+    Generic steps of black box testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#techniques-used-in-black-box-testing" class="md-nav__link">
+    Techniques Used in Black Box Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression-testing" class="md-nav__link">
+    Regression Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-testing" class="md-nav__link">
+    Unit Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective-of-unit-testing" class="md-nav__link">
+    Objective of Unit Testing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-testing-techniques" class="md-nav__link">
+    Unit Testing Techniques:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-testing-tools" class="md-nav__link">
+    Unit Testing Tools:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-unit-testing" class="md-nav__link">
+    Advantages of Unit Testing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-unit-testing" class="md-nav__link">
+    Disadvantages of Unit Testing:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-testing" class="md-nav__link">
+    Integration Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applications" class="md-nav__link">
+    Applications:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-testing" class="md-nav__link">
+    System Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="System Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#here-are-some-advantages-of-system-testing" class="md-nav__link">
+    Here are some advantages of System Testing:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification-testing" class="md-nav__link">
+    Verification testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-testing" class="md-nav__link">
+    Validation testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note-verification-and-validation-process-are-done-under-the-v-model-of-the-software-development-life-cycle" class="md-nav__link">
+    Note: Verification and Validation process are done under the V model of the software development life cycle.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-implementation-techniques" class="md-nav__link">
+    Software Implementation Techniques
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Implementation Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-using-a-system-design-strategy" class="md-nav__link">
+    Disadvantages of using a System Design Strategy:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../WD/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dbms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software-testing-fundamentals" class="md-nav__link">
+    Software Testing Fundamentals
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Testing Fundamentals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-testing-can-be-broadly-classified-into-two-types" class="md-nav__link">
+    Software Testing can be broadly classified into two types:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#different-software-testing-techniques" class="md-nav__link">
+    Different Software Testing Techniques
+  </a>
+  
+    <nav class="md-nav" aria-label="Different Software Testing Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levels-of-software-testing" class="md-nav__link">
+    Levels of Software Testing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internal-external-testing" class="md-nav__link">
+    Internal &amp; External Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Internal & External Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internal-testing" class="md-nav__link">
+    INTERNAL TESTING
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#external-testing" class="md-nav__link">
+    EXTERNAL TESTING
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#white-box-testing" class="md-nav__link">
+    White Box Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="White Box Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-testing" class="md-nav__link">
+    Path testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-testing" class="md-nav__link">
+    Loop testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-testing" class="md-nav__link">
+    Condition testing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-based-on-the-memory-size-perspective" class="md-nav__link">
+    Testing based on the memory (size) perspective
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-the-performance-speed-response-time-of-the-program" class="md-nav__link">
+    Test the performance (Speed, response time) of the program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#black-box-testing" class="md-nav__link">
+    Black box testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generic-steps-of-black-box-testing" class="md-nav__link">
+    Generic steps of black box testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#techniques-used-in-black-box-testing" class="md-nav__link">
+    Techniques Used in Black Box Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regression-testing" class="md-nav__link">
+    Regression Testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unit-testing" class="md-nav__link">
+    Unit Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Unit Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objective-of-unit-testing" class="md-nav__link">
+    Objective of Unit Testing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-testing-techniques" class="md-nav__link">
+    Unit Testing Techniques:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unit-testing-tools" class="md-nav__link">
+    Unit Testing Tools:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-unit-testing" class="md-nav__link">
+    Advantages of Unit Testing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-unit-testing" class="md-nav__link">
+    Disadvantages of Unit Testing:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-testing" class="md-nav__link">
+    Integration Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applications" class="md-nav__link">
+    Applications:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-testing" class="md-nav__link">
+    System Testing
+  </a>
+  
+    <nav class="md-nav" aria-label="System Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#here-are-some-advantages-of-system-testing" class="md-nav__link">
+    Here are some advantages of System Testing:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification-testing" class="md-nav__link">
+    Verification testing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-testing" class="md-nav__link">
+    Validation testing
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note-verification-and-validation-process-are-done-under-the-v-model-of-the-software-development-life-cycle" class="md-nav__link">
+    Note: Verification and Validation process are done under the V model of the software development life cycle.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-implementation-techniques" class="md-nav__link">
+    Software Implementation Techniques
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Implementation Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-using-a-system-design-strategy" class="md-nav__link">
+    Disadvantages of using a System Design Strategy:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="unit-4-testing-implementation">Unit 4 : Testing &amp; Implementation</h1>
+<ul>
+<li><a href="#software-testing-fundamentals">Software testing fundamentals</a></li>
+<li><a href="#internal-and-external-views-of-testing">Internal and external views of Testing</a></li>
+<li><a href="#white-box-testing-basis-path-testing-control-structure-testing">White box testing (basis path testing, control structure testing)</a></li>
+<li><a href="#black-box-testing">Black box testing</a></li>
+<li><a href="#regression-testing">Regression Testing</a></li>
+<li><a href="#unit-testing">Unit Testing</a></li>
+<li><a href="#integration-testing">Integration Testing</a></li>
+<li><a href="#validation-testing">Validation Testing</a></li>
+<li><a href="#system-testing-and-debugging">System Testing and Debugging</a></li>
+<li><a href="#software-implementation-techniques-coding-practices-refactoring">Software Implementation Techniques (Coding practices, Refactoring)</a></li>
+</ul>
+<h2 id="software-testing-fundamentals">Software Testing Fundamentals</h2>
+<p>Software testing can be stated as the process of verifying and validating whether a software or application is bug-free, meets the technical requirements as guided by its design and development, and meets the user requirements effectively and efficiently by handling all the exceptional and boundary cases.</p>
+<p>The process of software testing aims not only at finding faults in the existing software but also at finding measures to improve the software in terms of efficiency, accuracy, and usability. It mainly aims at measuring the specification, functionality, and performance of a software program or application.</p>
+<p><strong>Software testing can be divided into two steps:</strong></p>
+<ol>
+<li>
+<p><strong>Verification:</strong> it refers to the set of tasks that ensure that the software correctly implements a specific function.</p>
+</li>
+<li>
+<p><strong>Validation:</strong> it refers to a different set of tasks that ensure that the software that has been built is traceable to customer requirements.</p>
+</li>
+</ol>
+<p><strong>Verification:</strong> “Are we building the product right?”<br />
+<strong>Validation:</strong> “Are we building the right product?”</p>
+<h3 id="software-testing-can-be-broadly-classified-into-two-types">Software Testing can be broadly classified into two types:</h3>
+<ol>
+<li><strong>Manual Testing:</strong> Manual testing includes testing software manually, i.e., without using any automation tool or any script. In this type, the tester takes over the role of an end-user and tests the software to identify any unexpected behavior or bug. There are different stages for manual testing such as unit testing, integration testing, system testing, and user acceptance testing.</li>
+</ol>
+<p>Testers use test plans, test cases, or test scenarios to test software to ensure the completeness of testing. Manual testing also includes exploratory testing, as testers explore the software to identify errors in it.</p>
+<ol>
+<li><strong>Automation Testing:</strong> Automation testing, which is also known as Test Automation, is when the tester writes scripts and uses another software to test the product. This process involves the automation of a manual process. Automation Testing is used to re-run the test scenarios quickly and repeatedly, that were performed manually in manual testing.</li>
+</ol>
+<p>Apart from regression testing, automation testing is also used to test the application from a load, performance, and stress point of view. It increases the test coverage, improves accuracy, and saves time and money when compared to manual testing.</p>
+<h2 id="different-software-testing-techniques">Different Software Testing Techniques</h2>
+<p>Software testing techniques can be majorly classified into two categories:</p>
+<ol>
+<li>
+<p><strong>Black Box Testing:</strong> The technique of testing in which the tester doesn’t have access to the source code of the software and is conducted at the software interface without any concern with the internal logical structure of the software is known as black-box testing.</p>
+</li>
+<li>
+<p><strong>White-Box Testing:</strong> The technique of testing in which the tester is aware of the internal workings of the product, has access to its source code, and is conducted by making sure that all internal operations are performed according to the specifications is known as white box testing.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Black Box Testing</th>
+<th>White Box Testing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Knowledge of Internal Workings</td>
+<td>Not Required</td>
+<td>Knowledge of Internal Workings is a Must</td>
+</tr>
+<tr>
+<td>Also Known As</td>
+<td>Closed Box / Data-Driven Testing</td>
+<td>Clear Box / Structural Testing</td>
+</tr>
+<tr>
+<td>Typical Participants</td>
+<td>End Users, Testers, and Developers</td>
+<td>Primarily Testers and Developers</td>
+</tr>
+<tr>
+<td>Testing Approach</td>
+<td>Trial and Error Method</td>
+<td>Analyzes Data Domains and Internal Boundaries</td>
+</tr>
+<tr>
+<td>Focus on Application's Functionalities</td>
+<td>Yes</td>
+<td>Yes (in addition to internal structures)</td>
+</tr>
+<tr>
+<td>Code-Level Testing</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Testing Strategy</td>
+<td>Tests based on Requirements and Inputs</td>
+<td>Tests based on Code Structure and Logic</td>
+</tr>
+<tr>
+<td>Testing Timeframe</td>
+<td>Mostly at the End of Development</td>
+<td>Throughout Development Lifecycle</td>
+</tr>
+<tr>
+<td>Finding Hidden Issues</td>
+<td>Limited due to Lack of Code Knowledge</td>
+<td>Better Suited for Finding Hidden Issues</td>
+</tr>
+<tr>
+<td>Design and Code Improvement</td>
+<td>Less Influence</td>
+<td>Can Contribute to Design and Code Improvement</td>
+</tr>
+</tbody>
+</table>
+<h3 id="levels-of-software-testing">Levels of Software Testing</h3>
+<p>Software level testing can be majorly classified into 4 levels:</p>
+<ol>
+<li>
+<p><strong>Unit Testing:</strong> A level of the software testing process where individual units/components of a software/system are tested. The purpose is to validate that each unit of the software performs as designed.</p>
+</li>
+<li>
+<p><strong>Integration Testing:</strong> A level of the software testing process where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units.</p>
+</li>
+<li>
+<p><strong>System Testing:</strong> A level of the software testing process where a complete, integrated system/software is tested. The purpose of this test is to evaluate the system’s compliance with the specified requirements.</p>
+</li>
+<li>
+<p><strong>Acceptance Testing:</strong> A level of the software testing process where a system is tested for acceptability. The purpose of this test is to evaluate the system’s compliance with the business requirements and assess whether it is acceptable for delivery.</p>
+</li>
+</ol>
+<h2 id="internal-external-testing">Internal &amp; External Testing</h2>
+<h3 id="internal-testing">INTERNAL TESTING</h3>
+<p>The main <strong><em>advantage</em></strong> of such type of testing is the ability to control the whole process and to address issues at once.</p>
+<p>The main <strong><em>disadvantage</em></strong> is that in-house testing is much more expensive than outsourced one. (There are hideaway spending: expenses on hiring, training people and supporting the full-time team even if you do not need its service at the moment).</p>
+<p>• Continuously working on the same application is a monotonous activity, so the team loses the ability to think out of the box and the probability of finding bugs is reduced.</p>
+<h3 id="external-testing">EXTERNAL TESTING</h3>
+<p>The main <strong><em>advantage</em></strong> is that external testing will help you to reduce your costs.</p>
+<p>Also:</p>
+<p>• External testing provides you with certified, experienced specialists round the clock.</p>
+<p>• Flexibility (the team size can be changed, based on the customer requirements).</p>
+<p>• Prices on outsourced testing are reasonable.</p>
+<p>• Fresh eyes (independent testers are focused on finding bugs, while in-house team are focused on fulfilling the requirements)</p>
+<p>• At any point in time, an external tester knows "how many scenarios for a particular functionality have been executed?" whereas internal testers are just solely relying on test cases. Apart from this, external testers get a relatively stable product to test. Thanks to the internal testing team. So, they can focus on what they are targeting to test. There are hardly any distractions because of which they can lose focus.</p>
+<h2 id="white-box-testing">White Box Testing</h2>
+<p>The box testing approach of software testing consists of black box testing and white box testing. We are discussing here white box testing which also known as glass box is <strong>testing, structural testing, clear box testing, open box testing and transparent box testing</strong>. It tests internal coding and infrastructure of a software focus on checking of predefined inputs against expected and desired outputs. It is based on inner workings of an application and revolves around internal structure testing. In this type of testing programming skills are required to design test cases. The primary goal of white box testing is to focus on the flow of inputs and outputs through the software and strengthening the security of the software.</p>
+<p>The term 'white box' is used because of the internal perspective of the system. The clear box or white box or transparent box name denote the ability to see through the software's outer shell into its inner workings.</p>
+<p>The white box testing contains various tests, which are as follows:</p>
+<ul>
+<li>Path testing</li>
+<li>Loop testing</li>
+<li>Condition testing</li>
+<li>Testing based on the memory perspective</li>
+<li>Test performance of the program</li>
+</ul>
+<h3 id="path-testing">Path testing</h3>
+<p>In the path testing, we will write the flow graphs and test all independent paths. Here writing the flow graph implies that flow graphs are representing the flow of the program and also show how every program is added with one another</p>
+<h3 id="loop-testing">Loop testing</h3>
+<p>In the loop testing, we will test the loops such as while, for, and do-while, etc. and also check for ending condition if working correctly and if the size of the conditions is enough.</p>
+<h3 id="condition-testing">Condition testing</h3>
+<p>In this, we will test all logical conditions for both <strong>true</strong> and <strong>false</strong> values; that is, we will verify for both <strong>if</strong> and <strong>else</strong> condition.</p>
+<h3 id="testing-based-on-the-memory-size-perspective">Testing based on the memory (size) perspective</h3>
+<p>The size of the code is increasing for the following reasons:</p>
+<ul>
+<li><strong>The reuse of code is not there</strong>: let us take one example, where we have four programs of the same application, and the first ten lines of the program are similar. We can write these ten lines as a discrete function, and it should be accessible by the above four programs as well. And also, if any bug is there, we can modify the line of code in the function rather than the entire code.</li>
+<li>The <strong>developers use the logic</strong> that might be modified. If one programmer writes code and the file size is up to 250kb, then another programmer could write a similar code using the different logic, and the file size is up to 100kb.</li>
+<li>The <strong>developer declares so many functions and variables</strong> that might never be used in any portion of the code. Therefore, the size of the program will increase.</li>
+</ul>
+<h3 id="test-the-performance-speed-response-time-of-the-program">Test the performance (Speed, response time) of the program</h3>
+<p>The application could be slow for the following reasons:</p>
+<ul>
+<li>When logic is used.</li>
+<li>For the conditional cases, we will use <strong>or</strong> &amp; <strong>and</strong> adequately.</li>
+<li>Switch case, which means we cannot use <strong>nested if</strong>, instead of using a switch case.</li>
+</ul>
+<h2 id="black-box-testing">Black box testing</h2>
+<p>Black box testing is a technique of software testing which examines the functionality of software without peering into its internal structure or coding. The primary source of black box testing is a specification of requirements that is stated by the customer.</p>
+<p>In this method, tester selects a function and gives input value to examine its functionality, and checks whether the function is giving expected output or not. If the function produces correct output, then it is passed in testing, otherwise failed. The test team reports the result to the development team and then tests the next function. After completing testing of all functions if there are severe problems, then it is given back to the development team for correction.</p>
+<h2 id="generic-steps-of-black-box-testing">Generic steps of black box testing</h2>
+<ul>
+<li>The black box test is based on the specification of requirements, so it is examined in the beginning.</li>
+<li>In the second step, the tester creates a positive test scenario and an adverse test scenario by selecting valid and invalid input values to check that the software is processing them correctly or incorrectly.</li>
+<li>In the third step, the tester develops various test cases such as decision table, all pairs test, equivalent division, error estimation, cause-effect graph, etc.</li>
+<li>The fourth phase includes the execution of all test cases.</li>
+<li>In the fifth step, the tester compares the expected output against the actual output.</li>
+<li>In the sixth and final step, if there is any flaw in the software, then it is cured and tested again.</li>
+</ul>
+<h2 id="techniques-used-in-black-box-testing">Techniques Used in Black Box Testing</h2>
+<p>Decision Table Technique</p>
+<p>Decision Table Technique is a systematic approach where various input combinations and their respective system behavior are captured in a tabular form. It is appropriate for the functions that have a logical relationship between two and more than two inputs.</p>
+<p>Boundary Value Technique</p>
+<p>Boundary Value Technique is used to test boundary values, boundary values are those that contain the upper and lower limit of a variable. It tests, while entering boundary value whether the software is producing correct output or not.</p>
+<p>State Transition Technique</p>
+<p>State Transition Technique is used to capture the behavior of the software application when different input values are given to the same function. This applies to those types of applications that provide the specific number of attempts to access the application.</p>
+<p>All-pair Testing Technique</p>
+<p>All-pair testing Technique is used to test all the possible discrete combinations of values. This combinational method is used for testing the application that uses checkbox input, radio button input, list box, text box, etc.</p>
+<p>Cause-Effect Technique</p>
+<p>Cause-Effect Technique underlines the relationship between a given result and all the factors affecting the result.It is based on a collection of requirements.</p>
+<h2 id="regression-testing">Regression Testing</h2>
+<p><strong>Regression Testing</strong> is the process of testing the modified parts of the code and the parts that might get affected due to the modifications to ensure that no new errors have been introduced in the software after the modifications have been made. Regression means return of something and in the software field, it refers to the return of a bug.</p>
+<p><strong>Process of Regression testing:</strong><br />
+Firstly, whenever we make some changes to the source code for any reasons like adding new functionality, optimization, etc. then our program when executed fails in the previously designed test suite for obvious reasons. After the failure, the source code is debugged in order to identify the bugs in the program. After identification of the bugs in the source code, appropriate modifications are made. Then appropriate test cases are selected from the already existing test suite which covers all the modified and affected parts of the source code. We can add new test cases if required. In the end regression testing is performed using the selected test cases.</p>
+<p><img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/regression-1-1024x776.jpg" /></p>
+<p><strong>Techniques for the selection of Test cases for Regression Testing:</strong></p>
+<ul>
+<li><strong>Select all test cases:</strong> In this technique, all the test cases are selected from the already existing test suite. It is the most simple and safest technique but not much efficient.</li>
+<li><strong>Select test cases randomly:</strong> In this technique, test cases are selected randomly from the existing test-suite but it is only useful if all the test cases are equally good in their fault detection capability which is very rare. Hence, it is not used in most of the cases.</li>
+<li><strong>Select modification traversing test cases:</strong> In this technique, only those test cases are selected which covers and tests the modified portions of the source code the parts which are affected by these modifications.</li>
+<li><strong>Select higher priority test cases:</strong> In this technique, priority codes are assigned to each test case of the test suite based upon their bug detection capability, customer requirements, etc. After assigning the priority codes, test cases with highest priorities are selected for the process of regression testing.</li>
+</ul>
+<p><strong>Tools for regression testing:</strong> In regression testing, we generally select the test cases from the existing test suite itself and hence, we need not to compute their expected output and it can be easily automated due to this reason. Automating the process of regression testing will be very much effective and time saving.<br />
+Most commonly used tools for regression testing are:</p>
+<ul>
+<li>Selenium</li>
+<li>WATIR (Web Application Testing In Ruby)</li>
+<li>QTP (Quick Test Professional)</li>
+<li>RFT (Rational Functional Tester)</li>
+<li>Winrunner</li>
+<li>Silktest</li>
+</ul>
+<p><strong>Advantages of Regression Testing:</strong></p>
+<ul>
+<li>It ensures that no new bugs has been introduced after adding new functionalities to the system.</li>
+<li>As most of the test cases used in Regression Testing are selected from the existing test suite and we already know their expected outputs. Hence, it can be easily automated by the automated tools.</li>
+<li>It helps to maintain the quality of the source code.</li>
+</ul>
+<p><strong>Disadvantages of Regression Testing:</strong></p>
+<ul>
+<li>It can be time and resource consuming if automated tools are not used.</li>
+<li>It is required even after very small changes in the code.</li>
+</ul>
+<h2 id="unit-testing">Unit Testing</h2>
+<p>Unit testing involves the testing of each unit or an individual component of the software application. It is the first level of functional testing. The aim behind unit testing is to validate unit components with its performance.</p>
+<p>A unit is a single testable part of a software system and tested during the development phase of the application software.</p>
+<p>The purpose of unit testing is to test the correctness of isolated code. A unit component is an individual function or code of the application. White box testing approach used for unit testing and usually done by the developers.</p>
+<p>Whenever the application is ready and given to the Test engineer, he/she will start checking every component of the module or module of the application independently or one by one, and this process is known as <strong>Unit testing</strong> or <strong>components testing</strong>.</p>
+<h3 id="objective-of-unit-testing">Objective of Unit Testing:</h3>
+<p>The objective of Unit Testing is:</p>
+<ol>
+<li>To isolate a section of code.</li>
+<li>To verify the correctness of the code.</li>
+<li>To test every function and procedure.</li>
+<li>To fix bugs early in the development cycle and to save costs.</li>
+<li>To help the developers to understand the code base and enable them to make changes quickly.</li>
+<li>To help with code reuse.</li>
+</ol>
+<h3 id="unit-testing-techniques"><strong>Unit Testing Techniques:</strong></h3>
+<p>There are 3 types of Unit Testing Techniques. They are</p>
+<ol>
+<li><strong>Black Box Testing:</strong> This testing technique is used in covering the unit tests for input, user interface, and output parts.</li>
+<li><strong>White Box Testing:</strong> This technique is used in testing the functional behavior of the system by giving the input and checking the functionality output including the internal design structure and code of the modules.</li>
+<li><strong>Gray Box Testing:</strong> This technique is used in executing the relevant test cases, test methods, test functions, and analyzing the code performance for the modules.</li>
+</ol>
+<h3 id="unit-testing-tools">Unit Testing Tools:</h3>
+<p>Here are some commonly used Unit Testing tools:</p>
+<ol>
+<li>Jtest</li>
+<li>Junit</li>
+<li>NUnit</li>
+<li>EMMA</li>
+<li>PHPUnit</li>
+</ol>
+<h3 id="advantages-of-unit-testing">Advantages of Unit Testing:</h3>
+<ol>
+<li>Unit Testing allows developers to learn what functionality is provided by a unit and how to use it to gain a basic understanding of the unit API.</li>
+<li>Unit testing allows the programmer to refine code and make sure the module works properly.</li>
+<li>Unit testing enables testing parts of the project without waiting for others to be completed.</li>
+<li>Early Detection of Issues: Unit testing allows developers to detect and fix issues early in the development process, before they become larger and more difficult to fix.</li>
+<li>Improved Code Quality: Unit testing helps to ensure that each unit of code works as intended and meets the requirements, improving the overall quality of the software.</li>
+</ol>
+<h3 id="disadvantages-of-unit-testing">Disadvantages of Unit Testing:</h3>
+<ol>
+<li>The process is time-consuming for writing the unit test cases.</li>
+<li>Unit Testing will not cover all the errors in the module because there is a chance of having errors in the modules while doing integration testing.</li>
+<li>Unit Testing is not efficient for checking the errors in the UI(User Interface) part of the module.</li>
+<li>It requires more time for maintenance when the source code is changed frequently.</li>
+<li>It cannot cover the non-functional testing parameters such as scalability, the performance of the system, etc.</li>
+</ol>
+<h2 id="integration-testing">Integration Testing</h2>
+<p><strong>Integration Testing</strong> is defined as a type of testing where software modules are integrated logically and tested as a group. A typical software project consists of multiple software modules, coded by different programmers. The purpose of this level of testing is to expose defects in the interaction between these software modules when they are integrated.</p>
+<p>There are four types of integration testing approaches. Those approaches are the following:</p>
+<p><strong>1. Big-Bang Integration Testing –</strong> It is the simplest integration testing approach, where all the modules are combined and the functionality is verified after the completion of individual module testing.</p>
+<p><strong>Advantages:</strong></p>
+<ol>
+<li>It is convenient for small systems.</li>
+<li>Simple and straightforward approach.</li>
+<li>Can be completed quickly.</li>
+<li>Does not require a lot of planning or coordination.</li>
+<li>May be suitable for small systems or projects with a low degree of interdependence between components.</li>
+</ol>
+<p><strong>Disadvantages:</strong></p>
+<ol>
+<li>There will be quite a lot of delay because you would have to wait for all the modules to be integrated.</li>
+<li>High-risk critical modules are not isolated and tested on priority since all modules are tested at once.</li>
+<li>Not Good for long projects.</li>
+<li>High risk of integration problems that are difficult to identify and diagnose.</li>
+<li>This can result in long and complex debugging and troubleshooting efforts.
+    <strong>2. Bottom-Up Integration Testing –</strong> In bottom-up testing, each module at lower levels are tested with higher modules until all modules are tested. The primary purpose of this integration testing is that each subsystem tests the interfaces among various modules making up the subsystem. This integration testing uses test drivers to drive and pass appropriate data to the lower-level modules.</li>
+</ol>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>In bottom-up testing, no stubs are required.</li>
+<li>A principal advantage of this integration testing is that several disjoint subsystems can be tested simultaneously.</li>
+<li>It is easy to create the test conditions.</li>
+<li>Best for applications that uses bottom up design approach.</li>
+<li>It is Easy to observe the test results.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Driver modules must be produced.</li>
+<li>In this testing, the complexity that occurs when the system is made up of a large number of small subsystems.</li>
+<li>As Far modules have been created, there is no working model can be represented.</li>
+</ul>
+<p><strong>3. Top-Down Integration Testing –</strong> Top-down integration testing technique is used in order to simulate the behaviour of the lower-level modules that are not yet integrated. In this integration testing, testing takes place from top to bottom. First, high-level modules are tested and then low-level modules and finally integrating the low-level modules to a high level to ensure the system is working as intended.</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Separately debugged module.</li>
+<li>Few or no drivers needed.</li>
+<li>It is more stable and accurate at the aggregate level.</li>
+<li>Easier isolation of interface errors.</li>
+<li>In this, design defects can be found in the early stages.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Needs many Stubs.</li>
+<li>Modules at lower level are tested inadequately.</li>
+<li>It is difficult to observe the test output.</li>
+<li>It is difficult to stub design.</li>
+</ul>
+<p><strong>4. Mixed Integration Testing –</strong> A mixed integration testing is also called sandwiched integration testing. A mixed integration testing follows a combination of top down and bottom-up testing approaches. In top-down approach, testing can start only after the top-level module have been coded and unit tested. In bottom-up approach, testing can start only after the bottom level modules are ready. This sandwich or mixed approach overcomes this shortcoming of the top-down and bottom-up approaches. It is also called the hybrid integration testing. also, stubs and drivers are used in mixed integration testing.</p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>Mixed approach is useful for very large projects having several sub projects.</li>
+<li>This Sandwich approach overcomes this shortcoming of the top-down and bottom-up approaches.</li>
+<li>Parallel test can be performed in top and bottom layer tests.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>For mixed integration testing, it requires very high cost because one part has a Top-down approach while another part has a bottom-up approach.</li>
+<li>This integration testing cannot be used for smaller systems with huge interdependence between different modules.</li>
+</ul>
+<h3 id="applications">Applications:</h3>
+<ol>
+<li><strong>Identify the components:</strong> Identify the individual components of your application that need to be integrated. This could include the frontend, backend, database, and any third-party services.</li>
+<li><strong>Create a test plan:</strong> Develop a test plan that outlines the scenarios and test cases that need to be executed to validate the integration points between the different components. This could include testing data flow, communication protocols, and error handling.</li>
+<li><strong>Set up test environment:</strong> Set up a test environment that mirrors the production environment as closely as possible. This will help ensure that the results of your integration tests are accurate and reliable.</li>
+<li><strong>Execute the tests:</strong> Execute the tests outlined in your test plan, starting with the most critical and complex scenarios. Be sure to log any defects or issues that you encounter during testing.</li>
+<li><strong>Analyze the results:</strong> Analyze the results of your integration tests to identify any defects or issues that need to be addressed. This may involve working with developers to fix bugs or make changes to the application architecture.</li>
+</ol>
+<h2 id="system-testing">System Testing</h2>
+<p>System Testing includes testing of a fully integrated software system. Generally, a computer system is made with the integration of software (any software is only a single element of a computer system). The software is developed in units and then interfaced with other software and hardware to create a complete computer system. In other words, a computer system consists of a group of software to perform the various tasks, but only software cannot perform the task; for that software must be interfaced with compatible hardware.</p>
+<p>To check the end-to-end flow of an application or the software as a user is known as <strong>System testing</strong>. In this, we navigate (go through) all the necessary modules of an application and check if the end features or the end business works fine, and test the product as a whole system.</p>
+<p><strong>System Testing Process:</strong> System Testing is performed in the following steps:</p>
+<ul>
+<li><strong>Test Environment Setup:</strong> Create testing environment for the better quality testing.</li>
+<li><strong>Create Test Case:</strong> Generate test case for the testing process.</li>
+<li><strong>Create Test Data:</strong> Generate the data that is to be tested.</li>
+<li><strong>Execute Test Case:</strong> After the generation of the test case and the test data, test cases are executed.</li>
+<li><strong>Defect Reporting:</strong> Defects in the system are detected.</li>
+<li><strong>Regression Testing:</strong> It is carried out to test the side effects of the testing process.</li>
+<li><strong>Log Defects:</strong> Defects are fixed in this step.</li>
+<li>
+<p><strong>Retest:</strong> If the test is not successful then again test is performed.
+  <strong>Types of System Testing:</strong></p>
+</li>
+<li>
+<p><strong>Performance Testing:</strong> Performance Testing is a type of software testing that is carried out to test the speed, scalability, stability and reliability of the software product or application.</p>
+</li>
+<li><strong>Load Testing:</strong> Load Testing is a type of software Testing which is carried out to determine the behavior of a system or software product under extreme load.</li>
+<li><strong>Stress Testing:</strong> Stress Testing is a type of software testing performed to check the robustness of the system under the varying loads.</li>
+<li><strong>Scalability Testing:</strong> Scalability Testing is a type of software testing which is carried out to check the performance of a software application or system in terms of its capability to scale up or scale down the number of user request load.</li>
+</ul>
+<p><strong>Tools used for System Testing :</strong></p>
+<ol>
+<li>JMeter</li>
+<li>Gallen Framework</li>
+<li>Selenium</li>
+</ol>
+<h3 id="here-are-some-advantages-of-system-testing">Here are some advantages of System Testing:</h3>
+<ul>
+<li>Verifies the overall functionality of the system.</li>
+<li>Detects and identifies system-level problems early in the development cycle.</li>
+<li>Helps to validate the requirements and ensure the system meets the user needs.</li>
+<li>Improves system reliability and quality.</li>
+<li>
+<p>Facilitates collaboration and communication between development and testing teams.
+  <strong>Disadvantages of System Testing :</strong></p>
+</li>
+<li>
+<p>This testing is time consuming process than another testing techniques since it checks the entire product or software.</p>
+</li>
+<li>The cost for the testing will be high since it covers the testing of entire software.</li>
+<li>It needs good debugging tool otherwise the hidden errors will not be found.</li>
+</ul>
+<h2 id="verification-testing">Verification testing</h2>
+<p>Verification testing includes different activities such as business requirements, system requirements, design review, and code walkthrough while developing a product.</p>
+<p>It is also known as static testing, where we are ensuring that "<strong>we are developing the right product or not</strong>". And it also checks that the developed application fulfilling all the requirements given by the client.</p>
+<p><img alt="Verification and Validation Testing" src="https://static.javatpoint.com/tutorial/software-testing/images/verification-and-validation-testing.png" /></p>
+<h2 id="validation-testing">Validation testing</h2>
+<p>Validation testing is testing where tester performed functional and non-functional testing. Here <strong>functional testing</strong> includes <a href="https://www.javatpoint.com/unit-testing">Unit Testing</a> (UT), <a href="https://www.javatpoint.com/integration-testing">Integration Testing</a> (IT) and System Testing (ST), and <strong>non-functional</strong> testing includes User acceptance testing (UAT).</p>
+<p>Validation testing is also known as dynamic testing, where we are ensuring that <strong>"we have developed the product right."</strong> And it also checks that the software meets the business needs of the client.</p>
+<p><img alt="Verification and Validation Testing" src="https://static.javatpoint.com/tutorial/software-testing/images/verification-and-validation-testing2.png" /></p>
+<h4 id="note-verification-and-validation-process-are-done-under-the-v-model-of-the-software-development-life-cycle">Note: Verification and Validation process are done under the V model of the software development life cycle.</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Verification</th>
+<th>Validation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Purpose</td>
+<td>To check whether we are developing the right product or not.</td>
+<td>To check whether the developed product is right.</td>
+</tr>
+<tr>
+<td>Type of testing</td>
+<td>Static testing</td>
+<td>Dynamic testing</td>
+</tr>
+<tr>
+<td>Methods used</td>
+<td>Inspections, reviews, walkthroughs</td>
+<td>Functional testing, system testing, integration testing, user acceptance testing</td>
+</tr>
+<tr>
+<td>When performed</td>
+<td>During the development cycle</td>
+<td>After the development cycle</td>
+</tr>
+<tr>
+<td>Who performs it</td>
+<td>Quality assurance team</td>
+<td>Testing team</td>
+</tr>
+<tr>
+<td>Code execution involved</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Bugs found</td>
+<td>Early in the development phase</td>
+<td>Later in the development phase or after deployment</td>
+</tr>
+<tr>
+<td>Role in quality control</td>
+<td>Quality assurance</td>
+<td>Quality control</td>
+</tr>
+</tbody>
+</table>
+<h2 id="software-implementation-techniques">Software Implementation Techniques</h2>
+<p>A good system design is to organize the program modules in such a way that are easy to develop and change. Structured design techniques help developers to deal with the size and complexity of programs. Analysts create instructions for the developers about how code should be written and how pieces of code should fit together to form a program.</p>
+<p>Software Engineering is the process of designing, building, testing, and maintaining software. The goal of software engineering is to create software that is reliable, efficient, and easy to maintain. System design is a critical component of software engineering and involves making decisions about the architecture, components, modules, interfaces, and data for a software system.</p>
+<p><strong>System Design Strategy refers to the approach that is taken to design a software system. There are several strategies that can be used to design software systems, including the following:</strong></p>
+<ol>
+<li>Top-Down Design: This strategy starts with a high-level view of the system and gradually breaks it down into smaller, more manageable components.</li>
+<li>Bottom-Up Design: This strategy starts with individual components and builds the system up, piece by piece.</li>
+<li>Iterative Design: This strategy involves designing and implementing the system in stages, with each stage building on the results of the previous stage.</li>
+<li>Incremental Design: This strategy involves designing and implementing a small part of the system at a time, adding more functionality with each iteration.</li>
+<li>Agile Design: This strategy involves a flexible, iterative approach to design, where requirements and design evolve through collaboration between self-organizing and cross-functional teams.</li>
+</ol>
+<p>The choice of system design strategy will depend on the particular requirements of the software system, the size and complexity of the system, and the development methodology being used. A well-designed system can simplify the development process, improve the quality of the software, and make the software easier to maintain.</p>
+<p><strong>Importance :</strong></p>
+<ol>
+<li>If any pre-existing code needs to be understood, organized, and pieced together.</li>
+<li>It is common for the project team to have to write some code and produce original programs that support the application logic of the system.</li>
+</ol>
+<p>There are many strategies or techniques for performing system design. They are:</p>
+<ul>
+<li><strong>Bottom-up approach:</strong><br />
+  The design starts with the lowest level components and subsystems. By using these components, the next immediate higher-level components and subsystems are created or composed. The process is continued till all the components and subsystems are composed into a single component, which is considered as the complete system. The amount of abstraction grows high as the design moves to more high levels.</li>
+</ul>
+<p>By using the basic information existing system, when a new system needs to be created, the bottom-up strategy suits the purpose.</p>
+<p><img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/20190326154349/Untitled-document10.jpeg" /></p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>The economics can result when general solutions can be reused.</li>
+<li>It can be used to hide the low-level details of implementation and be merged with the top-down technique.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>It is not so closely related to the structure of the problem.</li>
+<li>High-quality bottom-up solutions are very hard to construct.</li>
+<li>It leads to the proliferation of ‘potentially useful’ functions rather than the most appropriate ones.</li>
+</ul>
+<p><strong>Top-down approach:</strong> Each system is divided into several subsystems and components. Each of the subsystems is further divided into a set of subsystems and components. This process of division facilitates forming a system hierarchy structure. The complete software system is considered a single entity and in relation to the characteristics, the system is split into sub-systems and components. The same is done with each of the sub-systems.</p>
+<p>This process is continued until the lowest level of the system is reached. The design is started initially by defining the system as a whole and then keeps on adding definitions of the subsystems and components. When all the definitions are combined together, it turns out to be a complete system.</p>
+<p>For the solutions of the software that need to be developed from the ground level, a top-down design best suits the purpose.</p>
+<p><img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/20190326161031/Untitled-document12.jpeg" /></p>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li>The main advantage of the top-down approach is that its strong focus on requirements helps to make a design responsive according to its requirements.</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Project and system boundaries tend to be application specification-oriented. Thus it is more likely that the advantages of component reuse will be missed.</li>
+<li>The system is likely to miss, the benefits of a well-structured, simple architecture.</li>
+<li><strong>Hybrid Design:</strong><br />
+  It is a combination of both top-down and bottom-up design strategies. In this, we can reuse the modules.</li>
+</ul>
+<p><strong>Advantages of using a System Design Strategy:</strong></p>
+<ol>
+<li>Improved quality: A well-designed system can improve the overall quality of the software, as it provides a clear and organized structure for the software.</li>
+<li>Ease of maintenance: A well-designed system can make it easier to maintain and update the software, as the design provides a clear and organized structure for the software.</li>
+<li>Improved efficiency: A well-designed system can make the software more efficient, as it provides a clear and organized structure for the software that reduces the complexity of the code.</li>
+<li>Better communication: A well-designed system can improve communication between stakeholders, as it provides a clear and organized structure for the software that makes it easier for stakeholders to understand and agree on the design of the software.</li>
+<li>Faster development: A well-designed system can speed up the development process, as it provides a clear and organized structure for the software that makes it easier for developers to understand the requirements and implement the software.</li>
+</ol>
+<h3 id="disadvantages-of-using-a-system-design-strategy">Disadvantages of using a System Design Strategy:</h3>
+<ol>
+<li>Time-consuming: Designing a system can be time-consuming, especially for large and complex systems, as it requires a significant amount of documentation and analysis.</li>
+<li>Inflexibility: Once a system has been designed, it can be difficult to make changes to the design, as the process is often highly structured and documentation-intensive.</li>
+</ol>
+<h2 id="references">References</h2>
+<ul>
+<li>https://www.javatpoint.com/white-box-testing</li>
+<li>https://www.javatpoint.com/black-box-testing</li>
+<li>https://www.geeksforgeeks.org/software-engineering-regression-testing/</li>
+<li>https://www.browserstack.com/guide/regression-testing</li>
+<li>https://www.javatpoint.com/unit-testing</li>
+<li>https://www.geeksforgeeks.org/unit-testing-software-testing/</li>
+<li>https://www.geeksforgeeks.org/software-engineering-integration-testing/?ref=lbp</li>
+<li>https://www.guru99.com/integration-testing.html</li>
+<li>https://www.geeksforgeeks.org/system-testing/?ref=lbp</li>
+<li>https://www.javatpoint.com/system-testing</li>
+<li>https://www.javatpoint.com/verification-and-validation-testing</li>
+<li>https://www.geeksforgeeks.org/software-engineering-system-design-strategy/</li>
+<li>https://www.brainkart.com/article/Internal-and-external-views-of-Testing_9085/</li>
+<li>https://www.linkedin.com/pulse/external-vs-internal-testing-mariya-novikava</li>
+<li>https://www.scaler.com/topics/fundamentals-of-software-testing/</li>
+<li>https://www.geeksforgeeks.org/software-testing-basics/</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit3" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit3
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Unit5/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit5" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit5
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,117 @@
+site_name: SYMaterials
+theme:
+  name: material
+  font: 
+    text: Roboto 500
+  logo: assets/logo.svg
+  favicon: favicon.ico
+  features:
+    - navigation.path
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+
+nav:  
+  - DAR:
+    - DAR/index.md
+
+  - AMM:
+    - AMM/index.md
+    - Unit1: AMM/UNIT_1.md
+    - Unit2: AMM/UNIT_2.md
+    - Unit3: AMM/UNIT_3.md
+    - Unit4: AMM/UNIT_4.md
+    - Unit5: AMM/UNIT_5.md
+    - CAE-1_Question_Bank: AMM/cae1.md
+    - CAE-2_Question_Bank: AMM/cae2.md
+    - CAE-3_Question_Bank: AMM/cae3.md
+
+  - OS:
+    - OS/index.md
+    - Unit1: OS/UNIT_1.md
+    - Unit2: OS/UNIT_2.md
+    - Unit3: OS/UNIT_3.md
+    - Unit4: OS/UNIT_4.md
+    - Unit5: OS/UNIT_5.md
+    - CAE-1_Question_Bank: OS/cae1.md
+    - CAE-2_Question_Bank: OS/cae2.md
+    - CAE-3_Question_Bank: OS/cae3.md
+
+  - DAA:
+    - DAA/index.md
+    - Unit1: DAA/UNIT_1.md
+    - Unit2: DAA/UNIT_2.md
+    - Unit3: DAA/UNIT_3.md
+    - Unit4: DAA/UNIT_4.md
+    - Unit5: DAA/UNIT_5.md
+    - CAE-1_Question_Bank: DAA/cae1.md
+    - CAE-2_Question_Bank: DAA/cae2.md
+    - CAE-3_Question_Bank: DAA/cae3.md
+
+  - TNM:
+    - TNM/index.md
+    - Unit1: TNM/UNIT_1.md
+    - Unit2: TNM/UNIT_2.md
+    - Unit3: TNM/UNIT_3.md
+    - Unit4: TNM/UNIT_4.md
+    - Unit5: TNM/UNIT_5.md
+    - CAE-1_Question_Bank: TNM/cae1.md
+    - CAE-2_Question_Bank: TNM/cae2.md
+    - CAE-3_Question_Bank: TNM/cae3.md
+
+  - CN:
+    - CN/index.md
+    - Unit1: CN/UNIT_1.md 
+    - Unit2: CN/UNIT_2.md
+    - Unit3: CN/UNIT_3.md
+    - Unit4: CN/UNIT_4.md
+    - Unit5: CN/UNIT_5.md
+    - CAE-1_Question_Bank: CN/cae1.md
+    - CAE-2_Question_Bank: CN/cae2.md
+    - CAE-3_Question_Bank: CN/cae3.md    
+
+  
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Vishal2vsp
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/vishal-pise-9b79b1244/
+    
+  generator: false
+  analytics:
+    provider: google 
+    property: G-B5944EDZSE
+
+extra_javascript:
+  - lol.js
+
+copyright: Copyright &copy; 2024 Vishal Pise

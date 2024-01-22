@@ -1,0 +1,2354 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Unit2/">
+      
+      
+        <link rel="next" href="../Unit4/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+    
+    
+      
+        <title>Unit3 - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#elements-of-html" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sepm/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-html-elements" class="md-nav__link">
+    Introduction to HTML Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-text" class="md-nav__link">
+    Working with Text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-lists" class="md-nav__link">
+    Working with Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordered-lists-ol" class="md-nav__link">
+    Ordered Lists (OL)
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordered Lists (OL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unordered-lists-ul" class="md-nav__link">
+    Unordered Lists (UL)
+  </a>
+  
+    <nav class="md-nav" aria-label="Unordered Lists (UL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_1" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nesting-lists" class="md-nav__link">
+    Nesting Lists
+  </a>
+  
+    <nav class="md-nav" aria-label="Nesting Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-list-styles-with-css" class="md-nav__link">
+    Customizing List Styles with CSS
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing List Styles with CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables-and-frames" class="md-nav__link">
+    Tables and Frames
+  </a>
+  
+    <nav class="md-nav" aria-label="Tables and Frames">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-table-element" class="md-nav__link">
+    The &lt;table&gt; Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-rows-tr-and-header-cells-th" class="md-nav__link">
+    Table Rows (&lt;tr&gt;) and Header Cells (&lt;th&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-data-cells-td" class="md-nav__link">
+    Table Data Cells (&lt;td&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes-for-tables" class="md-nav__link">
+    Attributes for Tables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frames-in-html-deprecated" class="md-nav__link">
+    Frames in HTML (Deprecated)
+  </a>
+  
+    <nav class="md-nav" aria-label="Frames in HTML (Deprecated)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame-elements-deprecated" class="md-nav__link">
+    Frame Elements (Deprecated)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-frames-are-deprecated" class="md-nav__link">
+    Why Frames are Deprecated
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-hyperlinks" class="md-nav__link">
+    Working with Hyperlinks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-hyperlinks" class="md-nav__link">
+    Basic Hyperlinks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relative-and-absolute-urls" class="md-nav__link">
+    Relative and Absolute URLs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-to-email-addresses" class="md-nav__link">
+    Linking to Email Addresses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-to-files" class="md-nav__link">
+    Linking to Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-attributes" class="md-nav__link">
+    Link Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images-and-multimedia" class="md-nav__link">
+    Images and Multimedia
+  </a>
+  
+    <nav class="md-nav" aria-label="Images and Multimedia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-elements" class="md-nav__link">
+    Image Elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multimedia-elements" class="md-nav__link">
+    Multimedia Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimedia Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audio-element" class="md-nav__link">
+    Audio Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-element" class="md-nav__link">
+    Video Element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsive-images-and-accessibility" class="md-nav__link">
+    Responsive Images and Accessibility
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dbms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-html-elements" class="md-nav__link">
+    Introduction to HTML Elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-text" class="md-nav__link">
+    Working with Text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-lists" class="md-nav__link">
+    Working with Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ordered-lists-ol" class="md-nav__link">
+    Ordered Lists (OL)
+  </a>
+  
+    <nav class="md-nav" aria-label="Ordered Lists (OL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unordered-lists-ul" class="md-nav__link">
+    Unordered Lists (UL)
+  </a>
+  
+    <nav class="md-nav" aria-label="Unordered Lists (UL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_1" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nesting-lists" class="md-nav__link">
+    Nesting Lists
+  </a>
+  
+    <nav class="md-nav" aria-label="Nesting Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_2" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-list-styles-with-css" class="md-nav__link">
+    Customizing List Styles with CSS
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing List Styles with CSS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_3" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables-and-frames" class="md-nav__link">
+    Tables and Frames
+  </a>
+  
+    <nav class="md-nav" aria-label="Tables and Frames">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-table-element" class="md-nav__link">
+    The &lt;table&gt; Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-rows-tr-and-header-cells-th" class="md-nav__link">
+    Table Rows (&lt;tr&gt;) and Header Cells (&lt;th&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-data-cells-td" class="md-nav__link">
+    Table Data Cells (&lt;td&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes-for-tables" class="md-nav__link">
+    Attributes for Tables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frames-in-html-deprecated" class="md-nav__link">
+    Frames in HTML (Deprecated)
+  </a>
+  
+    <nav class="md-nav" aria-label="Frames in HTML (Deprecated)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame-elements-deprecated" class="md-nav__link">
+    Frame Elements (Deprecated)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-frames-are-deprecated" class="md-nav__link">
+    Why Frames are Deprecated
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-hyperlinks" class="md-nav__link">
+    Working with Hyperlinks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-hyperlinks" class="md-nav__link">
+    Basic Hyperlinks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relative-and-absolute-urls" class="md-nav__link">
+    Relative and Absolute URLs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-to-email-addresses" class="md-nav__link">
+    Linking to Email Addresses
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linking-to-files" class="md-nav__link">
+    Linking to Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-attributes" class="md-nav__link">
+    Link Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images-and-multimedia" class="md-nav__link">
+    Images and Multimedia
+  </a>
+  
+    <nav class="md-nav" aria-label="Images and Multimedia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#image-elements" class="md-nav__link">
+    Image Elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multimedia-elements" class="md-nav__link">
+    Multimedia Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Multimedia Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audio-element" class="md-nav__link">
+    Audio Element
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video-element" class="md-nav__link">
+    Video Element
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#responsive-images-and-accessibility" class="md-nav__link">
+    Responsive Images and Accessibility
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="elements-of-html">Elements of HTML</h1>
+<ul>
+<li><a href="#introduction-to-elements-of-html">Introduction to elements of HTML</a></li>
+<li><a href="#working-with-text">Working with Text</a></li>
+<li><a href="#working-with-lists">Working with Lists</a></li>
+<li><a href="#tables-and-frames">Tables and Frames</a></li>
+<li><a href="#working-with-hyperlinks">Working with Hyperlinks</a></li>
+<li><a href="#images-and-multimedia">Images and Multimedia</a></li>
+<li><a href="#working-with-forms-and-controls">Working with Forms and controls</a></li>
+</ul>
+<h2 id="introduction-to-html-elements">Introduction to HTML Elements</h2>
+<p>HTML, which stands for Hypertext Markup Language, serves as the fundamental building block of the World Wide Web. It is a markup language that web developers use to structure the content of web pages. At its core, HTML consists of a series of elements, each designed for a specific purpose. In this comprehensive guide, we will explore the essential concepts and elements that make up HTML.</p>
+<p><strong>HTML Elements Defined</strong></p>
+<p>HTML elements are the basic units of structure in an HTML document. They consist of tags, attributes, and content. Tags are enclosed in angle brackets and define the beginning and end of an element. Content is the data contained within the element, and attributes provide additional information about the element.</p>
+<p>Here is a breakdown of the basic structure of an HTML element:</p>
+<ul>
+<li><strong>Opening Tag</strong>: The opening tag marks the beginning of the element and contains the element name. For example, <code>&lt;p&gt;</code> is the opening tag for a paragraph element.</li>
+<li><strong>Attributes</strong>: Some elements have attributes that provide extra information about the element. Attributes appear within the opening tag and are written as name-value pairs. An example is the <code>href</code> attribute in an anchor (<code>&lt;a&gt;</code>) element, which specifies the hyperlink destination.</li>
+<li><strong>Content</strong>: The content is the actual data or text that the element contains. For instance, within a <code>&lt;p&gt;</code> element, you place the text or content of the paragraph.</li>
+<li><strong>Closing Tag</strong>: The closing tag marks the end of the element and is similar to the opening tag, but with a forward slash (<code>/</code>) before the element name. For example, <code>&lt;/p&gt;</code> is the closing tag for a paragraph.</li>
+</ul>
+<p>Here's an example of a complete HTML element that defines a link:</p>
+<p><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></p>
+<p>In this example:</p>
+<ul>
+<li><code>&lt;a&gt;</code> is the opening tag.</li>
+<li><code>href="https://www.example.com"</code> is an attribute that specifies the link's destination.</li>
+<li><code>Visit Example</code> is the content of the link.</li>
+<li><code>&lt;/a&gt;</code> is the closing tag.</li>
+</ul>
+<p><strong>The Document Structure</strong></p>
+<p>HTML documents are hierarchical in nature and have a specific structure. At the top level, you have the entire HTML document enclosed within <code>&lt;html&gt;</code> tags. Inside the HTML document, there are two main sections: the <code>&lt;head&gt;</code> and the <code>&lt;body&gt;</code>.</p>
+<ol>
+<li><strong>Head Section</strong>: The <code>&lt;head&gt;</code> section contains metadata about the document, such as the title of the page, character encoding, and links to external resources like CSS stylesheets or JavaScript files. It doesn't display visible content on the web page.</li>
+</ol>
+<p><code>&lt;head&gt;
+        &lt;title&gt;My Web Page&lt;/title&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;/head&gt;</code></p>
+<ul>
+<li><strong>Body Section</strong>: The <code>&lt;body&gt;</code> section contains the visible content of the web page, including text, images, links, and other elements.</li>
+</ul>
+<p><code>&lt;body&gt;
+        &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+        &lt;p&gt;This is a sample paragraph.&lt;/p&gt;
+        &lt;img src="image.jpg" alt="An image"&gt;
+        &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+    &lt;/body&gt;</code></p>
+<p>By combining various HTML elements within the <code>&lt;body&gt;</code> section, you can create rich and structured web content.</p>
+<p><strong>Semantic HTML Elements</strong></p>
+<p>HTML offers a wide range of elements designed to convey meaning and structure to your web documents. Semantic HTML elements go beyond simple formatting and provide context to the content they enclose. Some common semantic elements include:</p>
+<ul>
+<li><code>&lt;header&gt;</code>: Represents a container for introductory content, often containing logos, headings, and navigation menus.</li>
+<li><code>&lt;nav&gt;</code>: Defines a navigation menu, typically used for site navigation links.</li>
+<li><code>&lt;section&gt;</code>: Represents a thematic grouping of content, such as a chapter, tabbed content, or a news article.</li>
+<li><code>&lt;article&gt;</code>: Encloses a self-contained composition, such as a blog post or news story.</li>
+<li><code>&lt;aside&gt;</code>: Contains content that is tangentially related to the content around it, like a sidebar or advertising.</li>
+<li><code>&lt;footer&gt;</code>: Represents a container for the footer of a section or a page, often containing copyright information, contact details, or related links.</li>
+</ul>
+<p>Using semantic elements not only improves accessibility for users with disabilities but also helps search engines better understand and index your content.</p>
+<h2 id="working-with-text">Working with Text</h2>
+<p>Working with text is a fundamental aspect of web development, and HTML provides a variety of elements and tags to help structure and present textual content on webpages. This article will delve into the nuances of working with text in HTML, including headings, paragraphs, inline text formatting, and more.</p>
+<p><strong>Headings (h1 to h6)</strong></p>
+<p>HTML offers six levels of headings, ranging from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, to create a hierarchical structure for your content. These headings define the importance and organization of text on a webpage, with <code>&lt;h1&gt;</code> being the most significant and <code>&lt;h6&gt;</code> the least. Headings are essential for accessibility, SEO (Search Engine Optimization), and overall content organization.</p>
+<p>Here's an example of how to use headings:</p>
+<pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Sub-subheading&lt;/h3&gt;`
+</code></pre>
+<p>By using headings appropriately, you provide clear and meaningful structure to your content, making it easier for both users and search engines to understand the hierarchy of information.</p>
+<p><strong>Paragraphs (p)</strong></p>
+<p>The <code>&lt;p&gt;</code> element is used to create paragraphs of text. It is one of the most commonly used HTML tags for organizing textual content. Paragraphs provide visual separation and improve readability.</p>
+<p>Example:</p>
+<p>html</p>
+<p><code>&lt;p&gt;This is a paragraph of text. It can contain multiple sentences and spans several lines.&lt;/p&gt;</code></p>
+<p>Paragraphs are block-level elements, which means they create a new block of content, pushing subsequent elements to a new line. They are especially useful for structuring long-form text, such as articles or blog posts.</p>
+<p><strong>Inline Text Formatting (Bold and Italic)</strong></p>
+<p>HTML allows you to format text inline using elements like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>.</p>
+<ul>
+<li><code>&lt;strong&gt;</code>: The <code>&lt;strong&gt;</code> element is used to indicate strong importance or emphasis. By default, browsers typically render <code>&lt;strong&gt;</code> text as bold.</li>
+</ul>
+<p>Example:</p>
+<p><code>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; information.&lt;/p&gt;</code></p>
+<ul>
+<li><code>&lt;em&gt;</code>: The <code>&lt;em&gt;</code> element is used to emphasize text, often rendered as italic by browsers.</li>
+</ul>
+<p>Example:</p>
+<p><code>&lt;p&gt;This text is &lt;em&gt;emphasized&lt;/em&gt;.&lt;/p&gt;</code></p>
+<p>These inline formatting elements provide a way to highlight specific words or phrases within a paragraph or heading, enhancing the readability and visual appeal of your content.</p>
+<p><strong>Text Alignment</strong></p>
+<p>You can control the alignment of text within HTML elements using CSS styles. Common text alignment options include left-align, right-align, center, and justified alignment.</p>
+<p>Example using CSS:</p>
+<p><code>&lt;p style="text-align: center;"&gt;This text is centered.&lt;/p&gt;</code></p>
+<p>By adjusting the text alignment, you can create visually appealing layouts for your content, improving the overall design of your webpage.</p>
+<p><strong>Text Indentation</strong></p>
+<p>HTML/CSS also allows you to control text indentation, which can be helpful for creating structured and visually appealing content. You can use the <code>text-indent</code> property in CSS to specify the amount of indentation.</p>
+<p>Example:</p>
+<p><code>&lt;p style="text-indent: 30px;"&gt;This paragraph has an indentation of 30 pixels.&lt;/p&gt;</code></p>
+<p>Indentation can be useful for creating lists, quotes, or other content elements where a hierarchical structure is needed.</p>
+<p><strong>Text Transform</strong></p>
+<p>The <code>text-transform</code> property in CSS allows you to control the capitalization of text. It can be used to make text uppercase, lowercase, or capitalize the first letter of each word.</p>
+<p>Example:</p>
+<p><code>&lt;p style="text-transform: uppercase;"&gt;This text is in uppercase.&lt;/p&gt;
+    &lt;p style="text-transform: lowercase;"&gt;This text is in lowercase.&lt;/p&gt;
+    &lt;p style="text-transform: capitalize;"&gt;This text is capitalized.&lt;/p&gt;</code></p>
+<p>Text transformation can be particularly useful for headings, labels, and navigation menus, where consistent text formatting is essential.</p>
+<p><strong>Text Decoration</strong></p>
+<p>HTML/CSS provides options for text decoration, allowing you to add underlines, overlines, and strikethroughs to text.</p>
+<p>Example:
+<code>&lt;p style="text-decoration: underline;"&gt;This text has an underline.&lt;/p&gt;
+    &lt;p style="text-decoration: overline;"&gt;This text has an overline.&lt;/p&gt;
+    &lt;p style="text-decoration: line-through;"&gt;This text has a strikethrough.&lt;/p&gt;</code></p>
+<p>Text decoration is often used to indicate links, emphasize specific content, or add visual cues to text.</p>
+<p><strong>Text Color</strong></p>
+<p>You can change the color of text using CSS. The <code>color</code> property allows you to specify a color using various formats, such as color names, hexadecimal codes, or RGB values.</p>
+<p>Example:</p>
+<pre><code>&lt;p style="color: #ff0000;"&gt;This text is red.&lt;/p&gt;
+&lt;p style="color: blue;"&gt;This text is blue.&lt;/p&gt;`
+</code></pre>
+<p>Customizing text colors enables you to create visually appealing designs and ensure that your content aligns with your website's color scheme.</p>
+<h2 id="working-with-lists">Working with Lists</h2>
+<p>HTML provides powerful tools for structuring content on webpages, and one of the fundamental ways to organize information is by using lists. Lists help present data in a structured and readable format. In HTML, you can work with two main types of lists: ordered lists (OL) and unordered lists (UL). In this detailed exploration, we will delve into working with lists in HTML, covering their syntax, attributes, and practical examples.</p>
+<h2 id="ordered-lists-ol">Ordered Lists (OL)</h2>
+<p>An ordered list, often referred to as OL in HTML, is used when you want to present items in a specific sequence or order. These lists are typically numbered, making it easy for readers to follow the content.</p>
+<h3 id="syntax">Syntax</h3>
+<p>To create an ordered list in HTML, you use the following structure:</p>
+<p>html</p>
+<pre><code>`&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;`
+</code></pre>
+<ul>
+<li><code>&lt;ol&gt;</code>: This is the opening tag for the ordered list.</li>
+<li><code>&lt;li&gt;</code>: This is the list item tag, and you place each individual item within these tags.</li>
+</ul>
+<h3 id="example">Example</h3>
+<p>Let's say you're creating a recipe webpage, and you want to list the ingredients in order:</p>
+<p>html</p>
+<pre><code>`&lt;h2&gt;Ingredients:&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;1 cup flour&lt;/li&gt;
+  &lt;li&gt;1/2 cup sugar&lt;/li&gt;
+  &lt;li&gt;1 tsp salt&lt;/li&gt;
+  &lt;li&gt;2 eggs&lt;/li&gt;
+  &lt;li&gt;1 cup milk&lt;/li&gt;
+&lt;/ol&gt;`
+</code></pre>
+<p>In this example, the ordered list (<code>&lt;ol&gt;</code>) is used to display the ingredients, and each ingredient is a list item (<code>&lt;li&gt;</code>).</p>
+<h2 id="unordered-lists-ul">Unordered Lists (UL)</h2>
+<p>Unordered lists, often referred to as UL in HTML, are employed when you want to present items in no particular order or sequence. These lists are typically displayed with bullet points or other markers.</p>
+<h3 id="syntax_1">Syntax</h3>
+<p>To create an unordered list in HTML, you use the following structure:</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;Item A&lt;/li&gt;
+  &lt;li&gt;Item B&lt;/li&gt;
+  &lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<ul>
+<li><code>&lt;ul&gt;</code>: This is the opening tag for the unordered list.</li>
+<li><code>&lt;li&gt;</code>: Just like with ordered lists, this is the list item tag where each item is placed.</li>
+</ul>
+<h3 id="example_1">Example</h3>
+<p>Imagine you're creating a travel blog and want to list the places you've visited:</p>
+<p>html</p>
+<pre><code>`&lt;h2&gt;Places I've Visited:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Paris, France&lt;/li&gt;
+  &lt;li&gt;Tokyo, Japan&lt;/li&gt;
+  &lt;li&gt;New York City, USA&lt;/li&gt;
+  &lt;li&gt;Rome, Italy&lt;/li&gt;
+  &lt;li&gt;Sydney, Australia&lt;/li&gt;
+&lt;/ul&gt;`
+</code></pre>
+<p>In this case, the unordered list (<code>&lt;ul&gt;</code>) is used to display the places visited, and each place is listed as a list item (<code>&lt;li&gt;</code>).</p>
+<h2 id="attributes">Attributes</h2>
+<p>Both ordered and unordered lists can have additional attributes to enhance their functionality and appearance:</p>
+<ul>
+<li>
+<p><strong><code>start</code></strong>: This attribute, when applied to an ordered list (<code>&lt;ol&gt;</code>), allows you to specify the starting number for the list.</p>
+</li>
+<li>
+<p><code>&lt;ol start="5"&gt;</code>
+  <code>&lt;li&gt;Item 5&lt;/li&gt;</code>
+  <code>&lt;li&gt;Item 6&lt;/li&gt;</code>
+  <code>&lt;li&gt;Item 7&lt;/li&gt;</code>
+  <code>&lt;/ol&gt;</code></p>
+</li>
+<li><strong><code>type</code></strong>: For ordered lists (<code>&lt;ol&gt;</code>), this attribute lets you define the type of numbering or bullet point style. Common values include "1" (default, Arabic numerals), "A" (uppercase letters), "a" (lowercase letters), "I" (uppercase Roman numerals), and "i" (lowercase Roman numerals).</li>
+</ul>
+<p><code>&lt;ol type="A"&gt;</code>
+<code>&lt;li&gt;Item A&lt;/li&gt;</code>
+<code>&lt;li&gt;Item B&lt;/li&gt;</code>
+<code>&lt;li&gt;Item C&lt;/li&gt;</code>
+<code>&lt;/ol&gt;</code></p>
+<ul>
+<li><strong><code>reversed</code></strong>: When applied to an ordered list (<code>&lt;ol&gt;</code>), this attribute reverses the numbering.</li>
+</ul>
+<p><code>&lt;ol reversed&gt;</code>
+<code>&lt;li&gt;Item 3&lt;/li&gt;</code>
+<code>&lt;li&gt;Item 2&lt;/li&gt;</code>
+<code>&lt;li&gt;Item 1&lt;/li&gt;</code>
+<code>&lt;/ol&gt;</code></p>
+<ul>
+<li><strong><code>compact</code></strong>: This attribute, which can be applied to an unordered list (<code>&lt;ul&gt;</code>), reduces the spacing between list items.</li>
+</ul>
+<p><code>&lt;ul compact&gt;</code></p>
+<pre><code>  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+</code></pre>
+<p><code>&lt;/ul&gt;</code>
+Output:-</p>
+<ul compact>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+   </ul>
+
+<h2 id="nesting-lists">Nesting Lists</h2>
+<p>HTML allows you to nest lists within lists, providing a flexible way to structure content. For instance, you can have an ordered list inside an unordered list or vice versa.</p>
+<h3 id="example_2">Example</h3>
+<p>Imagine you're creating a tutorial with subtopics and want to use nested lists:
+<code>&lt;h2&gt;HTML Basics&lt;/h2&gt;</code>
+<code>&lt;ul&gt;</code>
+<code>&lt;li&gt;Introduction to HTML&lt;/li&gt;</code>
+<code>&lt;li&gt;HTML Elements</code>
+<code>&lt;ul&gt;</code>
+<code>&lt;li&gt;Headings&lt;/li&gt;</code>
+<code>&lt;li&gt;Paragraphs&lt;/li&gt;</code>
+<code>&lt;li&gt;Lists</code>
+<code>&lt;ol&gt;</code>
+<code>&lt;li&gt;Ordered Lists&lt;/li&gt;</code>
+<code>&lt;li&gt;Unordered Lists&lt;/li&gt;</code>
+<code>&lt;/ol&gt;</code>
+<code>&lt;/li&gt;</code>
+<code>&lt;li&gt;Links&lt;/li&gt;</code>
+<code>&lt;/ul&gt;</code>
+<code>&lt;/li&gt;</code>
+<code>&lt;li&gt;HTML Attributes&lt;/li&gt;</code>
+<code>&lt;/ul&gt;</code>
+Output:-
+`<h2>HTML Basics</h2></p>
+<ul>
+  <li>Introduction to HTML</li>
+  <li>HTML Elements
+    <ul>
+      <li>Headings</li>
+      <li>Paragraphs</li>
+      <li>Lists
+        <ol>
+          <li>Ordered Lists</li>
+          <li>Unordered Lists</li>
+        </ol>
+      </li>
+      <li>Links</li>
+    </ul>
+  </li>
+  <li>HTML Attributes</li>
+</ul>
+<p>`</p>
+<p>In this example, the outer list is an unordered list, and within it, there's a nested ordered list and another unordered list.</p>
+<h2 id="customizing-list-styles-with-css">Customizing List Styles with CSS</h2>
+<p>While HTML provides the structure for lists, CSS (Cascading Style Sheets) allows you to customize their appearance. You can change the bullet point style, adjust spacing, and apply various visual effects.</p>
+<h3 id="example_3">Example</h3>
+<p>Suppose you want to change the bullet point style of an unordered list and add some spacing:</p>
+<pre><code>&lt;style&gt; ul.custom-list {
+list-style-type: square; /* Change bullet point style to square */
+margin-left: 20px; /* Add left margin for spacing */
+  } &lt;/style&gt;
+
+&lt;ul class="custom-list"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;`
+</code></pre>
+<p>Output:</p>
+<ul class="custom-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+<p>List item</p>
+<p>In this case, a <code>style</code> block with CSS is used to customize the list. The class <code>"custom-list"</code> is added to the unordered list to apply these styles.</p>
+<h2 id="tables-and-frames">Tables and Frames</h2>
+<p>Tables are a fundamental HTML element used to organize and display data in rows and columns. They provide a structured way to present information, making it easier for users to understand and interpret data. Tables are created using a combination of elements, primarily <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code>.</p>
+<h4 id="the-table-element">The <code>&lt;table&gt;</code> Element</h4>
+<p>The <code>&lt;table&gt;</code> element is the container for the entire table. It's used to define the beginning and end of the table structure. Here's an example of how to create a simple table using HTML:</p>
+<pre><code>&lt;table&gt;
+  &lt;!-- Table rows and cells go here --&gt;
+&lt;/table&gt;`
+</code></pre>
+<h4 id="table-rows-tr-and-header-cells-th">Table Rows (<code>&lt;tr&gt;</code>) and Header Cells (<code>&lt;th&gt;</code>)</h4>
+<p>Inside the <code>&lt;table&gt;</code> element, you define rows using the <code>&lt;tr&gt;</code> (table row) element. Each row contains cells, which can either be standard data cells or header cells. Header cells are represented using the <code>&lt;th&gt;</code> (table header) element and are typically used to label columns or provide additional context to the data. Here's an example:</p>
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;th&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;New York&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;td&gt;Los Angeles&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;`
+</code></pre>
+<p>In this example, the first row contains header cells, and subsequent rows contain data cells. The <code>&lt;th&gt;</code> elements make the header cells bold and centered by default, helping users distinguish them from regular data cells.</p>
+<h4 id="table-data-cells-td">Table Data Cells (<code>&lt;td&gt;</code>)</h4>
+<p>The <code>&lt;td&gt;</code> element represents standard data cells within the table. Each <code>&lt;td&gt;</code> element contains the actual data that you want to display in the table. Here's an example of data cells within a table:</p>
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;th&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+&lt;td&gt;John&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;New York&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;25&lt;/td&gt;
+&lt;td&gt;Los Angeles&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<h3 id="attributes-for-tables">Attributes for Tables</h3>
+<p>HTML provides attributes that allow you to customize the appearance and behavior of tables:</p>
+<ul>
+<li>
+<p><code>border</code>: Specifies the border width around the table. For example, <code>border="1"</code> adds a border with a width of 1 pixel.</p>
+</li>
+<li>
+<p><code>&lt;table border="1"&gt;</code>
+  <code>&lt;!-- Table content --&gt;</code>
+  <code>&lt;/table&gt;</code></p>
+</li>
+<li><code>width</code>: Sets the width of the table. You can specify the width in pixels or as a percentage of the available space.</li>
+<li><code>&lt;table width="50%"&gt;</code>
+  <code>&lt;!-- Table content --&gt;</code>
+  <code>&lt;/table&gt;</code></li>
+<li><code>cellspacing</code> and <code>cellpadding</code>: These attributes control the spacing between cells (<code>cellspacing</code>) and the padding inside cells (<code>cellpadding</code>).</li>
+</ul>
+<p><code>&lt;table cellspacing="5" cellpadding="10"&gt;</code>
+<code>&lt;!-- Table content --&gt;</code>
+<code>&lt;/table&gt;</code></p>
+<ul>
+<li><code>colspan</code> and <code>rowspan</code>: These attributes allow cells to span multiple columns or rows, useful for merging cells.</li>
+</ul>
+<p><code>&lt;table&gt;</code>
+<code>&lt;tr&gt;</code>
+<code>&lt;td colspan="2"&gt;Merged Cell&lt;/td&gt;</code>
+<code>&lt;/tr&gt;</code>
+<code>&lt;tr&gt;</code>
+<code>&lt;td&gt;Cell 1&lt;/td&gt;</code>
+<code>&lt;td&gt;Cell 2&lt;/td&gt;</code>
+<code>&lt;/tr&gt;</code>
+<code>&lt;/table&gt;</code></p>
+<h3 id="frames-in-html-deprecated">Frames in HTML (Deprecated)</h3>
+<p>Frames were once a feature in HTML used to divide a webpage into multiple sections or frames, each with its own separate HTML document. Frames allowed developers to create layouts with independent scrolling regions. However, frames have become deprecated in modern web development due to various limitations and usability concerns.</p>
+<h4 id="frame-elements-deprecated">Frame Elements (Deprecated)</h4>
+<p>Frames were implemented using the following HTML elements:</p>
+<ul>
+<li><code>&lt;frameset&gt;</code>: The <code>&lt;frameset&gt;</code> element defined the layout and structure of frames within a webpage.</li>
+<li><code>&lt;frame&gt;</code>: The <code>&lt;frame&gt;</code> element was used to create individual frames within the frameset. Each <code>&lt;frame&gt;</code> referenced a separate HTML document.</li>
+<li><code>&lt;iframe&gt;</code>: The <code>&lt;iframe&gt;</code> element allowed the embedding of one webpage within another. Unlike <code>&lt;frame&gt;</code>, <code>&lt;iframe&gt;</code> is still widely used for embedding content such as maps and videos but not for creating entire page layouts.</li>
+</ul>
+<h4 id="why-frames-are-deprecated">Why Frames are Deprecated</h4>
+<p>Frames had several drawbacks, which led to their deprecation:</p>
+<ol>
+<li><strong>Usability</strong>: Frames complicated navigation and made it challenging for users to bookmark or share specific pages within a frame-based layout.</li>
+<li><strong>SEO</strong>: Search engines had difficulty indexing content within frames, affecting the visibility of websites in search results.</li>
+<li><strong>Accessibility</strong>: Frames could cause accessibility issues for users with disabilities, as screen readers might struggle to interpret the content within frames.</li>
+<li><strong>Mobile Devices</strong>: Frames were not well-suited for responsive design and mobile devices.</li>
+</ol>
+<p>Due to these issues, frames have been replaced by more flexible and user-friendly layout techniques using CSS, such as flexbox and grid, along with modern HTML5 structural elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+<h2 id="working-with-hyperlinks">Working with Hyperlinks</h2>
+<p>Hyperlinks, often referred to as links, are fundamental elements in HTML that allow you to navigate between different web pages and resources on the internet. They are an essential part of web design and are used to create a web of interconnected content. In this detailed explanation, we will explore how to work with hyperlinks in HTML, including different types of links, link attributes, and best practices.</p>
+<h2 id="basic-hyperlinks">Basic Hyperlinks</h2>
+<p>To create a basic hyperlink in HTML, you use the <code>&lt;a&gt;</code> (anchor) element. Here's the basic syntax:</p>
+<p>html</p>
+<p><code>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</code></p>
+<ul>
+<li><code>&lt;a&gt;</code>: This is the anchor element used to create a hyperlink.</li>
+<li><code>href</code>: This is the attribute that specifies the URL (Uniform Resource Locator) to which the link points.</li>
+<li><code>Link Text</code>: This is the visible text or content of the hyperlink that users can click.</li>
+</ul>
+<p>For example, let's create a simple link to the OpenAI website:</p>
+<p>html</p>
+<p><code>&lt;a href="https://www.openai.com/"&gt;Visit OpenAI&lt;/a&gt;</code></p>
+<p>When rendered in a web browser, this HTML code will display "Visit OpenAI" as a clickable link. Clicking on it will take the user to the OpenAI website.</p>
+<h2 id="relative-and-absolute-urls">Relative and Absolute URLs</h2>
+<p>Hyperlinks can point to either relative or absolute URLs. Understanding the difference between these two types of URLs is crucial when working with hyperlinks.</p>
+<ol>
+<li>
+<p><strong>Relative URLs</strong>: These URLs are specified relative to the current web page's location. They are often used for links within the same website or when referencing resources located on the same server.</p>
+<p>Example of a relative URL:</p>
+<p>html</p>
+</li>
+<li>
+<p><code>&lt;a href="/about.html"&gt;About Us&lt;/a&gt;</code></p>
+</li>
+</ol>
+<p>In this example, the link points to a page named "about.html" located at the root of the current website.</p>
+<ul>
+<li><strong>Absolute URLs</strong>: These URLs specify the full path to a resource, including the protocol (e.g., "http://" or "https://") and the domain name. They are used when linking to external websites or resources.</li>
+</ul>
+<p>Example of an absolute URL:</p>
+<p>html</p>
+<ol>
+<li>
+<p><code>&lt;a href="https://www.example.com/"&gt;Visit Example&lt;/a&gt;</code></p>
+<p>Here, the link points to an external website, "<a href="https://www.example.com/">https://www.example.com/</a>."</p>
+</li>
+</ol>
+<h2 id="linking-to-email-addresses">Linking to Email Addresses</h2>
+<p>You can also create hyperlinks that open the user's default email client to compose a new message. To achieve this, use the <code>mailto:</code> scheme in the <code>href</code> attribute, followed by the email address.</p>
+<p>html</p>
+<p><code>&lt;a href="mailto:info@example.com"&gt;Send an Email&lt;/a&gt;</code></p>
+<p>Clicking on this link will open the user's email client with the recipient's address pre-filled as "<a href="mailto:info@example.com">info@example.com</a>."</p>
+<h2 id="linking-to-files">Linking to Files</h2>
+<p>In addition to web pages and email addresses, hyperlinks can also point to files, such as PDF documents, images, or downloadable files. When linking to files, it's essential to specify the correct file path in the <code>href</code> attribute.</p>
+<p>html</p>
+<p><code>&lt;a href="documents/mydocument.pdf"&gt;Download PDF&lt;/a&gt;</code></p>
+<p>In this example, the link points to a PDF file named "mydocument.pdf" located in a subdirectory called "documents."</p>
+<h2 id="link-attributes">Link Attributes</h2>
+<p>HTML provides several attributes that you can use to enhance the behavior and appearance of hyperlinks.</p>
+<ol>
+<li>
+<p><strong>Title Attribute</strong>: The <code>title</code> attribute allows you to provide additional information about the link. When users hover their cursor over the link, the text specified in the <code>title</code> attribute will be displayed as a tooltip.</p>
+<p>html</p>
+</li>
+<li>
+<p><code>&lt;a href="https://www.example.com/" title="Visit Example"&gt;Example Website&lt;/a&gt;</code></p>
+</li>
+<li><strong>Target Attribute</strong>: The <code>target</code> attribute specifies where the linked document should be displayed. Common values for the <code>target</code> attribute include <code>_blank</code> (opens the link in a new tab or window) and <code>_self</code> (opens the link in the same tab or window).</li>
+</ol>
+<p>html</p>
+<ul>
+<li><code>&lt;a href="https://www.example.com/" target="_blank"&gt;Open in New Tab&lt;/a&gt;</code></li>
+<li><strong>Rel Attribute</strong>: The <code>rel</code> attribute is used to specify the relationship between the current document and the linked document. It is often used in conjunction with CSS to style links differently based on their relationships.</li>
+</ul>
+<p>html</p>
+<ul>
+<li><code>&lt;a href="https://www.example.com/" rel="nofollow"&gt;Visit Example&lt;/a&gt;</code></li>
+<li><strong>Download Attribute</strong>: The <code>download</code> attribute, when used on links to downloadable files, prompts the user to download the linked file rather than navigating to it.</li>
+</ul>
+<p>html</p>
+<ol>
+<li><code>&lt;a href="documents/mydocument.pdf" download&gt;Download PDF&lt;/a&gt;</code></li>
+</ol>
+<h2 id="images-and-multimedia">Images and Multimedia</h2>
+<p>Images and multimedia elements are essential for enhancing the visual appeal and interactivity of web pages. In HTML, you can include images, audio, and video content using specific elements and attributes. Let's explore these elements and how to work with them.</p>
+<h3 id="image-elements">Image Elements</h3>
+<p>To display images on a web page, you use the <code>&lt;img&gt;</code> (image) element. Here's the basic syntax for adding an image:</p>
+<p>html</p>
+<p><code>&lt;img src="image-source.jpg" alt="Image Description"&gt;</code></p>
+<ul>
+<li><code>&lt;img&gt;</code>: This is the image element used to embed images.</li>
+<li><code>src</code>: This attribute specifies the source URL of the image.</li>
+<li><code>alt</code>: The <code>alt</code> attribute provides alternative text that is displayed if the image cannot be loaded or for accessibility purposes.</li>
+</ul>
+<p>Example:</p>
+<p>html</p>
+<p><code>&lt;img src="cat.jpg" alt="A cute cat"&gt;</code></p>
+<h3 id="multimedia-elements">Multimedia Elements</h3>
+<p>HTML provides specific elements for embedding audio and video content.</p>
+<h4 id="audio-element">Audio Element</h4>
+<p>To add audio to your web page, you use the <code>&lt;audio&gt;</code> element. Here's a basic example:</p>
+<p>html</p>
+<p>`<audio controls></p>
+<p><source src="audio.mp3" type="audio/mpeg">
+   Your browser does not support the audio element.
+</audio>`</p>
+<ul>
+<li><code>&lt;audio&gt;</code>: This is the audio element.</li>
+<li><code>controls</code>: The <code>controls</code> attribute adds audio playback controls (play, pause, volume, etc.).</li>
+<li><code>&lt;source&gt;</code>: This element specifies the audio source URL and type.</li>
+</ul>
+<h4 id="video-element">Video Element</h4>
+<p>To embed videos, use the <code>&lt;video&gt;</code> element:</p>
+<p>html</p>
+<p>`<video controls width="400" height="300"></p>
+<p><source src="video.mp4" type="video/mp4">
+   Your browser does not support the video element.
+</video>`</p>
+<ul>
+<li><code>&lt;video&gt;</code>: This is the video element.</li>
+<li><code>controls</code>: The <code>controls</code> attribute adds video playback controls.</li>
+<li><code>width</code> and <code>height</code>: These attributes define the video's dimensions.</li>
+<li><code>&lt;source&gt;</code>: Specify the video source URL and type.</li>
+</ul>
+<h3 id="responsive-images-and-accessibility">Responsive Images and Accessibility</h3>
+<p>When working with images and multimedia, it's important to consider responsive design and accessibility.</p>
+<ol>
+<li>
+<p><strong>Responsive Images</strong>: To ensure that images adapt to different screen sizes, you can use CSS techniques such as setting the <code>max-width</code> property to a percentage value.</p>
+</li>
+<li>
+<p><code>img {
+   max-width: 100%;
+   height: auto;
+}</code></p>
+</li>
+</ol>
+<p>This CSS rule makes images scale down proportionally to fit their container.</p>
+<ul>
+<li><strong>Image Accessibility</strong>: Always provide meaningful <code>alt</code> attributes for images to make your content accessible to users with disabilities. Screen readers rely on these attributes to describe</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit2" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Unit4/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit4" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit4
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

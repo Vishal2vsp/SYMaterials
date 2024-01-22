@@ -1,0 +1,1927 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Unit2/">
+      
+      
+        <link rel="next" href="../Unit4/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+    
+    
+      
+        <title>Unit3 - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-3-software-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    Design Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objectives-of-software-design" class="md-nav__link">
+    Objectives of Software Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-concepts" class="md-nav__link">
+    Design Concepts:
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Concepts:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-modularization" class="md-nav__link">
+    - Modularization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-concurrency" class="md-nav__link">
+    - Concurrency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-coupling" class="md-nav__link">
+    - Coupling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-cohesion" class="md-nav__link">
+    - Cohesion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-model" class="md-nav__link">
+    Design Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-heuristic" class="md-nav__link">
+    Design Heuristic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles-of-design-heuristic" class="md-nav__link">
+    Principles of Design Heuristic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-design" class="md-nav__link">
+    Architectural Design
+  </a>
+  
+    <nav class="md-nav" aria-label="Architectural Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-architecture-exhibits-the-following" class="md-nav__link">
+    Software architecture exhibits the following:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-styles" class="md-nav__link">
+    Architectural styles
+  </a>
+  
+    <nav class="md-nav" aria-label="Architectural styles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taxonomy-of-architectural-styles" class="md-nav__link">
+    Taxonomy of Architectural styles:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-mapping-using-data-flow" class="md-nav__link">
+    Architectural Mapping using Data Flow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface-design" class="md-nav__link">
+    User Interface Design
+  </a>
+  
+    <nav class="md-nav" aria-label="User Interface Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ui-design-principles" class="md-nav__link">
+    UI Design Principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interface-golden-rules" class="md-nav__link">
+    User Interface Golden rules
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-level-design" class="md-nav__link">
+    Component level Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-component-level-design" class="md-nav__link">
+    What is Component Level Design?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../WD/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dbms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    Design Process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objectives-of-software-design" class="md-nav__link">
+    Objectives of Software Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-concepts" class="md-nav__link">
+    Design Concepts:
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Concepts:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-modularization" class="md-nav__link">
+    - Modularization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-concurrency" class="md-nav__link">
+    - Concurrency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-coupling" class="md-nav__link">
+    - Coupling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-cohesion" class="md-nav__link">
+    - Cohesion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-model" class="md-nav__link">
+    Design Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-heuristic" class="md-nav__link">
+    Design Heuristic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles-of-design-heuristic" class="md-nav__link">
+    Principles of Design Heuristic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-design" class="md-nav__link">
+    Architectural Design
+  </a>
+  
+    <nav class="md-nav" aria-label="Architectural Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-architecture-exhibits-the-following" class="md-nav__link">
+    Software architecture exhibits the following:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-styles" class="md-nav__link">
+    Architectural styles
+  </a>
+  
+    <nav class="md-nav" aria-label="Architectural styles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taxonomy-of-architectural-styles" class="md-nav__link">
+    Taxonomy of Architectural styles:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-mapping-using-data-flow" class="md-nav__link">
+    Architectural Mapping using Data Flow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface-design" class="md-nav__link">
+    User Interface Design
+  </a>
+  
+    <nav class="md-nav" aria-label="User Interface Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ui-design-principles" class="md-nav__link">
+    UI Design Principles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interface-golden-rules" class="md-nav__link">
+    User Interface Golden rules
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-level-design" class="md-nav__link">
+    Component level Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-component-level-design" class="md-nav__link">
+    What is Component Level Design?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="unit-3-software-design">Unit 3 : Software Design</h1>
+<p><strong>Syllabus</strong></p>
+<ul>
+<li>
+<p><a href="#design-process">Design process</a></p>
+</li>
+<li>
+<p><a href="#design-concepts">Design Concepts</a></p>
+</li>
+<li>
+<p><a href="#design-model">Design Model</a></p>
+</li>
+<li>
+<p><a href="#design-heuristic">Design Heuristic</a></p>
+</li>
+<li>
+<p><a href="#architectural-design">Architectural Design</a></p>
+</li>
+<li>
+<p><a href="#architectural-styles">Architectural styles</a></p>
+</li>
+<li>
+<p><a href="#architectural-mapping-using-data-flow">Architectural Mapping using Data Flow</a></p>
+</li>
+<li>
+<p><a href="#user-interface-design">User Interface Design</a></p>
+</li>
+<li>
+<p><a href="#component-level-design-class-based-components-traditional-components">Component level Design (Class based components, traditional Components)</a></p>
+</li>
+</ul>
+<h2 id="design-process">Design Process</h2>
+<p>Software design process is a mechanism to transform user requirements into some suitable form, which helps the programmer in software coding and implementation. It deals with representing the client's requirement, as described in SRS (Software Requirement Specification) document, into a form, i.e., easily implementable using programming language.</p>
+<h2 id="objectives-of-software-design">Objectives of Software Design</h2>
+<p>Following are the purposes of Software design:</p>
+<ol>
+<li><strong>Correctness:</strong>Software design should be correct as per requirement.</li>
+<li><strong>Completeness:</strong>The design should have all components like data structures, modules, and external interfaces, etc.</li>
+<li><strong>Efficiency:</strong>Resources should be used efficiently by the program.</li>
+<li><strong>Flexibility:</strong>Able to modify on changing needs.</li>
+<li><strong>Consistency:</strong>There should not be any inconsistency in the design.</li>
+<li><strong>Maintainability:</strong> The design should be so simple so that it can be easily maintainable by other designers.</li>
+</ol>
+<h2 id="design-concepts">Design Concepts:</h2>
+<h4 id="-modularization">- Modularization</h4>
+<p>Modularization is a technique to divide a software system into multiple discrete and independent modules, which are expected to be capable of carrying out task(s) independently. These modules may work as basic constructs for the entire software. Designers tend to design modules such that they can be executed and/or compiled separately and independently.</p>
+<p>Modular design unintentionally follows the rules of ‘divide and conquer’ problem-solving strategy this is because there are many other benefits attached with the modular design of a software.</p>
+<p>Advantage of modularization:</p>
+<ul>
+<li>Smaller components are easier to maintain</li>
+<li>Program can be divided based on functional aspects</li>
+<li>Desired level of abstraction can be brought in the program</li>
+<li>Components with high cohesion can be re-used again</li>
+<li>Concurrent execution can be made possible</li>
+<li>Desired from security aspect</li>
+</ul>
+<h4 id="-concurrency">- Concurrency</h4>
+<p>In software design, concurrency is implemented by splitting the software into multiple independent units of execution, like modules and executing them in parallel. In other words, concurrency provides capability to the software to execute more than one part of code in parallel to each other.</p>
+<p>It is necessary for the programmers and designers to recognize those modules, which can be made parallel execution.</p>
+<h4 id="-coupling">- Coupling</h4>
+<p>Coupling is a measure that defines the level of inter-dependability among modules of a program. It tells at what level the modules interfere and interact with each other. The lower the coupling, the better the program.</p>
+<p>There are five levels of coupling, namely -</p>
+<ul>
+<li><strong>Content coupling -</strong> When a module can directly access or modify or refer to the content of another module, it is called content level coupling.</li>
+<li><strong>Common coupling-</strong> When multiple modules have read and write access to some global data, it is called common or global coupling.</li>
+<li><strong>Control coupling-</strong> Two modules are called control-coupled if one of them decides the function of the other module or changes its flow of execution.</li>
+<li><strong>Stamp coupling-</strong> When multiple modules share common data structure and work on different part of it, it is called stamp coupling.</li>
+<li><strong>Data coupling-</strong> Data coupling is when two modules interact with each other by means of passing data (as parameter). If a module passes data structure as parameter, then the receiving module should use all its components.</li>
+</ul>
+<h4 id="-cohesion">- Cohesion</h4>
+<p>Cohesion is a measure that defines the degree of intra-dependability within elements of a module. The greater the cohesion, the better is the program design.</p>
+<p>There are seven types of cohesion, namely –</p>
+<ul>
+<li><strong>Co-incidental cohesion -</strong> It is unplanned and random cohesion, which might be the result of breaking the program into smaller modules for the sake of modularization. Because it is unplanned, it may serve confusion to the programmers and is generally not-accepted.</li>
+<li><strong>Logical cohesion -</strong> When logically categorized elements are put together into a module, it is called logical cohesion.</li>
+<li><strong>Temporal Cohesion -</strong> When elements of module are organized such that they are processed at a similar point in time, it is called temporal cohesion.</li>
+<li><strong>Procedural cohesion -</strong> When elements of module are grouped together, which are executed sequentially in order to perform a task, it is called procedural cohesion.</li>
+<li><strong>Communicational cohesion -</strong> When elements of module are grouped together, which are executed sequentially and work on same data (information), it is called communicational cohesion.</li>
+<li><strong>Sequential cohesion -</strong> When elements of module are grouped because the output of one element serves as input to another and so on, it is called sequential cohesion.</li>
+<li><strong>Functional cohesion -</strong> It is considered to be the highest degree of cohesion, and it is highly expected. Elements of module in functional cohesion are grouped because they all contribute to a single well-defined function. It can also be reused.</li>
+</ul>
+<h2 id="design-model">Design Model</h2>
+<p>Design modeling in software engineering represents the features of the software that helps engineer to develop it effectively, the architecture, the user interface, and the component level detail. Design modeling provides a variety of different views of the system like architecture plan for home or building. Different methods like data-driven, pattern-driven, or object-oriented methods are used for constructing the design model. All these methods use set of design principles for designing a model.
+Designing a model is an important phase and is a multi-process that represent the data structure, program structure, interface characteristic, and procedural details. It is mainly classified into four categories – Data design, architectural design, interface design, and component-level design.</p>
+<ul>
+<li><strong>Data design:</strong> It represents the data objects and their interrelationship in an entity-relationship diagram. Entity-relationship consists of information required for each entity or data objects as well as it shows the relationship between these objects. It shows the structure of the data in terms of the tables. It shows three type of relationship – One to one, one to many, and many to many. In one to one relation, one entity is connected to another entity. In one many relation, one Entity is connected to more than one entity. un many to many relations one entity is connected to more than one entity as well as other entity also connected with first entity using more than one entity.</li>
+<li><strong>Architectural design:</strong> It defines the relationship between major structural elements of the software. It is about decomposing the system into interacting components. It is expressed as a block diagram defining an overview of the system structure – features of the components and how these components communicate with each other to share data. It defines the structure and properties of the component that are involved in the system and also the inter-relationship among these components.</li>
+<li><strong>User Interfaces design:</strong> It represents how the Software communicates with the user i.e. the behavior of the system. It refers to the product where user interact with controls or displays of the product. For example, Military, vehicles, aircraft, audio equipment, computer peripherals are the areas where user interface design is implemented. UI design becomes efficient only after performing usability testing. This is done to test what works and what does not work as expected. Only after making the repair, the product is said to have an optimized interface.</li>
+<li><strong>Component level design:</strong> It transforms the structural elements of the software architecture into a procedural description of software components. It is a perfect way to share a large amount of data. Components need not be concerned with how data is managed at a centralized level i.e. components need not worry about issues like backup and security of the data.</li>
+</ul>
+<h2 id="design-heuristic"><strong>Design Heuristic</strong></h2>
+<p>The main goal of heuristic evaluations is to identify any problems associated with the design of user interfaces. A heuristic, or heuristic technique, is any approach to problem solving or self-discovery that employs a practical method that is not guaranteed to be optimal, perfect, or rational, but is nevertheless sufficient for reaching an immediate, short-term goal or approximation.</p>
+<p>The simplicity of heuristic evaluation is beneficial at the early stages of design. This usability inspection method does not require user testing which can be burdensome due to the need for users, a place to test them and a payment for their time. Heuristic evaluation requires only one expert, reducing the complexity and expended time for evaluation.</p>
+<h2 id="principles-of-design-heuristic">Principles of Design Heuristic</h2>
+<p><strong>Automate unwanted workload</strong>:</p>
+<ul>
+<li>
+<p>free cognitive resources for high-level tasks.</p>
+</li>
+<li>
+<p>eliminate mental calculations, estimations, comparisons, and unnecessary thinking.</p>
+</li>
+</ul>
+<p>· <strong>Reduce uncertainty</strong>:</p>
+<ul>
+<li>display data in a manner that is clear and obvious.</li>
+</ul>
+<p>· <strong>Fuse data</strong>:</p>
+<ul>
+<li>reduce cognitive load by bringing together lower level data into a higher-level summation.</li>
+</ul>
+<p><strong>Present new information with meaningful aids to interpretation</strong>:</p>
+<ul>
+<li>
+<p>use a familiar framework, making it easier to absorb.</p>
+</li>
+<li>
+<p>use everyday terms, metaphors, etc.</p>
+</li>
+</ul>
+<p><strong>Use names that are conceptually related to function</strong>:</p>
+<ul>
+<li>
+<p>Context-dependent.</p>
+</li>
+<li>
+<p>Attempt to improve recall and recognition.</p>
+</li>
+<li>
+<p>Group data in consistently meaningful ways to decrease search time.</p>
+</li>
+</ul>
+<p><strong>Limit data-driven tasks</strong>:</p>
+<ul>
+<li>
+<p>Reduce the time spent assimilating raw data.</p>
+</li>
+<li>
+<p>Make appropriate use of color and graphics.</p>
+</li>
+</ul>
+<h2 id="architectural-design"><strong>Architectural Design</strong></h2>
+<p>The architecture is not the operational software. Rather, it is a representation that enables a software engineer to:</p>
+<p>(1) Analyze the effectiveness of the design in meeting its stated requirements,</p>
+<p>(2) Consider architectural alternatives at a stage when making design changes is still relatively easy, and</p>
+<p>(3) Reduce the risks associated with the construction of the software.</p>
+<p><strong>Software architecture</strong> is the high level structure of a software system, the discipline of creating such structures, and the documentation of these structures. It is the set of structures needed to reason about the software system, and comprises the software elements, the relations between them, and the properties of both elements and relations.</p>
+<h3 id="software-architecture-exhibits-the-following">Software architecture exhibits the following:</h3>
+<ul>
+<li>
+<p><strong>Multitude of stakeholders:</strong> software systems have to cater to a variety of stakeholders such as business managers, owners, users and operators. These stakeholders all have their own concerns with respect to the system. Balancing these concerns and demonstrating how they are addressed is part of designing the system.This implies that architecture involves dealing with a broad variety of concerns and stakeholders, and has a multidisciplinary nature.</p>
+</li>
+<li>
+<p><strong>Separation of concerns:</strong> the established way for architects to reduce complexity is by separating the concerns that drive the design. Architecture documentation shows that all stakeholder concerns are addressed by modeling and describing the architecture from separate points of view associated with the various stakeholder concerns. These separate descriptions are called architectural views (see for example the 4+1 Architectural View Model).</p>
+</li>
+<li>
+<p><strong>Quality-driven:</strong> classic software design approaches (e.g. Jackson Structured Programming) were driven by required functionality and the flow of data through the system, but the current insight is that the architecture of a software system is more closely related to its quality attributes such as fault-tolerance, backward compatibility, extensibility, reliability, maintainability, availability, security, usability, and other such –ilities. Stakeholder concerns often translate into requirements on these quality attributes, which are variously called non-functional requirements, extra-functional requirements, behavioral requirements, or quality attribute requirements.</p>
+</li>
+<li>
+<p><strong>Recurring styles:</strong> like building architecture, the software architecture discipline has developed standard ways to address recurring concerns. These “standard ways” are called by various names at various levels of abstraction. Common terms for recurring solutions are architectural style, strategy or tactic, reference architecture and architectural pattern.</p>
+</li>
+<li>
+<p><strong>Conceptual integrity:</strong> a term introduced by Fred Brooks in The Mythical Man-Month to denote the idea that the architecture of a software system represents an overall vision of what it should do and how it should do it. This vision should be separated from its implementation. The architect assumes the role of “keeper of the vision”, making sure that additions to the system are in line with the architecture, hence preserving conceptual integrity.</p>
+</li>
+</ul>
+<h2 id="architectural-styles">Architectural styles</h2>
+<p>The software needs the architectural design to represents the design of software. IEEE defines architectural design as “the process of defining a collection of hardware and software components and their interfaces to establish the framework for the development of a computer system.” The software that is built for computer-based systems can exhibit one of these many architectural styles.<br />
+Each style will describe a system category that consists of :</p>
+<ul>
+<li>A set of components(eg: a database, computational modules) that will perform a function required by the system.</li>
+<li>The set of connectors will help in coordination, communication, and cooperation between the components.</li>
+<li>Conditions that how components can be integrated to form the system.</li>
+<li>Semantic models that help the designer to understand the overall properties of the system.</li>
+</ul>
+<p>The use of architectural styles is to establish a structure for all the components of the system.</p>
+<h3 id="taxonomy-of-architectural-styles"><strong>Taxonomy of Architectural styles:</strong></h3>
+<p><strong>1] Data centered architectures:</strong></p>
+<ul>
+<li>A data store will reside at the center of this architecture and is accessed frequently by the other components that update, add, delete or modify the data present within the store.</li>
+<li>The figure illustrates a typical data centered style. The client software access a central repository. Variation of this approach are used to transform the repository into a blackboard when data related to client or data of interest for the client change the notifications to client software.</li>
+<li>This data-centered architecture will promote integrability. This means that the existing components can be changed and new client components can be added to the architecture without the permission or concern of other clients.</li>
+<li>Data can be passed among clients using blackboard mechanism.</li>
+</ul>
+<p><strong>Advantage of Data centered architecture</strong></p>
+<ul>
+<li>Repository of data is independent of clients</li>
+<li>Client work independent of each other</li>
+<li>It may be simple to add additional clients.</li>
+<li>Modification can be very easy</li>
+</ul>
+<p><img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/20221024125745/Screenshot20221024at12560-300x161.png" /></p>
+<p><strong>Data centered architecture</strong></p>
+<p><strong>2] Data flow architectures:</strong></p>
+<ul>
+<li>This kind of architecture is used when input data is transformed into output data through a series of computational manipulative components.</li>
+<li>The figure represents pipe-and-filter architecture since it uses both pipe and filter and it has a set of components called filters connected by lines.</li>
+<li>Pipes are used to transmitting data from one component to the next.</li>
+<li>Each filter will work independently and is designed to take data input of a certain form and produces data output to the next filter of a specified form. The filters don’t require any knowledge of the working of neighboring filters.</li>
+<li>If the data flow degenerates into a single line of transforms, then it is termed as batch sequential. This structure accepts the batch of data and then applies a series of sequential components to transform it.</li>
+</ul>
+<p><strong>Advantages of Data Flow architecture</strong></p>
+<ul>
+<li>It encourages upkeep, repurposing, and modification.</li>
+<li>With this design, concurrent execution is supported.</li>
+</ul>
+<p><strong>The disadvantage of Data Flow architecture</strong></p>
+<ul>
+<li>It frequently degenerates to batch sequential system</li>
+<li>Data flow architecture does not allow applications that require greater user engagement.</li>
+<li>It is not easy to coordinate two different but related streams</li>
+</ul>
+<p><img alt="" src="https://img.brainkart.com/imagebk10/lKptndm.jpg" /></p>
+<p><strong>Data Flow architecture</strong></p>
+<p><strong>3] Call and Return architectures:</strong> It is used to create a program that is easy to scale and modify. Many sub-styles exist within this category. Two of them are explained below.</p>
+<ul>
+<li><strong>Remote procedure call architecture:</strong> This components is used to present in a main program or sub program architecture distributed among multiple computers on a network.</li>
+<li><strong>Main program or Subprogram architectures:</strong> The main program structure decomposes into number of subprograms or function into a control hierarchy. Main program contains number of subprograms that can invoke other components.</li>
+</ul>
+<p><img alt="program architecture" src="https://media.geeksforgeeks.org/wp-content/uploads/Program-architecture.png" /></p>
+<p><strong>4] Object Oriented architecture:</strong> The components of a system encapsulate data and the operations that must be applied to manipulate the data. The coordination and communication between the components are established via the message passing.</p>
+<p><strong>Characteristics of Object Oriented architecture</strong></p>
+<ul>
+<li>Object protect the system’s integrity.</li>
+<li>An object is unaware of the depiction of other items.</li>
+</ul>
+<p><strong>Advantage of Object Oriented architecture</strong></p>
+<ul>
+<li>It enables the designer to separate a challenge into a collection of autonomous objects.</li>
+<li>Other objects are aware of the implementation details of the object, allowing changes to be made without having an impact on other objects.</li>
+</ul>
+<p><strong>5]</strong> <strong>Layered architecture:</strong></p>
+<ul>
+<li>A number of different layers are defined with each layer performing a well-defined set of operations. Each layer will do some operations that becomes closer to machine instruction set progressively.</li>
+<li>At the outer layer, components will receive the user interface operations and at the inner layers, components will perform the operating system interfacing(communication and coordination with OS)</li>
+<li>Intermediate layers to utility services and application software functions.</li>
+<li>One common example of this architectural style is OSI-ISO (Open Systems Interconnection-International Organisation for Standardisation) communication system.</li>
+</ul>
+<p><img alt="" src="https://www.tutorialride.com/images/software-engineering/layered-architecture.jpg" /></p>
+<h2 id="architectural-mapping-using-data-flow">Architectural Mapping using Data Flow</h2>
+<p>A mapping technique, called structured design, is often characterized as a data flow-oriented design method because it provides a convenient transition from a data flow diagram to software architecture.</p>
+<ul>
+<li>
+<p>The transition from information flow to program structure is accomplished as part of a six step process:</p>
+</li>
+<li>
+<p>(1) The type of information flow is established,</p>
+</li>
+<li>(2) Flow boundaries are indicated,</li>
+<li>(3) The DFD is mapped into the program structure,</li>
+<li>(4) Control hierarchy is defined,</li>
+<li>(5) The resultant structure is refined using design measures.</li>
+<li>
+<p>(6) The architectural description is refined and elaborated.</p>
+</li>
+<li>
+<p>Example of data flow mapping, a step-by-step “transform” mapping for a small part of the SafeHome security function.</p>
+</li>
+<li>In order to perform the mapping,</li>
+<li>The type of information flow must be determined. It is called <strong><em>transform flow and exhibits a linear quality.</em></strong></li>
+<li>Data flows into the system along an incoming flow path where it is transformed from an external world representation into internalized form. Once it has been internalized, <strong>it is processed at a transform center.</strong></li>
+<li>Finally, it flows out of the system along an outgoing flow path that transforms the data into external world form.</li>
+</ul>
+<h2 id="user-interface-design">User Interface Design</h2>
+<p>User interface is the front-end application view to which user interacts in order to use the software. The software becomes more popular if its user interface is:</p>
+<ul>
+<li>Attractive</li>
+<li>Simple to use</li>
+<li>Responsive in short time</li>
+<li>Clear to understand</li>
+<li>Consistent on all interface screens</li>
+</ul>
+<p>There are two types of User Interface:</p>
+<ol>
+<li><strong>Command Line Interface:</strong> Command Line Interface provides a command prompt, where the user types the command and feeds to the system. The user needs to remember the syntax of the command and its use. eg Unix, MSDos.</li>
+<li><strong>Graphical User Interface:</strong> Graphical User Interface provides the simple interactive interface to interact with the system. GUI can be a combination of both hardware and software. Using GUI, user interprets the software. eg Windows, Android.</li>
+</ol>
+<h3 id="ui-design-principles">UI Design Principles</h3>
+<p><strong>Structure:</strong> Design should organize the user interface purposefully, in the meaningful and usual based on precise, consistent models that are apparent and recognizable to users, putting related things together and separating unrelated things, differentiating dissimilar things and making similar things resemble one another. The structure principle is concerned with overall user interface architecture.</p>
+<p><strong>Simplicity:</strong> The design should make the simple, common task easy, communicating clearly and directly in the user's language, and providing good shortcuts that are meaningfully related to longer procedures.</p>
+<p><strong>Visibility:</strong> The design should make all required options and materials for a given function visible without distracting the user with extraneous or redundant data.</p>
+<p><strong>Feedback:</strong> The design should keep users informed of actions or interpretation, changes of state or condition, and bugs or exceptions that are relevant and of interest to the user through clear, concise, and unambiguous language familiar to users.</p>
+<p><strong>Tolerance:</strong> The design should be flexible and tolerant, decreasing the cost of errors and misuse by allowing undoing and redoing while also preventing bugs wherever possible by tolerating varied inputs and sequences and by interpreting all reasonable actions.</p>
+<h3 id="user-interface-golden-rules">User Interface Golden rules</h3>
+<p>The following rules are mentioned to be the golden rules for GUI design, described by Shneiderman and Plaisant in their book (Designing the User Interface).</p>
+<ul>
+<li><strong>Strive for consistency</strong> - Consistent sequences of actions should be required in similar situations. Identical terminology should be used in prompts, menus, and help screens. Consistent commands should be employed throughout.</li>
+<li><strong>Enable frequent users to use short-cuts</strong> - The user’s desire to reduce the number of interactions increases with the frequency of use. Abbreviations, function keys, hidden commands, and macro facilities are very helpful to an expert user.</li>
+<li><strong>Offer informative feedback</strong> - For every operator action, there should be some system feedback. For frequent and minor actions, the response must be modest, while for infrequent and major actions, the response must be more substantial.</li>
+<li><strong>Design dialog to yield closure</strong> - Sequences of actions should be organized into groups with a beginning, middle, and end. The informative feedback at the completion of a group of actions gives the operators the satisfaction of accomplishment, a sense of relief, the signal to drop contingency plans and options from their minds, and this indicates that the way ahead is clear to prepare for the next group of actions.</li>
+<li><strong>Offer simple error handling</strong> - As much as possible, design the system so the user will not make a serious error. If an error is made, the system should be able to detect it and offer simple, comprehensible mechanisms for handling the error.</li>
+<li><strong>Permit easy reversal of actions</strong> - This feature relieves anxiety, since the user knows that errors can be undone. Easy reversal of actions encourages exploration of unfamiliar options. The units of reversibility may be a single action, a data entry, or a complete group of actions.</li>
+<li><strong>Support internal locus of control</strong> - Experienced operators strongly desire the sense that they are in charge of the system and that the system responds to their actions. Design the system to make users the initiators of actions rather than the responders.</li>
+<li><strong>Reduce short-term memory load</strong> - The limitation of human information processing in short-term memory requires the displays to be kept simple, multiple page displays be consolidated, window-motion frequency be reduced, and sufficient training time be allotted for codes, mnemonics, and sequences of actions.</li>
+</ul>
+<h2 id="component-level-design"><strong>Component level Design</strong></h2>
+<p><strong>Component-based software engineering (CBSE)</strong> (also known as <strong>component-based development (CBD)</strong>) is a branch of software engineering that emphasizes the separation of concerns in respect of the wide-ranging functionality available throughout a given software system. It is a reuse-based approach to defining, implementing and composing loosely coupled independent components into systems. This practice aims to bring about an equally wide-ranging degree of benefits in both the short-term and the long-term for the software itself and for organizations that sponsor such software.</p>
+<p>Software engineering practitioners regard components as part of the starting platform for service-orientation. Components play this role, for example, in web services, and more recently, in service-oriented architectures (SOA), whereby a component is converted by the web service into a <em>service</em> and subsequently inherits further characteristics beyond that of an ordinary component.</p>
+<h2 id="what-is-component-level-design">What is Component Level Design?</h2>
+<ul>
+<li>A complete set of software components is defined during architectural design</li>
+<li>But the internal data structures and processing details of each component are not represented at a level of abstraction that is close to code</li>
+<li><em>Component-level design defines, the data structures algorithms, interface characteristics, and communication mechanisms allocated to each component</em></li>
+<li>A component-level design can be represented using some intermediate representation (e.g. graphical, tabular, or text-based) that can be translated into source code</li>
+<li>The design of data structures, interfaces, and algorithms should conform to well-established guidelines to help us avoid the introduction of errors</li>
+<li>A component communicates and collaborates with other components</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li>https://www.geeksforgeeks.org/software-engineering-software-design-process/</li>
+<li>https://www.javatpoint.com/software-engineering-software-design</li>
+<li>https://www.brainkart.com/article/Design-Heuristic_9077/</li>
+<li>https://www.geeksforgeeks.org/software-engineering-architectural-design/</li>
+<li>-https://ecomputernotes.com/software-engineering/architecturaldesign</li>
+<li>http://softwareengineeringmca.blogspot.com/2017/07/architectural-mapping-using-data-flow-transform-mapping.html</li>
+<li>https://www.scribd.com/document/464837735/Architectural-mapping-using-Data-flow</li>
+<li>https://www.brainkart.com/article/Architectural-styles,-Architectural-Design,-Architectural-Mapping-using-Data-Flow_9079/</li>
+<li>https://www.geeksforgeeks.org/software-engineering-user-interface-design/</li>
+<li>https://www.javatpoint.com/software-engineering-user-interface-design</li>
+<li>https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm</li>
+<li>https://www.tutorialspoint.com/software_engineering/software_user_interface_design.htm</li>
+<li>http://epgp.inflibnet.ac.in/epgpdata/uploads/epgp_content/S000007CS/P001067/M022567/ET/1504860540SE-MOD17-e-TEXT.pdf</li>
+<li>https://www.educative.io/answers/what-is-the-component-design</li>
+<li>https://cuitutorial.com/component-level-design/</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit2" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Unit4/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit4" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit4
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

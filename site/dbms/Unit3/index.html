@@ -1,0 +1,2726 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Unit2/">
+      
+      
+        <link rel="next" href="../Unit4/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+    
+    
+      
+        <title>Unit3 - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unit-3-relational-database-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sepm/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../WD/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../WD/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functional-dependency-fd-basic-concepts" class="md-nav__link">
+    Functional Dependency (FD) Basic concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Functional Dependency (FD) Basic concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-functional-dependencies" class="md-nav__link">
+    Types of Functional Dependencies
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Functional Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1trivial-functional-dependency" class="md-nav__link">
+    1.Trivial functional dependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2non-trivial-functional-dependency" class="md-nav__link">
+    2.Non-trivial functional dependency
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-functional-dependencies" class="md-nav__link">
+    Advantages of functional dependencies:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-functional-dependencies" class="md-nav__link">
+    Disadvantages of functional dependencies:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closure-of-set-of-fd" class="md-nav__link">
+    Closure of set of FD
+  </a>
+  
+    <nav class="md-nav" aria-label="Closure of set of FD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-attributes-from-the-lhs-of-fd1" class="md-nav__link">
+    Step 1: Add Attributes from the LHS of FD1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-attributes-from-the-rhs-of-fd1" class="md-nav__link">
+    Step 2: Add Attributes from the RHS of FD1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-derive-attributes-using-fd2" class="md-nav__link">
+    Step 3: Derive Attributes Using FD2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-attributes-from-the-lhs-of-fd2" class="md-nav__link">
+    Step 1: Add Attributes from the LHS of FD2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-attributes-from-the-rhs-of-fd2" class="md-nav__link">
+    Step 2: Add Attributes from the RHS of FD2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-no-further-derivation" class="md-nav__link">
+    Step 3: No Further Derivation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closure-of-attribute-set" class="md-nav__link">
+    Closure of Attribute Set
+  </a>
+  
+    <nav class="md-nav" aria-label="Closure of Attribute Set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-find-attribute-closure-of-an-attribute-set" class="md-nav__link">
+    How to Find Attribute Closure of an Attribute Set?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-find-candidate-keys-and-super-keys-using-attribute-closure" class="md-nav__link">
+    How to Find Candidate Keys and Super Keys using Attribute Closure?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-attribute-closure" class="md-nav__link">
+    Advantages of attribute closure:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-attribute-closure" class="md-nav__link">
+    Disadvantages of attribute closure:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decomposition" class="md-nav__link">
+    Decomposition
+  </a>
+  
+    <nav class="md-nav" aria-label="Decomposition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-decomposition" class="md-nav__link">
+    Types of Decomposition
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Decomposition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-lossless-decomposition" class="md-nav__link">
+    1. Lossless Decomposition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dependency-preserving" class="md-nav__link">
+    2. Dependency Preserving
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalization" class="md-nav__link">
+    Normalization
+  </a>
+  
+    <nav class="md-nav" aria-label="Normalization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-normalization" class="md-nav__link">
+    Advantages of Normalization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-normalization" class="md-nav__link">
+    Disadvantages of Normalization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1nf-2nf-3nf-bcnf-4nf" class="md-nav__link">
+    1NF, 2NF, 3NF, BCNF, 4NF
+  </a>
+  
+    <nav class="md-nav" aria-label="1NF, 2NF, 3NF, BCNF, 4NF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-first-normal-form-1nf" class="md-nav__link">
+    1. First Normal Form (1NF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-second-normal-form-2nf" class="md-nav__link">
+    2. Second Normal Form (2NF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-third-normal-form-3nf" class="md-nav__link">
+    3. Third Normal Form (3NF):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4boyce-codd-normal-form-bcnf" class="md-nav__link">
+    4.Boyce-Codd Normal Form (BCNF):
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-optimization" class="md-nav__link">
+    Query Optimization:
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Optimization:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principles-of-query-optimization" class="md-nav__link">
+    Principles of Query Optimization:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-optimization-strategies" class="md-nav__link">
+    Query Optimization Strategies:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components-of-query-optimizer" class="md-nav__link">
+    Components of Query Optimizer:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-tuning-optimizer" class="md-nav__link">
+    Automatic Tuning Optimizer:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-of-query-optimization-in-dbms" class="md-nav__link">
+    Methods of Query Optimization in DBMS:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functional-dependency-fd-basic-concepts" class="md-nav__link">
+    Functional Dependency (FD) Basic concepts
+  </a>
+  
+    <nav class="md-nav" aria-label="Functional Dependency (FD) Basic concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-functional-dependencies" class="md-nav__link">
+    Types of Functional Dependencies
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Functional Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1trivial-functional-dependency" class="md-nav__link">
+    1.Trivial functional dependency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2non-trivial-functional-dependency" class="md-nav__link">
+    2.Non-trivial functional dependency
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-functional-dependencies" class="md-nav__link">
+    Advantages of functional dependencies:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-functional-dependencies" class="md-nav__link">
+    Disadvantages of functional dependencies:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closure-of-set-of-fd" class="md-nav__link">
+    Closure of set of FD
+  </a>
+  
+    <nav class="md-nav" aria-label="Closure of set of FD">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-attributes-from-the-lhs-of-fd1" class="md-nav__link">
+    Step 1: Add Attributes from the LHS of FD1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-attributes-from-the-rhs-of-fd1" class="md-nav__link">
+    Step 2: Add Attributes from the RHS of FD1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-derive-attributes-using-fd2" class="md-nav__link">
+    Step 3: Derive Attributes Using FD2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-1-add-attributes-from-the-lhs-of-fd2" class="md-nav__link">
+    Step 1: Add Attributes from the LHS of FD2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-attributes-from-the-rhs-of-fd2" class="md-nav__link">
+    Step 2: Add Attributes from the RHS of FD2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-no-further-derivation" class="md-nav__link">
+    Step 3: No Further Derivation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closure-of-attribute-set" class="md-nav__link">
+    Closure of Attribute Set
+  </a>
+  
+    <nav class="md-nav" aria-label="Closure of Attribute Set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-find-attribute-closure-of-an-attribute-set" class="md-nav__link">
+    How to Find Attribute Closure of an Attribute Set?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-find-candidate-keys-and-super-keys-using-attribute-closure" class="md-nav__link">
+    How to Find Candidate Keys and Super Keys using Attribute Closure?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-attribute-closure" class="md-nav__link">
+    Advantages of attribute closure:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-attribute-closure" class="md-nav__link">
+    Disadvantages of attribute closure:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decomposition" class="md-nav__link">
+    Decomposition
+  </a>
+  
+    <nav class="md-nav" aria-label="Decomposition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-decomposition" class="md-nav__link">
+    Types of Decomposition
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Decomposition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-lossless-decomposition" class="md-nav__link">
+    1. Lossless Decomposition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dependency-preserving" class="md-nav__link">
+    2. Dependency Preserving
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalization" class="md-nav__link">
+    Normalization
+  </a>
+  
+    <nav class="md-nav" aria-label="Normalization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-normalization" class="md-nav__link">
+    Advantages of Normalization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-normalization" class="md-nav__link">
+    Disadvantages of Normalization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1nf-2nf-3nf-bcnf-4nf" class="md-nav__link">
+    1NF, 2NF, 3NF, BCNF, 4NF
+  </a>
+  
+    <nav class="md-nav" aria-label="1NF, 2NF, 3NF, BCNF, 4NF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-first-normal-form-1nf" class="md-nav__link">
+    1. First Normal Form (1NF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-second-normal-form-2nf" class="md-nav__link">
+    2. Second Normal Form (2NF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-third-normal-form-3nf" class="md-nav__link">
+    3. Third Normal Form (3NF):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4boyce-codd-normal-form-bcnf" class="md-nav__link">
+    4.Boyce-Codd Normal Form (BCNF):
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-optimization" class="md-nav__link">
+    Query Optimization:
+  </a>
+  
+    <nav class="md-nav" aria-label="Query Optimization:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principles-of-query-optimization" class="md-nav__link">
+    Principles of Query Optimization:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-optimization-strategies" class="md-nav__link">
+    Query Optimization Strategies:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components-of-query-optimizer" class="md-nav__link">
+    Components of Query Optimizer:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatic-tuning-optimizer" class="md-nav__link">
+    Automatic Tuning Optimizer:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-of-query-optimization-in-dbms" class="md-nav__link">
+    Methods of Query Optimization in DBMS:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="unit-3-relational-database-design">Unit 3: Relational Database Design</h1>
+<ul>
+<li><a href="http://localhost:8000/dbms/Unit3/#functional-dependency-fd-basic-concepts">Functional Dependency (FD) Basic concepts</a></li>
+<li><a href="http://localhost:8000/dbms/Unit3/#closure-of-set-of-fd">Closure of set of FD</a></li>
+<li><a href="http://localhost:8000/dbms/Unit3/#closure-of-attribute-set">Closure of attribute set</a></li>
+<li><a href="http://localhost:8000/dbms/Unit3/#decomposition">Decomposition</a></li>
+<li><a href="http://localhost:8000/dbms/Unit3/#normalization">Normalization</a></li>
+<li><a href="http://localhost:8000/dbms/Unit3/#1nf-2nf-3nf-bcnf-4nf">1NF, 2NF, 3NF, BCNF, 4NF</a></li>
+<li><a href="http://localhost:8000/dbms/Unit3/#query-optimization">Query Optimization</a></li>
+<li><a href="http://localhost:8000/dbms/Unit3/#reference">Reference</a></li>
+</ul>
+<h2 id="functional-dependency-fd-basic-concepts">Functional Dependency (FD) Basic concepts</h2>
+<p><strong>Functional dependency</strong> (FD) is a set of constraints between two attributes in a relation. Functional dependency says that if two tuples have same values for attributes A1, A2,..., An, then those two tuples must have to have same values for attributes B1, B2, ..., Bn.</p>
+<p>The functional dependency is a relationship that exists between two attributes. It typically exists between the primary key and non-key attribute within a table.</p>
+<p><strong>For Example</strong> Assume we have an employee table with attributes: Emp_Id, Emp_Name, Emp_Address.</p>
+<p>Here Emp_Id attribute can uniquely identify the Emp_Name attribute of employee table because if we know the Emp_Id, we can tell that employee name associated with it.</p>
+<p>Functional dependency can be written as:</p>
+<pre><code>Emp_Id → Emp_Name
+
+</code></pre>
+<h3 id="types-of-functional-dependencies">Types of Functional Dependencies</h3>
+<p><img alt="https://static.javatpoint.com/dbms/images/dbms-functional-dependency.png" src="https://static.javatpoint.com/dbms/images/dbms-functional-dependency.png" /></p>
+<h4 id="1trivial-functional-dependency">1.Trivial functional dependency</h4>
+<p>A → B has trivial functional dependency if B is a subset of A. The following dependencies are also trivial like: A → A, B → B</p>
+<p>Example: Consider a table with two columns Employee_Id and Employee_Name.</p>
+<pre><code>{Employee_id, Employee_Name}   →    Employee_Id is a trivial functional dependency as
+Employee_Id is a subset of {Employee_Id, Employee_Name}.
+Also, Employee_Id → Employee_Id and Employee_Name   →    Employee_Name are trivial dependencies too.
+
+</code></pre>
+<h4 id="2non-trivial-functional-dependency">2.Non-trivial functional dependency</h4>
+<p>A → B has a non-trivial functional dependency if B is not a subset of A. When A intersection B is NULL, then A → B is called as complete non-trivial.</p>
+<p>Example:</p>
+<pre><code>ID   →    Name,
+Name →  DOB
+
+</code></pre>
+<h3 id="advantages-of-functional-dependencies">Advantages of functional dependencies:</h3>
+<ul>
+<li>They help in reducing data redundancy in a database by identifying and eliminating unnecessary or duplicate data.</li>
+<li>They improve data integrity by ensuring that data is consistent and accurate across the database.</li>
+<li>They facilitate database maintenance by making it easier to modify, update, and delete data.</li>
+</ul>
+<h3 id="disadvantages-of-functional-dependencies">Disadvantages of functional dependencies:</h3>
+<ul>
+<li>
+<p>The process of identifying functional dependencies can be time-consuming and complex, especially in large databases with many tables and relationships.</p>
+</li>
+<li>
+<p>Overly restrictive functional dependencies can result in slow query performance or data inconsistencies, as data that should be related may not be properly linked.</p>
+</li>
+<li>
+<p>Functional dependencies do not take into account the semantic meaning of data, and may not always reflect the true relationships between data elements.</p>
+</li>
+</ul>
+<h2 id="closure-of-set-of-fd">Closure of set of FD</h2>
+<p>The Closure Of Functional Dependency means the complete set of all possible attributes that can be functionally derived from given functional dependency using the inference rules known as Armstrong's Rules.</p>
+<p>If "F" is a functional dependency then closure of functional dependency can be denoted using "{F}+".</p>
+<p>There are three steps to calculate closure of functional dependency. These are:</p>
+<ol>
+<li>
+<p>Add the attributes which are present on Left Hand Side in the original functional dependency.</p>
+</li>
+<li>
+<p>Now, add the attributes present on the Right Hand Side of the functional dependency.</p>
+</li>
+<li>
+<p>With the help of attributes present on Right Hand Side, check the other attributes that can be derived from the other given functional dependencies. Repeat this process until all the possible attributes which can be derived are added in the closure.</p>
+</li>
+</ol>
+<h3 id="example">Example</h3>
+<p>Consider the table <code>student_details</code> with attributes (Roll_No, Name, Marks, Location) and two functional dependencies:</p>
+<ul>
+<li>FD1: Roll_No → Name, Marks</li>
+<li>FD2: Name → Marks, Location</li>
+</ul>
+<p>Now, let's calculate the closure of all attributes in the relation using the following steps:</p>
+<h4 id="step-1-add-attributes-from-the-lhs-of-fd1">Step 1: Add Attributes from the LHS of FD1</h4>
+<p>{Roll_No}⁺ = {Roll_No}</p>
+<h4 id="step-2-add-attributes-from-the-rhs-of-fd1">Step 2: Add Attributes from the RHS of FD1</h4>
+<p>{Roll_No}⁺ = {Roll_No, Marks}</p>
+<h4 id="step-3-derive-attributes-using-fd2">Step 3: Derive Attributes Using FD2</h4>
+<p>While Roll_No cannot determine any other attribute, Name can determine other attributes such as Marks and Location using FD2 (Name → Marks, Location). Therefore, the complete closure of Roll_No is:</p>
+<p>{Roll_No}⁺ = {Roll_No, Marks, Name, Location}</p>
+<p>Similarly, we can calculate the closure for the "Name" attribute:</p>
+<h4 id="step-1-add-attributes-from-the-lhs-of-fd2">Step 1: Add Attributes from the LHS of FD2</h4>
+<p>{Name}⁺ = {Name}</p>
+<h4 id="step-2-add-attributes-from-the-rhs-of-fd2">Step 2: Add Attributes from the RHS of FD2</h4>
+<p>{Name}⁺ = {Name, Marks, Location}</p>
+<h4 id="step-3-no-further-derivation">Step 3: No Further Derivation</h4>
+<p>Since there are no functional dependencies where "Marks" or "Location" attribute is functionally determining any other attribute, we cannot add more attributes to the closure. Hence, the complete closure of Name is:</p>
+<p>{Name}⁺ = {Name, Marks, Location}</p>
+<p>Note: There are no functional dependencies where "Marks" and "Location" can functionally determine any attribute. Therefore, for those attributes, we can only add the attributes themselves in their closures:</p>
+<p>{Marks}⁺ = {Marks} {Location}⁺ = {Location}</p>
+<h2 id="closure-of-attribute-set">Closure of Attribute Set</h2>
+<p><strong>Attribute closure</strong> of an attribute set can be defined as the set of attributes that can be functionally determined from it.</p>
+<h3 id="how-to-find-attribute-closure-of-an-attribute-set">How to Find Attribute Closure of an Attribute Set?</h3>
+<p>To find the attribute closure of an attribute set:</p>
+<ol>
+<li>Add elements of the attribute set to the result set.</li>
+<li>Recursively add elements to the result set that can be functionally determined from the elements of the result set.</li>
+</ol>
+<p>Using the functional dependency (FD) set of table 1, attribute closure can be determined as:</p>
+<ul>
+<li>(STUD_NO)⁺ = {STUD_NO, STUD_NAME, STUD_PHONE, STUD_STATE, STUD_COUNTRY, STUD_AGE}</li>
+<li>(STUD_STATE)⁺ = {STUD_STATE, STUD_COUNTRY}</li>
+</ul>
+<h3 id="how-to-find-candidate-keys-and-super-keys-using-attribute-closure">How to Find Candidate Keys and Super Keys using Attribute Closure?</h3>
+<ul>
+<li>If the attribute closure of an attribute set contains all attributes of the relation, the attribute set will be a super key of the relation.</li>
+<li>If no subset of this attribute set can functionally determine all attributes of the relation, the set will be a candidate key as well.</li>
+</ul>
+<p>For example, using the FD set of table 1:</p>
+<ul>
+<li>(STUD_NO, STUD_NAME)⁺ = {STUD_NO, STUD_NAME, STUD_PHONE, STUD_STATE, STUD_COUNTRY, STUD_AGE}</li>
+<li>(STUD_NO)⁺ = {STUD_NO, STUD_NAME, STUD_PHONE, STUD_STATE, STUD_COUNTRY, STUD_AGE}</li>
+</ul>
+<p>(STUD_NO, STUD_NAME) will be a super key but not a candidate key because its subset (STUD_NO)⁺ is equal to all attributes of the relation. So, STUD_NO will be a candidate key.</p>
+<h3 id="advantages-of-attribute-closure">Advantages of attribute closure:</h3>
+<ul>
+<li>
+<p>Attribute closures help to identify all possible attributes that can be derived from a set of given attributes.</p>
+</li>
+<li>
+<p>They facilitate database design by identifying relationships between attributes and tables, which can help to optimize query performance.</p>
+</li>
+<li>
+<p>They ensure data consistency by identifying all possible combinations of attributes that can exist in the database.</p>
+</li>
+</ul>
+<h3 id="disadvantages-of-attribute-closure">Disadvantages of attribute closure:</h3>
+<ul>
+<li>
+<p>The process of calculating attribute closures can be computationally expensive, especially for large datasets.</p>
+</li>
+<li>
+<p>Attribute closures can become too complex to manage, especially as the number of attributes and tables in a database grows.</p>
+</li>
+<li>
+<p>Attribute closures do not take into account the semantic meaning of data, and may not always accurately reflect the relationships between data elements.</p>
+</li>
+</ul>
+<h2 id="decomposition">Decomposition</h2>
+<ul>
+<li>When a relation in the relational model is not in appropriate normal form then the decomposition of a relation is required.</li>
+<li>In a database, it breaks the table into multiple tables.</li>
+<li>If the relation has no proper decomposition, then it may lead to problems like loss of information.</li>
+<li>Decomposition is used to eliminate some of the problems of bad design like anomalies, inconsistencies, and redundancy.</li>
+<li>Decomposition in Database Management System is to break a relation into multiple relations to bring it into an appropriate normal form. It helps to remove redundancy, inconsistencies, and anomalies from a database. The decomposition of a relation R in a relational schema is the process of replacing the original relation R with two or more relations in a relational schema. Each of these relations contains a subset of the attributes of R and together they include all attributes of R.</li>
+</ul>
+<h3 id="types-of-decomposition">Types of Decomposition</h3>
+<p><img alt="https://static.javatpoint.com/dbms/images/dbms-relational-decomposition.png" src="https://static.javatpoint.com/dbms/images/dbms-relational-decomposition.png" /></p>
+<h4 id="1-lossless-decomposition">1. Lossless Decomposition</h4>
+<p>Lossless decomposition ensures that no information is lost when a relation is decomposed. It guarantees that the join of relations will result in the same relation as it was decomposed.</p>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li>If no information is lost during the decomposition, it's considered lossless.</li>
+<li>The join of decomposed relations should yield the original relation.</li>
+<li>A relation is considered to have a lossless decomposition if the natural joins of all the decompositions give the original relation.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Consider the "EMPLOYEE_DEPARTMENT" table:</p>
+<table>
+<thead>
+<tr>
+<th>EMP_ID</th>
+<th>EMP_NAME</th>
+<th>EMP_AGE</th>
+<th>EMP_CITY</th>
+<th>DEPT_ID</th>
+<th>DEPT_NAME</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22</td>
+<td>Denim</td>
+<td>28</td>
+<td>Mumbai</td>
+<td>827</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Alina</td>
+<td>25</td>
+<td>Delhi</td>
+<td>438</td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Stephan</td>
+<td>30</td>
+<td>Bangalore</td>
+<td>869</td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>52</td>
+<td>Katherine</td>
+<td>36</td>
+<td>Mumbai</td>
+<td>575</td>
+<td>Production</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Jack</td>
+<td>40</td>
+<td>Noida</td>
+<td>678</td>
+<td>Testing</td>
+</tr>
+</tbody>
+</table>
+<p>This relation is decomposed into two relations: "EMPLOYEE" and "DEPARTMENT."</p>
+<p><strong>EMPLOYEE table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>EMP_ID</th>
+<th>EMP_NAME</th>
+<th>EMP_AGE</th>
+<th>EMP_CITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22</td>
+<td>Denim</td>
+<td>28</td>
+<td>Mumbai</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Alina</td>
+<td>25</td>
+<td>Delhi</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Stephan</td>
+<td>30</td>
+<td>Bangalore</td>
+</tr>
+<tr>
+<td>52</td>
+<td>Katherine</td>
+<td>36</td>
+<td>Mumbai</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Jack</td>
+<td>40</td>
+<td>Noida</td>
+</tr>
+</tbody>
+</table>
+<p><strong>DEPARTMENT table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>DEPT_ID</th>
+<th>EMP_ID</th>
+<th>DEPT_NAME</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>827</td>
+<td>22</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>438</td>
+<td>33</td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td>869</td>
+<td>46</td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>575</td>
+<td>52</td>
+<td>Production</td>
+</tr>
+<tr>
+<td>678</td>
+<td>60</td>
+<td>Testing</td>
+</tr>
+</tbody>
+</table>
+<p>When these two relations are joined on the common column "EMP_ID," the resultant relation is the same as the original relation:</p>
+<p>Employee ⋈ Department</p>
+<table>
+<thead>
+<tr>
+<th>EMP_ID</th>
+<th>EMP_NAME</th>
+<th>EMP_AGE</th>
+<th>EMP_CITY</th>
+<th>DEPT_ID</th>
+<th>DEPT_NAME</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22</td>
+<td>Denim</td>
+<td>28</td>
+<td>Mumbai</td>
+<td>827</td>
+<td>Sales</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Alina</td>
+<td>25</td>
+<td>Delhi</td>
+<td>438</td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td>46</td>
+<td>Stephan</td>
+<td>30</td>
+<td>Bangalore</td>
+<td>869</td>
+<td>Finance</td>
+</tr>
+<tr>
+<td>52</td>
+<td>Katherine</td>
+<td>36</td>
+<td>Mumbai</td>
+<td>575</td>
+<td>Production</td>
+</tr>
+<tr>
+<td>60</td>
+<td>Jack</td>
+<td>40</td>
+<td>Noida</td>
+<td>678</td>
+<td>Testing</td>
+</tr>
+</tbody>
+</table>
+<p>Hence, the decomposition is a lossless join decomposition.</p>
+<h4 id="2-dependency-preserving">2. Dependency Preserving</h4>
+<p>Dependency preserving is an essential constraint of a database design.</p>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li>At least one decomposed table must satisfy every dependency.</li>
+<li>If a relation R is decomposed into relations R1 and R2, the dependencies of R must either be a part of R1 or R2 or must be derivable from the combination of functional dependencies of R1 and R2.</li>
+</ul>
+<p>For example, suppose there is a relation R (A, B, C, D) with a functional dependency set (A -&gt; BC). The relational R is decomposed into R1 (ABC) and R2 (AD), which is dependency preserving because the FD A -&gt; BC is a part of relation R1 (ABC).</p>
+<h2 id="normalization">Normalization</h2>
+<p>Database normalization is the process of organizing the attributes of the database to reduce or eliminate data redundancy (having the same data but at different places).</p>
+<p>Problems because of data redundancy: Data redundancy unnecessarily increases the size of the database as the same data is repeated in many places. Inconsistency problems also arise during insert, delete and update operations.</p>
+<ul>
+<li>Normalization is the process of organizing the data in the database.</li>
+<li>Normalization is used to minimize the redundancy from a relation or set of relations. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.</li>
+<li>Normalization divides the larger table into smaller and links them using relationships.</li>
+<li>The normal form is used to reduce redundancy from the database table.</li>
+</ul>
+<p>The main reason for normalizing the relations is removing these anomalies. Failure to eliminate anomalies leads to data redundancy and can cause data integrity and other problems as the database grows. Normalization consists of a series of guidelines that helps to guide you in creating a good database structure.</p>
+<p>Data modification anomalies can be categorized into three types:</p>
+<ul>
+<li>Insertion Anomaly: Insertion Anomaly refers to when one cannot insert a new tuple into a relationship due to lack of data.</li>
+<li>Deletion Anomaly: The delete anomaly refers to the situation where the deletion of data results in the unintended loss of some other important data.</li>
+<li>Updatation Anomaly: The update anomaly is when an update of a single data value requires multiple rows of data to be updated.</li>
+</ul>
+<h3 id="advantages-of-normalization">Advantages of Normalization</h3>
+<ul>
+<li>Normalization helps to minimize data redundancy.</li>
+<li>Greater overall database organization.</li>
+<li>Data consistency within the database.</li>
+<li>Much more flexible database design.</li>
+<li>Enforces the concept of relational integrity.</li>
+</ul>
+<h3 id="disadvantages-of-normalization">Disadvantages of Normalization</h3>
+<ul>
+<li>You cannot start building the database before knowing what the user needs.</li>
+<li>The performance degrades when normalizing the relations to higher normal forms, i.e., 4NF, 5NF.</li>
+<li>It is very time-consuming and difficult to normalize relations of a higher degree.</li>
+<li>Careless decomposition may lead to a bad database design, leading to serious problems.</li>
+</ul>
+<h2 id="1nf-2nf-3nf-bcnf-4nf">1NF, 2NF, 3NF, BCNF, 4NF</h2>
+<table>
+<thead>
+<tr>
+<th>Normal Form</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1NF</td>
+<td>A relation is in 1NF if it contains an atomic value.</td>
+</tr>
+<tr>
+<td>2NF</td>
+<td>A relation will be in 2NF if it is in 1NF and all non-key attributes are fully functional dependent on the primary key.</td>
+</tr>
+<tr>
+<td>3NF</td>
+<td>A relation will be in 3NF if it is in 2NF and no transition dependency exists.</td>
+</tr>
+<tr>
+<td>BCNF</td>
+<td>A stronger definition of 3NF is known as Boyce Codd's normal form.</td>
+</tr>
+<tr>
+<td>4NF</td>
+<td>A relation will be in 4NF if it is in Boyce Codd's normal form and has no multi-valued dependency.</td>
+</tr>
+<tr>
+<td>5NF</td>
+<td>A relation is in 5NF if it is in 4NF and does not contain any join dependency; joining should be lossless.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-first-normal-form-1nf">1. <strong>First Normal Form (1NF)</strong></h4>
+<p>If a relation contains a composite or multi-valued attribute, it violates the first normal form, or the relation is in first normal form if it does not contain any composite or multi-valued attribute. A relation is in first normal form if every attribute in that relation is singled valued attribute.</p>
+<p>A table is in 1 NF if:</p>
+<ul>
+<li>There are only Single Valued Attributes.</li>
+<li>Attribute Domain does not change.</li>
+<li>There is a unique name for every Attribute/Column.</li>
+<li>The order in which data is stored does not matter.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Original Table (Not in 1NF):</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>c1, c2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>E</td>
+<td>c3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>M</td>
+<td>c2, c3</td>
+</tr>
+</tbody>
+</table>
+<p>In the above table, the "Courses" column is a multi-valued attribute, so it is not in 1NF.</p>
+<p>Table in 1NF (Each Course as a Separate Row):</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Course</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>c1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>A</td>
+<td>c2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>E</td>
+<td>c3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>M</td>
+<td>c2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>M</td>
+<td>c3</td>
+</tr>
+</tbody>
+</table>
+<p>Note: A database design is considered bad if it is not even in the First Normal Form (1NF).</p>
+<h4 id="2-second-normal-form-2nf"><strong>2. Second Normal Form (2NF)</strong></h4>
+<p>Second Normal Form (2NF): Second Normal Form (2NF) is based on the concept of full functional dependency. Second Normal Form applies to relations with composite keys, that is, relations with a primary key composed of two or more attributes. A relation with a single-attribute primary key is automatically in at least 2NF.</p>
+<p><strong>Example-:</strong></p>
+<p>Consider the following functional dependencies in relation R (A, B, C, D):</p>
+<ul>
+<li>AB -&gt; C [A and B together determine C]</li>
+<li>BC -&gt; D [B and C together determine D]</li>
+</ul>
+<p>In this case, we can see that the relation R has a composite candidate key {A, B} as AB -&gt; C. Therefore, A and B together uniquely determine the value of C. Similarly, BC -&gt; D shows that B and C together uniquely determine the value of D.</p>
+<p>The relation R is already in 1NF because it does not have any repeating groups or nested relations.</p>
+<p>However, we can see that the non-prime attribute D is functionally dependent on only part of a candidate key, BC. This violates the 2NF condition.</p>
+<h4 id="3-third-normal-form-3nf"><strong>3. Third Normal Form (3NF):</strong></h4>
+<ul>
+<li>A relation will be in 3NF if it is in 2NF and does not contain any transitive partial dependency.</li>
+<li>3NF is used to reduce data duplication and achieve data integrity.</li>
+<li>If there is no transitive dependency for non-prime attributes, then the relation must be in the third normal form.</li>
+</ul>
+<p><strong>Conditions for 3NF:</strong> For every non-trivial functional dependency X → Y, a relation is in 3NF if it holds at least one of the following conditions: 1. X is a super key. 2. Y is a prime attribute, i.e., each element of Y is part of some candidate key.</p>
+<p><strong>Example:</strong></p>
+<p>Consider the "EMPLOYEE_DETAIL" table:</p>
+<table>
+<thead>
+<tr>
+<th>EMP_ID</th>
+<th>EMP_NAME</th>
+<th>EMP_ZIP</th>
+<th>EMP_STATE</th>
+<th>EMP_CITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>222</td>
+<td>Harry</td>
+<td>201010</td>
+<td>UP</td>
+<td>Noida</td>
+</tr>
+<tr>
+<td>333</td>
+<td>Stephan</td>
+<td>02228</td>
+<td>US</td>
+<td>Boston</td>
+</tr>
+<tr>
+<td>444</td>
+<td>Lan</td>
+<td>60007</td>
+<td>US</td>
+<td>Chicago</td>
+</tr>
+<tr>
+<td>555</td>
+<td>Katharine</td>
+<td>06389</td>
+<td>UK</td>
+<td>Norwich</td>
+</tr>
+<tr>
+<td>666</td>
+<td>John</td>
+<td>462007</td>
+<td>MP</td>
+<td>Bhopal</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Super key in the table above: {EMP_ID}, {EMP_ID, EMP_NAME}, {EMP_ID, EMP_NAME, EMP_ZIP}, and so on.</li>
+<li>Candidate key: {EMP_ID}</li>
+<li>Non-prime attributes: In the given table, all attributes except EMP_ID are non-prime.</li>
+<li>Here, EMP_STATE &amp; EMP_CITY are dependent on EMP_ZIP, and EMP_ZIP is dependent on EMP_ID. The non-prime attributes (EMP_STATE, EMP_CITY) transitively depend on the super key (EMP_ID), violating the rule of the third normal form.</li>
+</ul>
+<p>To achieve 3NF, we need to move EMP_CITY and EMP_STATE to a new "EMPLOYEE_ZIP" table, with EMP_ZIP as the Primary key.</p>
+<p><strong>EMPLOYEE table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>EMP_ID</th>
+<th>EMP_NAME</th>
+<th>EMP_ZIP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>222</td>
+<td>Harry</td>
+<td>201010</td>
+</tr>
+<tr>
+<td>333</td>
+<td>Stephan</td>
+<td>02228</td>
+</tr>
+<tr>
+<td>444</td>
+<td>Lan</td>
+<td>60007</td>
+</tr>
+<tr>
+<td>555</td>
+<td>Katharine</td>
+<td>06389</td>
+</tr>
+<tr>
+<td>666</td>
+<td>John</td>
+<td>462007</td>
+</tr>
+</tbody>
+</table>
+<p><strong>EMPLOYEE_ZIP table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>EMP_ZIP</th>
+<th>EMP_STATE</th>
+<th>EMP_CITY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>201010</td>
+<td>UP</td>
+<td>Noida</td>
+</tr>
+<tr>
+<td>02228</td>
+<td>US</td>
+<td>Boston</td>
+</tr>
+<tr>
+<td>60007</td>
+<td>US</td>
+<td>Chicago</td>
+</tr>
+<tr>
+<td>06389</td>
+<td>UK</td>
+<td>Norwich</td>
+</tr>
+<tr>
+<td>462007</td>
+<td>MP</td>
+<td>Bhopal</td>
+</tr>
+</tbody>
+</table>
+<p>This separation of data into two tables (EMPLOYEE and EMPLOYEE_ZIP) satisfies the third normal form and eliminates transitive dependencies.</p>
+<h4 id="4boyce-codd-normal-form-bcnf">4.<strong>Boyce-Codd Normal Form (BCNF):</strong></h4>
+<p>Boyce--Codd Normal Form (BCNF) is a level of normalization in database design that considers all candidate keys in a relation. BCNF has additional constraints compared to the general definition of 3NF.</p>
+<p><strong>Rules for BCNF:</strong></p>
+<ol>
+<li>Rule 1: The table should be in the 3rd Normal Form (3NF).</li>
+<li>Rule 2: X should be a superkey for every functional dependency (FD) X → Y in a given relation.</li>
+</ol>
+<p><strong>How to Satisfy BCNF:</strong></p>
+<p>To satisfy BCNF, a table may need to be decomposed into further tables. Here is the full procedure for transforming a table into BCNF. Let's start by dividing the main table into two tables: "Stu_Branch" and "Stu_Course" tables.</p>
+<p><strong>Stu_Branch Table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stu_ID</th>
+<th>Stu_Branch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>Computer Science &amp; Engineering</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Electronics &amp; Communication Engineering</td>
+</tr>
+</tbody>
+</table>
+<p>Candidate Key for this table: Stu_ID.</p>
+<p><strong>Stu_Course Table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stu_Course</th>
+<th>Branch_Number</th>
+<th>Stu_Course_No</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DBMS</td>
+<td>B_001</td>
+<td>201</td>
+</tr>
+<tr>
+<td>Computer Networks</td>
+<td>B_001</td>
+<td>202</td>
+</tr>
+<tr>
+<td>VLSI Technology</td>
+<td>B_003</td>
+<td>401</td>
+</tr>
+<tr>
+<td>Mobile Communication</td>
+<td>B_003</td>
+<td>402</td>
+</tr>
+</tbody>
+</table>
+<p>Candidate Key for this table: Stu_Course.</p>
+<p><strong>Stu_ID to Stu_Course_No Table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Stu_ID</th>
+<th>Stu_Course_No</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>201</td>
+</tr>
+<tr>
+<td>101</td>
+<td>202</td>
+</tr>
+<tr>
+<td>102</td>
+<td>401</td>
+</tr>
+<tr>
+<td>102</td>
+<td>402</td>
+</tr>
+</tbody>
+</table>
+<p>Candidate Key for this table: {Stu_ID, Stu_Course_No}.</p>
+<p>After decomposing the main table into further tables, it is now in BCNF as it satisfies the condition that X is a superkey for every functional dependency X → Y.</p>
+<p>This decomposition ensures that the BCNF requirements are met and helps in achieving a well-structured and normalized database design.</p>
+<h2 id="query-optimization"><strong>Query Optimization:</strong></h2>
+<p>Query optimization is of great importance for the performance of a relational database, especially for the execution of complex SQL statements. A query optimizer decides the best methods for implementing each query.</p>
+<p>The query optimizer selects, for instance, whether or not to use indexes for a given query, and which join methods to use when joining multiple tables. These decisions have a tremendous effect on SQL performance, and query optimization is a key technology for every application, from operational systems to data warehouses and analytical systems to content management systems.</p>
+<h3 id="principles-of-query-optimization"><strong>Principles of Query Optimization:</strong></h3>
+<ol>
+<li>
+<p><strong>Understand the Query Execution:</strong> The first phase of query optimization is understanding what the database is performing. Different databases have different commands for this. For example, in MySQL, one can use the "EXPLAIN [SQL Query]" keyword to see the query plan. In Oracle, one can use the "EXPLAIN PLAN FOR [SQL Query]" to see the query plan.</p>
+</li>
+<li>
+<p><strong>Retrieve as Little Data as Possible:</strong> Minimize the amount of data retrieved from the database. The more information retrieved from the query, the more resources the database needs to process and store. Avoid using 'SELECT *' when only specific columns are needed.</p>
+</li>
+<li>
+<p><strong>Store Intermediate Results:</strong> For complex queries, consider using subqueries, inline views, and UNION-type statements to generate intermediate results. These transitional results are not saved in the database but are directly used within the query. Be cautious when dealing with large transitional results, as they can impact performance.</p>
+</li>
+</ol>
+<h3 id="query-optimization-strategies"><strong>Query Optimization Strategies:</strong></h3>
+<ol>
+<li>
+<p><strong>Use Index:</strong> Utilize indexing as the primary strategy to speed up a query. Well-designed indexes can significantly improve query performance.</p>
+</li>
+<li>
+<p><strong>Aggregate Tables:</strong> Pre-populate tables at higher levels to reduce the amount of data that needs to be processed during query execution.</p>
+</li>
+<li>
+<p><strong>Vertical Partitioning:</strong> Partition tables by columns to reduce the amount of data a SQL query needs to process.</p>
+</li>
+<li>
+<p><strong>Horizontal Partitioning:</strong> Partition tables by data value, often based on time, to reduce the data volume processed by SQL queries.</p>
+</li>
+<li>
+<p><strong>De-normalization:</strong> Combine multiple tables into a single table to reduce the need for extensive table joins, thereby speeding up query execution.</p>
+</li>
+<li>
+<p><strong>Server Tuning:</strong> Adjust server parameters to fully utilize hardware resources, improving query execution speed. Server tuning is specific to each server's hardware and software configuration.</p>
+</li>
+</ol>
+<p>Query optimization is a critical aspect of database performance tuning, and applying these principles and strategies can lead to significant improvements in SQL query performance.</p>
+<h3 id="components-of-query-optimizer"><strong>Components of Query Optimizer:</strong></h3>
+<p>The query optimizer consists of three components: 1. <strong>Query Transformer:</strong> Determines if it's advantageous to change original SQL statements into less expensive, semantically equivalent SQL statements. 2. <strong>Estimator:</strong> Calculates the overall cost of an execution plan, using techniques like selectivity (row selectivity based on query predicates), cardinality (number of rows returned by each action), and cost (measuring resource usage). 3. <strong>Plan Generator:</strong> Generates feasible execution plan designs due to multiple combinations available for achieving the same goal.</p>
+<h3 id="automatic-tuning-optimizer"><strong>Automatic Tuning Optimizer:</strong></h3>
+<p>The optimizer performs various operations depending on how it is invoked. It offers different categories of optimizations: - <strong>Normal Optimization:</strong> Generates an execution strategy for SQL statements. It operates within tight time constraints and aims to choose the best plan. - <strong>SQL Tuning Advisor Optimization:</strong> Activated by SQL Tuning Advisor, it performs additional research to enhance plans created in regular mode. It generates a set of activities to create a better plan.</p>
+<h3 id="methods-of-query-optimization-in-dbms"><strong>Methods of Query Optimization in DBMS:</strong></h3>
+<p><strong>Cost-Based Optimization:</strong> In cost-based optimization, the optimizer selects the most efficient way to execute a SQL statement. It calculates cost estimates for potential plans and chooses the plan with the lowest estimated cost. This method is also known as the Cost-Based Optimizer.</p>
+<ul>
+<li><strong>Execution Plans:</strong> Describe the actions taken by the database to execute a SQL statement. Each operation in the plan has a cost associated with it.</li>
+<li><strong>Query Blocks:</strong> Internally, the optimizer uses query blocks to represent SELECT blocks in the original SQL statement. Query blocks are used to optimize parts of the query individually.</li>
+</ul>
+<p><strong>Adaptive Query Optimizer in DBMS:</strong></p>
+<p>Adaptive query optimization allows the optimizer to modify execution plans in real-time and learn new facts that can improve statistics. It's useful when available data is insufficient for generating a perfect plan.</p>
+<p>Adaptive plans are significant because they help avoid subpar default plans due to incorrect cardinality estimation. The optimizer can adjust the plan as it's being executed based on actual execution statistics, resulting in a more ideal final plan. This final plan is then used for further executions, ensuring that subpar plans are not reused.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>https://www.javatpoint.com/dbms-functional-dependency</li>
+<li>https://www.tutorialspoint.com/dbms/database_normalization.htm</li>
+<li>https://www.geeksforgeeks.org/functional-dependency-and-attribute-closure/?ref=lbp</li>
+<li>https://minigranth.in/dbms-tutorial/closure-of-functional-dependency</li>
+<li>https://www.javatpoint.com/dbms-normalization</li>
+<li>https://www.geeksforgeeks.org/introduction-of-database-normalization/?ref=lbp</li>
+<li>https://www.geeksforgeeks.org/first-normal-form-1nf/?ref=lbp</li>
+<li>https://www.geeksforgeeks.org/second-normal-form-2nf/?ref=lbp</li>
+<li>https://www.javatpoint.com/dbms-third-normal-form</li>
+<li>https://www.geeksforgeeks.org/boyce-codd-normal-form-bcnf/?ref=lbp</li>
+<li>https://www.javatpoint.com/dbms-forth-normal-form</li>
+<li>https://www.tutorialspoint.com/what-is-query-optimization</li>
+<li>https://www.scaler.com/topics/query-optimization-in-dbms/</li>
+<li>https://www.tutorialandexample.com/query-optimization-in-dbms</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit2" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit2
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Unit4/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit4" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit4
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>

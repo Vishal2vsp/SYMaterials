@@ -1,0 +1,3853 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Unit3/">
+      
+      
+        <link rel="next" href="../Unit5/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+    
+    
+      
+        <title>Unit4 - TYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-css-javascript" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TYMaterials" class="md-header__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TYMaterials" class="md-nav__button md-logo" aria-label="TYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    TYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../sepm/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SEPM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            SEPM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sepm/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    WD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            WD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-concept-of-css-cascading-style-sheets" class="md-nav__link">
+    The Concept of CSS (Cascading Style Sheets)
+  </a>
+  
+    <nav class="md-nav" aria-label="The Concept of CSS (Cascading Style Sheets)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-role-of-css" class="md-nav__link">
+    Understanding the Role of CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts-of-css" class="md-nav__link">
+    Key Concepts of CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-basic-css-rule" class="md-nav__link">
+    Example 1: Basic CSS Rule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-using-classes" class="md-nav__link">
+    Example 2: Using Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-inline-css" class="md-nav__link">
+    Example 3: Inline CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-css-for-lists" class="md-nav__link">
+    Example 4: CSS for Lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-responsive-design" class="md-nav__link">
+    Example 5: Responsive Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-6-css-transitions" class="md-nav__link">
+    Example 6: CSS Transitions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-7-css-flexbox-layout" class="md-nav__link">
+    Example 7: CSS Flexbox Layout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-style-sheet" class="md-nav__link">
+    Creating Style Sheet
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Style Sheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-css" class="md-nav__link">
+    Understanding CSS:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-css-style-sheet" class="md-nav__link">
+    Creating a CSS Style Sheet:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-properties" class="md-nav__link">
+    CSS Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-styling-background-text-format-controlling-fonts" class="md-nav__link">
+    CSS Styling (Background, Text Format, Controlling Fonts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-properties" class="md-nav__link">
+    Background Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Background Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-background-color" class="md-nav__link">
+    1. Background Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-background-image" class="md-nav__link">
+    2. Background Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-background-repeat" class="md-nav__link">
+    3. Background Repeat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-background-position" class="md-nav__link">
+    4. Background Position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-background-attachment" class="md-nav__link">
+    5. Background Attachment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-formatting" class="md-nav__link">
+    Text Formatting
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-font-size" class="md-nav__link">
+    1. Font Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-font-style" class="md-nav__link">
+    2. Font Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-font-weight" class="md-nav__link">
+    3. Font Weight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-text-color" class="md-nav__link">
+    4. Text Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-text-alignment" class="md-nav__link">
+    5. Text Alignment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-text-decoration" class="md-nav__link">
+    6. Text Decoration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-fonts" class="md-nav__link">
+    Controlling Fonts
+  </a>
+  
+    <nav class="md-nav" aria-label="Controlling Fonts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-font-family" class="md-nav__link">
+    1. Font Family
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-web-fonts" class="md-nav__link">
+    2. Web Fonts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-font-variant" class="md-nav__link">
+    3. Font Variant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-line-height" class="md-nav__link">
+    4. Line Height
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-block-elements-in-html" class="md-nav__link">
+    Working with Block Elements in HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-lists-tables" class="md-nav__link">
+    Working with lists &amp; Tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with lists & Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lists-in-html" class="md-nav__link">
+    Lists in HTML
+  </a>
+  
+    <nav class="md-nav" aria-label="Lists in HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-unordered-lists-ul" class="md-nav__link">
+    1. Unordered Lists (&lt;ul&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ordered-lists-ol" class="md-nav__link">
+    2. Ordered Lists (&lt;ol&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-description-lists-dl" class="md-nav__link">
+    3. Description Lists (&lt;dl&gt;)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables-in-html" class="md-nav__link">
+    Tables in HTML
+  </a>
+  
+    <nav class="md-nav" aria-label="Tables in HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-table-structure" class="md-nav__link">
+    Basic Table Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-attributes" class="md-nav__link">
+    Table Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-captions" class="md-nav__link">
+    Table Captions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-headers" class="md-nav__link">
+    Table Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spanning-rows-and-columns" class="md-nav__link">
+    Spanning Rows and Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#styling-tables-with-css" class="md-nav__link">
+    Styling Tables with CSS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-lists-and-tables" class="md-nav__link">
+    Best Practices for Lists and Tables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-id-class" class="md-nav__link">
+    CSS Id &amp; Class
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-selectors-overview" class="md-nav__link">
+    CSS Selectors Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-id-selector" class="md-nav__link">
+    CSS Id Selector
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS Id Selector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-about-css-id-selector" class="md-nav__link">
+    Key Points about CSS Id Selector:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-class-selector" class="md-nav__link">
+    CSS Class Selector
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS Class Selector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_1" class="md-nav__link">
+    Syntax:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-about-css-class-selector" class="md-nav__link">
+    Key Points about CSS Class Selector:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differences-between-css-id-and-class-selectors" class="md-nav__link">
+    Differences between CSS Id and Class Selectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-use-cases" class="md-nav__link">
+    Practical Use Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#css-id-selector-use-cases" class="md-nav__link">
+    CSS Id Selector Use Cases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css-class-selector-use-cases" class="md-nav__link">
+    CSS Class Selector Use Cases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-model" class="md-nav__link">
+    Box Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-of-the-box-model" class="md-nav__link">
+    Components of the Box Model
+  </a>
+  
+    <nav class="md-nav" aria-label="Components of the Box Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-content" class="md-nav__link">
+    1. Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-padding" class="md-nav__link">
+    2. Padding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-border" class="md-nav__link">
+    3. Border
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-margin" class="md-nav__link">
+    4. Margin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-box-model-works" class="md-nav__link">
+    How the Box Model Works
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-use-cases_1" class="md-nav__link">
+    Practical Use Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-layout-control" class="md-nav__link">
+    1. Layout Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-responsive-design" class="md-nav__link">
+    2. Responsive Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-debugging-and-troubleshooting" class="md-nav__link">
+    3. Debugging and Troubleshooting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-box-sizing" class="md-nav__link">
+    4. Box Sizing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-model-example" class="md-nav__link">
+    Box Model Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-introduction" class="md-nav__link">
+    JavaScript Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="JavaScript Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#javascript-an-essential-web-technology" class="md-nav__link">
+    JavaScript: An Essential Web Technology
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-of-javascript" class="md-nav__link">
+    Application of JavaScript
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advantages-of-javascript" class="md-nav__link">
+    Advantages of JavaScript
+  </a>
+  
+    <nav class="md-nav" aria-label="Advantages of JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#popup-boxes-in-javascript" class="md-nav__link">
+    Popup Boxes in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-details-in-javascript" class="md-nav__link">
+    Programming Details in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-and-data-types" class="md-nav__link">
+    Variables and Data Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrays-and-objects" class="md-nav__link">
+    Arrays and Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays and Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dom-manipulation" class="md-nav__link">
+    DOM Manipulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-handling" class="md-nav__link">
+    Event Handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    Error Handling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-and-object-in-javascript" class="md-nav__link">
+    Class and Object in JavaScript
+  </a>
+  
+    <nav class="md-nav" aria-label="Class and Object in JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objects-in-javascript" class="md-nav__link">
+    Objects in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-in-javascript-es6-and-later" class="md-nav__link">
+    Classes in JavaScript (ES6 and Later)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototypes-in-javascript" class="md-nav__link">
+    Prototypes in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#es6-class-vs-prototype-based-objects" class="md-nav__link">
+    ES6 Class vs. Prototype-Based Objects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../dbms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DBMS
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            DBMS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dbms/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cd/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CD
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cd/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../eeim/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    EEIM
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            EEIM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eeim/Unit5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-concept-of-css-cascading-style-sheets" class="md-nav__link">
+    The Concept of CSS (Cascading Style Sheets)
+  </a>
+  
+    <nav class="md-nav" aria-label="The Concept of CSS (Cascading Style Sheets)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-role-of-css" class="md-nav__link">
+    Understanding the Role of CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts-of-css" class="md-nav__link">
+    Key Concepts of CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-1-basic-css-rule" class="md-nav__link">
+    Example 1: Basic CSS Rule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-using-classes" class="md-nav__link">
+    Example 2: Using Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-inline-css" class="md-nav__link">
+    Example 3: Inline CSS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-css-for-lists" class="md-nav__link">
+    Example 4: CSS for Lists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-5-responsive-design" class="md-nav__link">
+    Example 5: Responsive Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-6-css-transitions" class="md-nav__link">
+    Example 6: CSS Transitions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-7-css-flexbox-layout" class="md-nav__link">
+    Example 7: CSS Flexbox Layout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-style-sheet" class="md-nav__link">
+    Creating Style Sheet
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating Style Sheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-css" class="md-nav__link">
+    Understanding CSS:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-css-style-sheet" class="md-nav__link">
+    Creating a CSS Style Sheet:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-properties" class="md-nav__link">
+    CSS Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-styling-background-text-format-controlling-fonts" class="md-nav__link">
+    CSS Styling (Background, Text Format, Controlling Fonts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-properties" class="md-nav__link">
+    Background Properties
+  </a>
+  
+    <nav class="md-nav" aria-label="Background Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-background-color" class="md-nav__link">
+    1. Background Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-background-image" class="md-nav__link">
+    2. Background Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-background-repeat" class="md-nav__link">
+    3. Background Repeat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-background-position" class="md-nav__link">
+    4. Background Position
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-background-attachment" class="md-nav__link">
+    5. Background Attachment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-formatting" class="md-nav__link">
+    Text Formatting
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Formatting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-font-size" class="md-nav__link">
+    1. Font Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-font-style" class="md-nav__link">
+    2. Font Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-font-weight" class="md-nav__link">
+    3. Font Weight
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-text-color" class="md-nav__link">
+    4. Text Color
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-text-alignment" class="md-nav__link">
+    5. Text Alignment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-text-decoration" class="md-nav__link">
+    6. Text Decoration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-fonts" class="md-nav__link">
+    Controlling Fonts
+  </a>
+  
+    <nav class="md-nav" aria-label="Controlling Fonts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-font-family" class="md-nav__link">
+    1. Font Family
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-web-fonts" class="md-nav__link">
+    2. Web Fonts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-font-variant" class="md-nav__link">
+    3. Font Variant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-line-height" class="md-nav__link">
+    4. Line Height
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-block-elements-in-html" class="md-nav__link">
+    Working with Block Elements in HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-lists-tables" class="md-nav__link">
+    Working with lists &amp; Tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Working with lists & Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lists-in-html" class="md-nav__link">
+    Lists in HTML
+  </a>
+  
+    <nav class="md-nav" aria-label="Lists in HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-unordered-lists-ul" class="md-nav__link">
+    1. Unordered Lists (&lt;ul&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ordered-lists-ol" class="md-nav__link">
+    2. Ordered Lists (&lt;ol&gt;)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-description-lists-dl" class="md-nav__link">
+    3. Description Lists (&lt;dl&gt;)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables-in-html" class="md-nav__link">
+    Tables in HTML
+  </a>
+  
+    <nav class="md-nav" aria-label="Tables in HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-table-structure" class="md-nav__link">
+    Basic Table Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-attributes" class="md-nav__link">
+    Table Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-captions" class="md-nav__link">
+    Table Captions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-headers" class="md-nav__link">
+    Table Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spanning-rows-and-columns" class="md-nav__link">
+    Spanning Rows and Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#styling-tables-with-css" class="md-nav__link">
+    Styling Tables with CSS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-lists-and-tables" class="md-nav__link">
+    Best Practices for Lists and Tables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-id-class" class="md-nav__link">
+    CSS Id &amp; Class
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-selectors-overview" class="md-nav__link">
+    CSS Selectors Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-id-selector" class="md-nav__link">
+    CSS Id Selector
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS Id Selector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-about-css-id-selector" class="md-nav__link">
+    Key Points about CSS Id Selector:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#css-class-selector" class="md-nav__link">
+    CSS Class Selector
+  </a>
+  
+    <nav class="md-nav" aria-label="CSS Class Selector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax_1" class="md-nav__link">
+    Syntax:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-points-about-css-class-selector" class="md-nav__link">
+    Key Points about CSS Class Selector:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differences-between-css-id-and-class-selectors" class="md-nav__link">
+    Differences between CSS Id and Class Selectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-use-cases" class="md-nav__link">
+    Practical Use Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#css-id-selector-use-cases" class="md-nav__link">
+    CSS Id Selector Use Cases
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css-class-selector-use-cases" class="md-nav__link">
+    CSS Class Selector Use Cases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-model" class="md-nav__link">
+    Box Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-of-the-box-model" class="md-nav__link">
+    Components of the Box Model
+  </a>
+  
+    <nav class="md-nav" aria-label="Components of the Box Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-content" class="md-nav__link">
+    1. Content
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-padding" class="md-nav__link">
+    2. Padding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-border" class="md-nav__link">
+    3. Border
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-margin" class="md-nav__link">
+    4. Margin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-box-model-works" class="md-nav__link">
+    How the Box Model Works
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-use-cases_1" class="md-nav__link">
+    Practical Use Cases
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-layout-control" class="md-nav__link">
+    1. Layout Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-responsive-design" class="md-nav__link">
+    2. Responsive Design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-debugging-and-troubleshooting" class="md-nav__link">
+    3. Debugging and Troubleshooting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-box-sizing" class="md-nav__link">
+    4. Box Sizing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-model-example" class="md-nav__link">
+    Box Model Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#javascript-introduction" class="md-nav__link">
+    JavaScript Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="JavaScript Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#javascript-an-essential-web-technology" class="md-nav__link">
+    JavaScript: An Essential Web Technology
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-of-javascript" class="md-nav__link">
+    Application of JavaScript
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advantages-of-javascript" class="md-nav__link">
+    Advantages of JavaScript
+  </a>
+  
+    <nav class="md-nav" aria-label="Advantages of JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#popup-boxes-in-javascript" class="md-nav__link">
+    Popup Boxes in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programming-details-in-javascript" class="md-nav__link">
+    Programming Details in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-and-data-types" class="md-nav__link">
+    Variables and Data Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arrays-and-objects" class="md-nav__link">
+    Arrays and Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Arrays and Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dom-manipulation" class="md-nav__link">
+    DOM Manipulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-handling" class="md-nav__link">
+    Event Handling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    Error Handling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-and-object-in-javascript" class="md-nav__link">
+    Class and Object in JavaScript
+  </a>
+  
+    <nav class="md-nav" aria-label="Class and Object in JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objects-in-javascript" class="md-nav__link">
+    Objects in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes-in-javascript-es6-and-later" class="md-nav__link">
+    Classes in JavaScript (ES6 and Later)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototypes-in-javascript" class="md-nav__link">
+    Prototypes in JavaScript
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#es6-class-vs-prototype-based-objects" class="md-nav__link">
+    ES6 Class vs. Prototype-Based Objects
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="introduction-to-css-javascript">Introduction to CSS &amp; Javascript</h1>
+<ul>
+<li><a href="#concept-of-css">Concept of CSS</a></li>
+<li><a href="#creating-style-sheet">Creating Style Sheet</a></li>
+<li><a href="#css-properties">CSS Properties</a></li>
+<li><a href="#css-styling-background-text-format-controlling-fonts">CSS Styling (Background, Text Format, Controlling Fonts)</a></li>
+<li><a href="#working-with-block-elements-and-objects">Working with block elements and objects</a></li>
+<li><a href="#working-with-lists-and-tables">Working with Lists and Tables</a></li>
+<li><a href="#css-id-and-class">CSS Id and Class</a></li>
+<li><a href="#box-model">Box Model</a></li>
+<li><a href="#advanced-css">Advanced CSS</a></li>
+<li><a href="#javascript-introduction">JavaScript Introduction</a></li>
+<li><a href="#application">Application</a></li>
+<li><a href="#advantages">Advantages</a></li>
+<li><a href="#popup-boxes">Popup Boxes</a></li>
+<li><a href="#programming-details">Programming details</a></li>
+<li><a href="#class--object">Class &amp; object</a></li>
+</ul>
+<h2 id="the-concept-of-css-cascading-style-sheets">The Concept of CSS (Cascading Style Sheets)</h2>
+<p>Cascading Style Sheets, often abbreviated as CSS, are a fundamental component of web development. They play a pivotal role in controlling the presentation and visual design of web pages. CSS allows web developers to separate the structure and content of a webpage from its visual styling, providing greater flexibility, maintainability, and creativity in web design. In this comprehensive guide, we will explore the concept of CSS, its principles, syntax, and provide numerous examples to illustrate its power and versatility.</p>
+<h3 id="understanding-the-role-of-css">Understanding the Role of CSS</h3>
+<p>CSS is a stylesheet language that describes how elements in a web document should be displayed on the screen, printed, or otherwise presented to users. It acts as a bridge between the raw content of a webpage (written in HTML) and the user's experience by defining the layout, colors, fonts, spacing, and various other aspects of the visual presentation.</p>
+<h3 id="key-concepts-of-css">Key Concepts of CSS</h3>
+<p>Before diving into examples, let's establish some key concepts of CSS:</p>
+<ol>
+<li><strong>Selectors</strong>: CSS selectors are used to target HTML elements that you want to style. Selectors can be based on element types, classes, IDs, attributes, and more.</li>
+<li><strong>Properties</strong>: CSS properties define the specific aspects of an element that you want to style. Examples include <code>color</code>, <code>font-size</code>, <code>margin</code>, and <code>background-color</code>.</li>
+<li><strong>Values</strong>: CSS properties are assigned values that determine the style. For instance, <code>color: blue;</code> sets the text color to blue.</li>
+<li><strong>Declaration</strong>: A declaration consists of a property and its associated value. Multiple declarations are grouped within curly braces <code>{}</code> to form a CSS rule.</li>
+</ol>
+<p>Now, let's explore CSS through examples:</p>
+<h3 id="example-1-basic-css-rule">Example 1: Basic CSS Rule</h3>
+<p>Suppose you have an HTML paragraph element like this:</p>
+<p>html</p>
+<p><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
+<p>You can create a basic CSS rule to style this paragraph with a red text color:</p>
+<p>css</p>
+<pre><code>p {
+  color: red;
+}
+</code></pre>
+<p>In this example:</p>
+<ul>
+<li><code>p</code> is the selector targeting all <code>&lt;p&gt;</code> elements in the HTML.</li>
+<li><code>color</code> is the property being styled.</li>
+<li><code>red</code> is the value assigned to the <code>color</code> property.</li>
+</ul>
+<p>This simple CSS rule changes the text color of all paragraphs to red.</p>
+<h3 id="example-2-using-classes">Example 2: Using Classes</h3>
+<p>CSS allows you to apply styles to specific elements using classes. Suppose you want to style a specific paragraph differently:</p>
+<pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p class="special"&gt;This is a special paragraph.&lt;/p&gt;`
+</code></pre>
+<p>In your CSS, you can define a class-based rule:</p>
+<pre><code>.special {
+  font-weight: bold;
+  color: blue;
+}
+</code></pre>
+<p>In this case:</p>
+<ul>
+<li><code>.special</code> is the class selector.</li>
+<li><code>font-weight</code> and <code>color</code> are properties being applied.</li>
+<li><code>bold</code> and <code>blue</code> are the values for those properties.</li>
+</ul>
+<p>This rule makes the paragraph with the <code>special</code> class bold and sets its text color to blue.</p>
+<h3 id="example-3-inline-css">Example 3: Inline CSS</h3>
+<p>You can also apply CSS styles directly to individual HTML elements using the <code>style</code> attribute. Here's an example:</p>
+<pre><code>&lt;p style="font-size: 20px; background-color: yellow;"&gt;
+    This is a styled paragraph.
+&lt;/p&gt;
+</code></pre>
+<p>In this example:</p>
+<ul>
+<li>The <code>style</code> attribute contains CSS rules within double quotes.</li>
+<li>The <code>font-size</code> and <code>background-color</code> properties are applied inline to this specific paragraph.</li>
+</ul>
+<p>Using inline CSS is less recommended for large-scale styling but can be handy for quick adjustments.</p>
+<h3 id="example-4-css-for-lists">Example 4: CSS for Lists</h3>
+<p>Let's say you have an HTML unordered list (<code>&lt;ul&gt;</code>) with list items (<code>&lt;li&gt;</code>):</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+
+<p>You can use CSS to remove the default list bullet points and style the list items:</p>
+<pre><code>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f0f0f0;
+  margin: 5px 0;
+  padding: 10px;
+}
+</code></pre>
+<p>In this case:</p>
+<ul>
+<li><code>list-style-type: none;</code> removes the bullet points.</li>
+<li><code>padding: 0;</code> removes the default padding on the <code>&lt;ul&gt;</code> element.</li>
+<li><code>background-color</code>, <code>margin</code>, and <code>padding</code> properties are applied to list items, creating a uniform appearance.</li>
+</ul>
+<h3 id="example-5-responsive-design">Example 5: Responsive Design</h3>
+<p>CSS is crucial for creating responsive web designs that adapt to different screen sizes and devices. Here's a simple example using CSS media queries:</p>
+<pre><code>/* Default styles for larger screens */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Media query for screens smaller than 600px wide */
+@media (max-width: 600px) {
+  p {
+font-size: 16px;
+line-height: 1.3;
+  }
+}
+</code></pre>
+<p>In this example:</p>
+<ul>
+<li>Default styles are set for paragraphs.</li>
+<li>A media query is used to modify the styles for screens with a maximum width of 600px.</li>
+<li>The font size and line height are adjusted for smaller screens.</li>
+</ul>
+<p>This technique ensures that your webpage looks good and is legible on both large desktop screens and smaller mobile devices.</p>
+<h3 id="example-6-css-transitions">Example 6: CSS Transitions</h3>
+<p>CSS enables smooth transitions and animations on elements. Suppose you want to create a simple button that changes color when hovered over:</p>
+<pre><code>&lt;button class="color-change-button"&gt;
+    Hover Me
+&lt;/button&gt;`
+</code></pre>
+<p>You can achieve this effect with CSS:</p>
+<pre><code>.color-change-button {
+  background-color: blue;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.color-change-button:hover {
+  background-color: red;
+}
+</code></pre>
+<p>In this example:</p>
+<ul>
+<li>The <code>transition</code> property specifies the property to transition (<code>background-color</code>), duration (0.3 seconds), and easing function (ease).</li>
+<li>The <code>:hover</code> pseudo-class is used to apply styles when the button is hovered over.</li>
+</ul>
+<p>This creates a smooth color transition when the button is hovered.</p>
+<h3 id="example-7-css-flexbox-layout">Example 7: CSS Flexbox Layout</h3>
+<p>CSS offers layout capabilities that simplify complex designs. Consider a basic flexbox layout:</p>
+<pre><code>&lt;div class="flex-container"&gt;
+    &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+  &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>With CSS:</p>
+<p>css</p>
+<pre><code>.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+</code></pre>
+<p>In this example:</p>
+<ul>
+<li><code>display: flex;</code> defines a flex container, enabling a flex layout for its children.</li>
+<li><code>justify-content: space-between;</code> evenly spaces the child items within the container.</li>
+</ul>
+<p>This results in a horizontal layout with equal spacing between items.</p>
+<h2 id="creating-style-sheet">Creating Style Sheet</h2>
+<p>Cascading Style Sheets, commonly known as CSS, are an integral part of modern web development. They allow web designers and developers to control the presentation and layout of web pages. CSS is used to define styles, such as colors, fonts, spacing, and positioning, for HTML elements. This separation of content (HTML) and presentation (CSS) is a fundamental principle of web design, making it easier to maintain and update websites. In this extensive guide, we will delve into the world of creating style sheets with CSS, providing detailed explanations and examples.</p>
+<h3 id="understanding-css"><strong>Understanding CSS:</strong></h3>
+<p>CSS works by selecting HTML elements and applying styles to them. These styles are defined in a separate CSS file or embedded within an HTML document using <code>&lt;style&gt;</code> tags. To create an effective style sheet, you need to understand the following concepts:</p>
+<ol>
+<li>
+<p><strong>Selectors:</strong> Selectors are used to target specific HTML elements that you want to style. CSS provides various types of selectors, including element selectors, class selectors, and ID selectors. Here's an example:</p>
+<p>css</p>
+</li>
+<li>
+<p>```/<em> Element Selector </em>/
+  p {
+      color: blue;
+  }</p>
+</li>
+</ol>
+<p>/<em> Class Selector </em>/
+  .highlight {
+      background-color: yellow;
+  }</p>
+<p>/<em> ID Selector </em>/
+  #header {
+      font-size: 24px;
+  }</p>
+<p>```</p>
+<ul>
+<li><strong>Properties and Values:</strong> CSS properties define the aspects of an element that you want to style, such as <code>color</code>, <code>font-size</code>, <code>margin</code>, <code>padding</code>, and many others. These properties are assigned values that specify how the element should appear. For instance:</li>
+</ul>
+<p>css</p>
+<ol>
+<li>h1 {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            color: #333;
+        }</li>
+<li><strong>Cascade and Specificity:</strong> The "C" in CSS stands for "Cascading," which means that styles can be applied from multiple sources, including external style sheets, internal (embedded) styles, and inline styles. When conflicting styles are encountered, CSS uses rules like specificity and the order of appearance to determine which style should be applied.</li>
+<li><strong>Inheritance:</strong> CSS properties can be inherited from parent elements to child elements. For example, if you set a font family on the <code>body</code> element, it will apply to all the text within that body unless overridden by more specific styles.</li>
+</ol>
+<h3 id="creating-a-css-style-sheet"><strong>Creating a CSS Style Sheet:</strong></h3>
+<p>To create a CSS style sheet, you can follow these steps:</p>
+<ol>
+<li><strong>Create a New File:</strong> Start by creating a new text file with a <code>.css</code> extension. You can use any text editor or integrated development environment (IDE) to write CSS code.</li>
+<li>
+<p><strong>Define Selectors and Styles:</strong> Within your CSS file, define selectors and the styles you want to apply. For example:</p>
+</li>
+<li>
+<p>````/<em> Selectors and Styles </em>/
+  h1 {
+      font-family: Arial, sans-serif;
+      font-size: 36px;
+      color: #333;
+  }</p>
+</li>
+</ol>
+<p>p {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      line-height: 1.5;
+  }```</p>
+<p>````</p>
+<ul>
+<li>
+<p><strong>Link CSS to HTML:</strong> To apply your CSS styles to an HTML document, link the CSS file in the HTML document's <code>&lt;head&gt;</code> section using the <code>&lt;link&gt;</code> element. Here's an example:</p>
+</li>
+<li>
+<p><code>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;p&gt;This is a sample paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;`</code>
+    In this example, the <code>href</code> attribute in the <code>&lt;link&gt;</code> tag should point to the path of your CSS file.</p>
+</li>
+</ul>
+<p><strong>Examples of CSS Styles:</strong></p>
+<p>Let's explore some common CSS styles and how they affect the appearance of HTML elements.</p>
+<ol>
+<li>
+<p><strong>Font Style:</strong></p>
+</li>
+<li>
+<p>````/<em> Change font family and size </em>/
+  body {
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 16px;
+  }</p>
+</li>
+</ol>
+<p>/<em> Make headings bold </em>/
+  h1, h2, h3 {
+      font-weight: bold;
+  }```</p>
+<p>````</p>
+<ul>
+<li><strong>Colors and Backgrounds:</strong></li>
+</ul>
+<p>```/<em> Set text color and background color </em>/
+  h1 {
+      color: #333;
+      background-color: #f0f0f0;
+  }</p>
+<pre><code>
+    /* Change link color on hover */
+    a:hover {
+        color: #007bff;
+    }
+
+- **Spacing and Layout:**
+
+</code></pre>
+<p>/<em> Add padding and margin to elements </em>/
+  .container {
+      padding: 20px;
+  }</p>
+<p>/<em> Center-align text </em>/
+  .center {
+      text-align: center;
+  }</p>
+<pre><code>
+- **Borders and Shadows:**
+
+```css
+/* Add a border to an element */
+.box {
+  border: 2px solid #ccc;
+}
+
+/* Apply box shadow */
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+</code></pre>
+<p>ok</p>
+<h2 id="css-properties">CSS Properties</h2>
+<p><strong>1. Introduction to CSS Properties:</strong></p>
+<p>CSS properties are rules or directives that define how HTML elements should be displayed on a web page. These properties control elements' styling, including their colors, fonts, spacing, positioning, and more. CSS properties are essential for creating visually appealing and user-friendly websites.</p>
+<p><strong>2. Syntax of CSS Properties:</strong></p>
+<p>A CSS property consists of two parts: a property name and a value. The property name specifies what aspect of the element you want to style, and the value determines how that property should be applied. The property and value are separated by a colon, and each rule is terminated by a semicolon. Here's an example:</p>
+<pre><code>`selector {
+    property: value;
+}`
+</code></pre>
+<p><strong>3. Common CSS Properties:</strong></p>
+<p>Let's delve into some of the most commonly used CSS properties:</p>
+<ul>
+<li>
+<p><strong>Color Properties</strong>:</p>
+</li>
+<li>
+<p><code>color</code>: Sets the text color.</p>
+</li>
+<li>
+<p><code>background-color</code>: Sets the background color of an element.</p>
+</li>
+<li>
+<p><strong>Typography Properties</strong>:</p>
+</li>
+<li>
+<p><code>font-family</code>: Defines the font used for text.</p>
+</li>
+<li><code>font-size</code>: Sets the size of the font.</li>
+<li><code>font-weight</code>: Specifies the thickness of the font.</li>
+<li><code>text-align</code>: Aligns text within an element.</li>
+<li>
+<p><code>text-decoration</code>: Adds decoration to text (e.g., underline, overline).</p>
+</li>
+<li>
+<p><strong>Layout Properties</strong>:</p>
+</li>
+<li>
+<p><code>width</code> and <code>height</code>: Determine the dimensions of an element.</p>
+</li>
+<li><code>margin</code> and <code>padding</code>: Control spacing around an element.</li>
+<li><code>display</code>: Defines how an element is displayed (e.g., block, inline).</li>
+<li>
+<p><code>position</code>: Sets the positioning method for an element (e.g., relative, absolute).</p>
+</li>
+<li>
+<p><strong>Border and Box Properties</strong>:</p>
+</li>
+<li>
+<p><code>border</code>: Specifies the border around an element.</p>
+</li>
+<li><code>border-radius</code>: Rounds the corners of an element.</li>
+<li>
+<p><code>box-shadow</code>: Adds a shadow effect to an element's box.</p>
+</li>
+<li>
+<p><strong>Background Properties</strong>:</p>
+</li>
+<li>
+<p><code>background-image</code>: Sets an image as the background.</p>
+</li>
+<li><code>background-repeat</code>: Defines how a background image repeats.</li>
+<li>
+<p><code>background-position</code>: Specifies the position of a background image.</p>
+</li>
+<li>
+<p><strong>Transform and Transition Properties</strong>:</p>
+</li>
+<li>
+<p><code>transform</code>: Applies 2D or 3D transformations (e.g., rotate, scale).</p>
+</li>
+<li>
+<p><code>transition</code>: Adds smooth transitions to element changes (e.g., hover effects).</p>
+</li>
+<li>
+<p><strong>Flexbox and Grid Properties</strong>:</p>
+</li>
+<li>
+<p><code>display: flex</code> and related properties create flexible layouts.</p>
+</li>
+<li>
+<p><code>display: grid</code> and related properties create grid-based layouts.</p>
+</li>
+<li>
+<p><strong>Media Query Properties</strong>:</p>
+</li>
+<li>
+<p><code>@media</code>: Allows for responsive design by applying styles based on screen size.</p>
+</li>
+</ul>
+<p><strong>4. Inheritance and Specificity:</strong></p>
+<p>CSS properties follow the rules of inheritance and specificity:</p>
+<ul>
+<li><strong>Inheritance</strong>: Some CSS properties are inherited by child elements from their parent elements. For example, the <code>font-family</code> property is often inherited. If a parent element defines the font family, child elements will inherit it unless explicitly overridden.</li>
+<li><strong>Specificity</strong>: When multiple CSS rules apply to the same element, the specificity of the selectors determines which styles are applied. Specificity is based on the type of selector (e.g., class, ID, element) and the order of declaration in the stylesheet.</li>
+</ul>
+<p><strong>5. CSS Selectors:</strong></p>
+<p>To apply CSS properties to specific HTML elements, you use selectors. Selectors target elements based on their type, attributes, classes, IDs, or other criteria. Some common selectors include:</p>
+<ul>
+<li><strong>Element Selector</strong>: Targets all instances of a specific HTML element (e.g., <code>p</code> for paragraphs).</li>
+<li><strong>Class Selector</strong>: Targets elements with a specific class attribute (e.g., <code>.button</code>).</li>
+<li><strong>ID Selector</strong>: Targets a unique element with a specific ID attribute (e.g., <code>#header</code>).</li>
+<li><strong>Descendant Selector</strong>: Targets elements that are descendants of another element (e.g., <code>ul li</code>).</li>
+<li><strong>Pseudo-class Selector</strong>: Targets elements based on their state (e.g., <code>:hover</code> for hover effects).</li>
+<li><strong>Attribute Selector</strong>: Targets elements with specific attribute values (e.g., <code>[type="text"]</code> for input fields).</li>
+</ul>
+<p><strong>6. CSS Box Model:</strong></p>
+<p>Understanding the CSS box model is crucial for layout and spacing. It consists of four parts:</p>
+<ul>
+<li><strong>Content</strong>: The actual content of the element (e.g., text, images).</li>
+<li><strong>Padding</strong>: The space between the content and the border.</li>
+<li><strong>Border</strong>: The border surrounding the padding and content.</li>
+<li><strong>Margin</strong>: The space outside the border, separating elements.</li>
+</ul>
+<p>You can control the dimensions of these components using CSS properties like <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>, and <code>border</code>.</p>
+<p><strong>7. CSS Units:</strong></p>
+<p>CSS properties often use different units for measurements, such as pixels (<code>px</code>), percentages (<code>%</code>), ems (<code>em</code>), and rems (<code>rem</code>). Understanding which unit to use and when is crucial for responsive design and layout control.</p>
+<p><strong>8. External CSS vs. Inline CSS vs. Internal CSS:</strong></p>
+<p>CSS can be applied to HTML documents in three main ways:</p>
+<ul>
+<li><strong>External CSS</strong>: A separate CSS file linked to the HTML document.</li>
+<li><strong>Inline CSS</strong>: CSS defined directly within an HTML element's <code>style</code> attribute.</li>
+<li><strong>Internal CSS</strong>: CSS defined within the <code>&lt;style&gt;</code> tag in the HTML document's <code>&lt;head&gt;</code> section.</li>
+</ul>
+<p>Each method has its use cases, with external CSS being the most common for maintainability and separation of concerns.</p>
+<p><strong>9. CSS Frameworks:</strong></p>
+<p>CSS frameworks like Bootstrap, Foundation, and Bulma provide pre-designed CSS classes and components to streamline web development. They offer a consistent and responsive design system, reducing the need for custom CSS.</p>
+<p><strong>10. CSS Preprocessors:</strong></p>
+<p>CSS preprocessors like Sass and Less extend the capabilities of CSS by introducing variables, mixins, and functions. These preprocessors enhance code modularity and maintainability.</p>
+<h2 id="css-styling-background-text-format-controlling-fonts">CSS Styling (Background, Text Format, Controlling Fonts)</h2>
+<p>Cascading Style Sheets (CSS) is a fundamental technology in web development that allows you to control the visual presentation of HTML elements. CSS styling plays a crucial role in creating visually appealing and user-friendly web pages. In this discussion, we'll explore the key elements of CSS styling, focusing on background properties, text formatting, and font control.</p>
+<h2 id="background-properties">Background Properties</h2>
+<p>Background properties in CSS enable you to define the background appearance of HTML elements, such as divs, sections, or the entire page. These properties include:</p>
+<h3 id="1-background-color">1. Background Color</h3>
+<p>You can set the background color of an element using the <code>background-color</code> property. For example:</p>
+<pre><code>`div {
+  background-color: #3498db; /* Sets the background color to a shade of blue */
+}`
+</code></pre>
+<h3 id="2-background-image">2. Background Image</h3>
+<p>The <code>background-image</code> property allows you to use an image as the background of an element. You can specify the image URL as follows:</p>
+<pre><code>`body {
+  background-image: url('background-image.jpg');
+}`
+</code></pre>
+<h3 id="3-background-repeat">3. Background Repeat</h3>
+<p>You can control how the background image repeats using the <code>background-repeat</code> property. Options include <code>repeat</code>, <code>no-repeat</code>, <code>repeat-x</code>, and <code>repeat-y</code>.</p>
+<pre><code>`section {
+  background-image: url('pattern.png');
+  background-repeat: repeat-x; /* Repeats the image horizontally */
+}`
+</code></pre>
+<h3 id="4-background-position">4. Background Position</h3>
+<p>The <code>background-position</code> property defines the starting position of the background image within the element.</p>
+<pre><code>`header {
+  background-image: url('header-bg.jpg');
+  background-position: center top; /* Positions the image at the center top of the header */
+}`
+</code></pre>
+<h3 id="5-background-attachment">5. Background Attachment</h3>
+<p>The <code>background-attachment</code> property determines whether the background image scrolls with the content or remains fixed as the user scrolls.</p>
+<pre><code>`body {
+  background-image: url('background.jpg');
+  background-attachment: fixed; /* Background stays fixed while scrolling */
+}`
+</code></pre>
+<h2 id="text-formatting">Text Formatting</h2>
+<p>CSS provides extensive capabilities for formatting text within HTML elements. Let's explore some key text formatting properties:</p>
+<h3 id="1-font-size">1. Font Size</h3>
+<p>You can control the size of text using the <code>font-size</code> property. You can specify sizes in various units like pixels, ems, or percentages.</p>
+<pre><code>`p {
+  font-size: 18px; /* Sets the font size to 18 pixels */
+}`
+</code></pre>
+<h3 id="2-font-style">2. Font Style</h3>
+<p>The <code>font-style</code> property allows you to italicize text if desired.</p>
+<pre><code>`em {
+  font-style: italic; /* Makes the text italic */
+}`
+</code></pre>
+<h3 id="3-font-weight">3. Font Weight</h3>
+<p>The <code>font-weight</code> property defines the thickness of the text, allowing you to create bold or normal text.</p>
+<pre><code>`strong {
+  font-weight: bold; /* Makes the text bold */
+}`
+</code></pre>
+<h3 id="4-text-color">4. Text Color</h3>
+<p>To change the color of text, use the <code>color</code> property.</p>
+<pre><code>`h1 {
+  color: #e74c3c; /* Sets the text color to a shade of red */
+}`
+</code></pre>
+<h3 id="5-text-alignment">5. Text Alignment</h3>
+<p>The <code>text-align</code> property controls the horizontal alignment of text within an element.</p>
+<pre><code>`div {
+  text-align: center; /* Centers the text within the div */
+}`
+</code></pre>
+<h3 id="6-text-decoration">6. Text Decoration</h3>
+<p>You can add underlines or strike-throughs to text using the <code>text-decoration</code> property.</p>
+<pre><code>`a {
+  text-decoration: underline; /* Adds underlines to links */
+}`
+</code></pre>
+<h2 id="controlling-fonts">Controlling Fonts</h2>
+<p>CSS provides several properties to manage the choice and presentation of fonts on your web page. These properties include:</p>
+<h3 id="1-font-family">1. Font Family</h3>
+<p>The <code>font-family</code> property specifies the font or list of fonts to use for text.</p>
+<pre><code>`body {
+  font-family: Arial, sans-serif; /* Specifies Arial as the preferred font family */
+}`
+</code></pre>
+<h3 id="2-web-fonts">2. Web Fonts</h3>
+<p>Web fonts, like Google Fonts or Typekit, can be imported using the <code>@font-face</code> rule to expand font choices.</p>
+<pre><code>`@font-face {
+  font-family: 'CustomFont';
+  src: url('custom-font.woff2') format('woff2');
+}
+
+h2 {
+  font-family: 'CustomFont', sans-serif;
+}`
+</code></pre>
+<h3 id="3-font-variant">3. Font Variant</h3>
+<p>The <code>font-variant</code> property allows you to use small caps for text.</p>
+<pre><code>`p {
+  font-variant: small-caps; /* Converts text to small caps */
+}`
+</code></pre>
+<h3 id="4-line-height">4. Line Height</h3>
+<p><code>line-height</code> defines the vertical spacing between lines of text.</p>
+<pre><code>`article {
+  line-height: 1.5; /* Sets line height to 1.5 times the font size */
+}`
+</code></pre>
+<h2 id="working-with-block-elements-in-html">Working with Block Elements in HTML</h2>
+<p><strong>Block Elements: An Overview</strong></p>
+<p>Block elements, also known as block-level elements, are HTML elements that are used to define the main structural elements of a web page. These elements typically start on a new line and take up the full width available within their parent container. Block elements create a distinct "block" or "box" in the web page's layout, and they are fundamental for organizing and structuring content. Block elements can contain other block elements or inline elements.</p>
+<p><strong>Characteristics of Block Elements:</strong></p>
+<ol>
+<li><strong>Start on a New Line</strong>: Block elements are usually placed on a new line in the layout, creating a clear separation from other elements. Examples of block elements include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;form&gt;</code>, and more.</li>
+<li><strong>Full Width</strong>: By default, block elements expand to fill the entire width of their containing element (usually the parent container), unless their width is explicitly defined. This makes them suitable for creating distinct sections or containers on a web page.</li>
+<li><strong>Can Contain Other Elements</strong>: Block elements can contain other block elements and inline elements. For example, a <code>&lt;div&gt;</code> element can hold text, images, other <code>&lt;div&gt;</code> elements, and more. This nesting capability allows for complex page layouts.</li>
+<li><strong>Semantic Meaning</strong>: Many block elements carry semantic meaning, indicating the purpose of the content they enclose. For instance, <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> elements represent headings of different levels, while <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> elements are used for creating lists.</li>
+</ol>
+<p><strong>Usage of Block Elements:</strong></p>
+<p>Block elements are used extensively in web development for structuring content and controlling layout. Here are some common use cases:</p>
+<ol>
+<li><strong>Text and Paragraphs</strong>: <code>&lt;p&gt;</code> elements are used for defining paragraphs of text. They create clear separations between different blocks of content.</li>
+<li><strong>Headings</strong>: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> elements are used for headings with varying levels of importance. They help structure content hierarchically.</li>
+<li><strong>Lists</strong>: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;li&gt;</code> elements are used for creating unordered lists, ordered lists, and list items, respectively.</li>
+<li><strong>Divisions</strong>: <code>&lt;div&gt;</code> elements are often used as generic containers for grouping and styling content. They are commonly used in CSS for layout purposes.</li>
+<li><strong>Tables</strong>: The <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, and related elements are used for creating tabular data structures. Tables can be used to present data in rows and columns.</li>
+<li><strong>Forms</strong>: Form elements like <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code> are block elements that facilitate user input and data submission.</li>
+</ol>
+<p><strong>Block Elements and Layout:</strong></p>
+<p>Block elements play a crucial role in controlling the layout of a web page. They enable web developers to structure content into well-defined sections, columns, and blocks. When combined with CSS (Cascading Style Sheets), block elements can be styled, positioned, and manipulated to achieve various layout designs.</p>
+<p>For example, a common layout structure might involve using <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> elements as block-level containers to create a typical webpage layout with a header, navigation menu, main content area, sidebar, and footer. By using CSS, each of these block elements can be styled differently, and their positioning can be controlled to achieve a visually appealing and responsive design.</p>
+<p><strong>Accessibility and SEO with Block Elements:</strong></p>
+<p>Using block elements appropriately also has implications for accessibility and search engine optimization (SEO). Block-level elements convey semantic meaning and hierarchy to assistive technologies such as screen readers. Proper use of headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) and lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>) can improve the accessibility of a web page.</p>
+<p>Additionally, search engines use the semantic structure of a webpage to index and rank content. By using block elements in a meaningful and organized way, you can enhance the SEO of your website, making it more discoverable by search engines.</p>
+<h2 id="working-with-lists-tables">Working with lists &amp; Tables</h2>
+<h3 id="lists-in-html">Lists in HTML</h3>
+<p>Lists are used to organize and display information in a structured format. HTML offers three main types of lists:</p>
+<h4 id="1-unordered-lists-ul">1. Unordered Lists (<code>&lt;ul&gt;</code>)</h4>
+<p>Unordered lists are used when the order of items is not significant. The list items are displayed with bullet points by default. To create an unordered list, use the <code>&lt;ul&gt;</code> element and wrap each list item with the <code>&lt;li&gt;</code> (list item) element.</p>
+<pre><code>`&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;`
+</code></pre>
+<p>This code will render an unordered list like this:</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+<h4 id="2-ordered-lists-ol">2. Ordered Lists (<code>&lt;ol&gt;</code>)</h4>
+<p>Ordered lists are used when the order of items is important. The list items are displayed with numbers or letters by default. To create an ordered list, use the <code>&lt;ol&gt;</code> element and wrap each list item with the <code>&lt;li&gt;</code> element.</p>
+<pre><code>`&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+  &lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;`
+</code></pre>
+<p>This code will render an ordered list like this:</p>
+<ol>
+<li>First</li>
+<li>Second</li>
+<li>Third</li>
+</ol>
+<h4 id="3-description-lists-dl">3. Description Lists (<code>&lt;dl&gt;</code>)</h4>
+<p>Description lists are used to define terms and their descriptions. They consist of pairs of terms (defined by <code>&lt;dt&gt;</code>) and their descriptions (defined by <code>&lt;dd&gt;</code>).</p>
+<pre><code>`&lt;dl&gt;
+  &lt;dt&gt;Term 1&lt;/dt&gt;
+  &lt;dd&gt;Description of Term 1&lt;/dd&gt;
+  &lt;dt&gt;Term 2&lt;/dt&gt;
+  &lt;dd&gt;Description of Term 2&lt;/dd&gt;
+&lt;/dl&gt;`
+</code></pre>
+<p>This code will render a description list like this:</p>
+<p>Term 1 : Description of Term 1</p>
+<p>Term 2 : Description of Term 2</p>
+<h3 id="tables-in-html">Tables in HTML</h3>
+<p>Tables are used to display structured data in rows and columns. They are created using a combination of elements:</p>
+<ul>
+<li><code>&lt;table&gt;</code>: The container for the entire table.</li>
+<li><code>&lt;tr&gt;</code>: Defines a table row.</li>
+<li><code>&lt;th&gt;</code>: Defines a table header cell (usually bold and centered).</li>
+<li><code>&lt;td&gt;</code>: Defines a table data cell (normal cell).</li>
+</ul>
+<h4 id="basic-table-structure">Basic Table Structure</h4>
+<p>Here's a simple example of an HTML table:</p>
+<pre><code>`&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;`
+</code></pre>
+<p>This code will create a table with two columns and three rows:</p>
+<p>Header 1</p>
+<p>Header 2</p>
+<p>Data 1</p>
+<p>Data 2</p>
+<p>Data 3</p>
+<p>Data 4</p>
+<h4 id="table-attributes">Table Attributes</h4>
+<p>HTML tables can be customized using various attributes:</p>
+<ul>
+<li><code>border</code>: Specifies the width of the table border (not recommended; use CSS for styling).</li>
+<li><code>width</code>: Sets the width of the table.</li>
+<li><code>cellspacing</code>: Specifies the space between cells.</li>
+<li><code>cellpadding</code>: Specifies the space between the cell content and cell borders.</li>
+</ul>
+<p>Example:</p>
+<pre><code>`&lt;table border="1" width="50%" cellspacing="10" cellpadding="5"&gt;
+  &lt;!-- Table content here --&gt;
+&lt;/table&gt;`
+</code></pre>
+<h4 id="table-captions">Table Captions</h4>
+<p>You can add captions to tables using the <code>&lt;caption&gt;</code> element. The caption should be placed immediately after the opening <code>&lt;table&gt;</code> tag.</p>
+<pre><code>`&lt;table&gt;
+  &lt;caption&gt;Monthly Sales&lt;/caption&gt;
+  &lt;!-- Table content here --&gt;
+&lt;/table&gt;`
+</code></pre>
+<h4 id="table-headers">Table Headers</h4>
+<p>Table headers are typically used in the first row of a table (inside <code>&lt;th&gt;</code> elements). They are bold and centered by default, making it easier for users to identify columns.</p>
+<h4 id="spanning-rows-and-columns">Spanning Rows and Columns</h4>
+<p>HTML tables allow cells to span multiple rows or columns using the <code>rowspan</code> and <code>colspan</code> attributes. For example, to create a cell that spans two columns:</p>
+<p>html</p>
+<p><code>&lt;td colspan="2"&gt;Spanning two columns&lt;/td&gt;</code></p>
+<h4 id="styling-tables-with-css">Styling Tables with CSS</h4>
+<p>While HTML provides basic table styling attributes, it is recommended to use CSS for advanced table styling. CSS allows you to control the table's appearance, including borders, backgrounds, and text formatting. For example:</p>
+<pre><code>`table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}`
+</code></pre>
+<h3 id="best-practices-for-lists-and-tables">Best Practices for Lists and Tables</h3>
+<ol>
+<li><strong>Semantic Structure</strong>: Use lists and tables for their intended purposes. Lists should organize related items, and tables should display structured data.</li>
+<li><strong>Accessibility</strong>: Ensure your lists and tables are accessible to users with disabilities by providing appropriate markup and using ARIA attributes when necessary.</li>
+<li><strong>Responsive Design</strong>: Make your tables responsive by using CSS to handle different screen sizes, and consider using responsive tables or hiding columns on smaller screens.</li>
+<li><strong>Consistency</strong>: Maintain a consistent design and layout for lists and tables throughout your website to improve user experience.</li>
+<li><strong>Use CSS for Styling</strong>: Use CSS for styling rather than HTML attributes to separate content from presentation.</li>
+<li><strong>Testing</strong>: Test your lists and tables across different browsers and devices to ensure they display correctly.</li>
+</ol>
+<h2 id="css-id-class">CSS Id &amp; Class</h2>
+<h2 id="css-selectors-overview">CSS Selectors Overview</h2>
+<p>Before diving into CSS Id and Class selectors, let's briefly review what CSS selectors are and why they are essential in web development. CSS selectors are patterns used to select and style HTML elements. They define the rules for applying styles to specific elements or groups of elements on a web page. By using selectors, you can control the appearance, layout, and behavior of your web content.</p>
+<h2 id="css-id-selector">CSS Id Selector</h2>
+<p>The CSS Id selector is used to target a single, unique HTML element on a web page. It is defined by using the <code>#</code> symbol followed by the Id attribute value of the HTML element you want to select. Id attributes are intended to be unique within an HTML document, making them ideal for selecting a specific element.</p>
+<h3 id="syntax">Syntax:</h3>
+<pre><code>`#elementId {
+    /* CSS styles go here */
+}`
+</code></pre>
+<h3 id="example">Example:</h3>
+<pre><code>`&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt; #uniqueElement {
+            color: blue;
+            font-size: 16px;
+        } &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="uniqueElement"&gt;This is a uniquely styled paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;`
+</code></pre>
+<p>In the example above, we have an HTML paragraph element with the Id attribute set to "uniqueElement." The CSS Id selector is then used to apply styles specifically to this element. It sets the text color to blue and the font size to 16 pixels.</p>
+<h3 id="key-points-about-css-id-selector">Key Points about CSS Id Selector:</h3>
+<ul>
+<li>Should be unique within an HTML document.</li>
+<li>Begins with <code>#</code>.</li>
+<li>Used to target a single element.</li>
+<li>High specificity, which means it overrides less specific styles.</li>
+</ul>
+<h2 id="css-class-selector">CSS Class Selector</h2>
+<p>The CSS Class selector, unlike the Id selector, can be applied to multiple HTML elements. It selects elements that have a specified class attribute. Class attributes can be reused across multiple elements, making this selector versatile for styling multiple elements consistently.</p>
+<h3 id="syntax_1">Syntax:</h3>
+<pre><code>`.className {
+    /* CSS styles go here */
+}`
+</code></pre>
+<h3 id="example_1">Example:</h3>
+<pre><code>`&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt; .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        } &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p class="highlight"&gt;This is a highlighted paragraph.&lt;/p&gt;
+    &lt;p&gt;This is a regular paragraph.&lt;/p&gt;
+    &lt;p class="highlight"&gt;Another highlighted paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;`
+</code></pre>
+<p>In the example above, we have defined a CSS class called "highlight." This class is applied to two different paragraphs, resulting in both paragraphs having a yellow background color and bold font weight.</p>
+<h3 id="key-points-about-css-class-selector">Key Points about CSS Class Selector:</h3>
+<ul>
+<li>Can be applied to multiple elements.</li>
+<li>Begins with <code>.</code>.</li>
+<li>Used for styling groups of elements with shared characteristics.</li>
+<li>Less specific than the Id selector but more specific than element selectors (e.g., <code>p</code>, <code>div</code>).</li>
+</ul>
+<h2 id="differences-between-css-id-and-class-selectors">Differences between CSS Id and Class Selectors</h2>
+<ol>
+<li>
+<p><strong>Uniqueness</strong>:</p>
+<ul>
+<li>Id selectors must be unique within an HTML document. There can only be one element with a particular Id.</li>
+<li>Class selectors, on the other hand, can be used on multiple elements. You can apply the same class to multiple elements to style them consistently.</li>
+</ul>
+</li>
+<li>
+<p><strong>Syntax</strong>:</p>
+<ul>
+<li>Id selectors begin with <code>#</code>, followed by the Id attribute value (e.g., <code>#myId</code>).</li>
+<li>Class selectors begin with <code>.</code>, followed by the class name (e.g., <code>.highlight</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Specificity</strong>:</p>
+<ul>
+<li>Id selectors have higher specificity than class selectors. This means that styles defined using Id selectors will override styles defined using class selectors.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use Cases</strong>:</p>
+<ul>
+<li>Id selectors are typically used when you want to uniquely style a specific element on a page.</li>
+<li>Class selectors are used when you want to style multiple elements that share common characteristics or styles.</li>
+</ul>
+</li>
+</ol>
+<h2 id="practical-use-cases">Practical Use Cases</h2>
+<h3 id="css-id-selector-use-cases">CSS Id Selector Use Cases</h3>
+<ol>
+<li>
+<p><strong>Navigation Menus</strong>:</p>
+<ul>
+<li>You can use Id selectors to uniquely style navigation menu items, ensuring that the current page's menu item stands out.</li>
+</ul>
+</li>
+<li>
+<p><strong>Modal Windows</strong>:</p>
+<ul>
+<li>Id selectors are useful for styling modal windows or pop-up dialogs, as each modal may have a unique styling requirement.</li>
+</ul>
+</li>
+<li>
+<p><strong>Forms</strong>:</p>
+<ul>
+<li>Id selectors can be applied to form elements like input fields and buttons to provide distinct styling for important form elements.</li>
+</ul>
+</li>
+</ol>
+<h3 id="css-class-selector-use-cases">CSS Class Selector Use Cases</h3>
+<ol>
+<li>
+<p><strong>Styling Elements with Common Characteristics</strong>:</p>
+<ul>
+<li>Class selectors are ideal for styling elements that share common characteristics, such as paragraphs with a specific class for highlighting.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reusable Styles</strong>:</p>
+<ul>
+<li>You can create classes for reusable styles, like buttons or alert messages, and apply them to multiple elements throughout your website.</li>
+</ul>
+</li>
+<li>
+<p><strong>Responsive Design</strong>:</p>
+<ul>
+<li>Classes are often used in responsive web design to apply different styles to elements based on screen size or device type.</li>
+</ul>
+</li>
+</ol>
+<h2 id="box-model">Box Model</h2>
+<h2 id="components-of-the-box-model">Components of the Box Model</h2>
+<h3 id="1-content">1. <strong>Content</strong></h3>
+<ul>
+<li>The content is the innermost part of an HTML element, and it represents the actual information or data contained within the element. For example, in a <code>&lt;p&gt;</code> (paragraph) element, the text and any inline elements (e.g., links or spans) are considered the content.</li>
+</ul>
+<h3 id="2-padding">2. <strong>Padding</strong></h3>
+<ul>
+<li>Padding is the space between the content and the element's border. It provides internal spacing within an element, creating distance between the content and the border. Padding can be adjusted using CSS properties like <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>.</li>
+</ul>
+<h3 id="3-border">3. <strong>Border</strong></h3>
+<ul>
+<li>The border surrounds the padding and content and defines the element's visible boundary. It is typically a line or series of lines that can have various styles (e.g., solid, dashed, or dotted) and colors. You can control the border using properties such as <code>border-width</code>, <code>border-style</code>, and <code>border-color</code>.</li>
+</ul>
+<h3 id="4-margin">4. <strong>Margin</strong></h3>
+<ul>
+<li>Margin is the space outside the border of an element, creating separation between the element and adjacent elements. Margins control the spacing between elements on a web page. Like padding, margins can be adjusted using properties like <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>.</li>
+</ul>
+<h2 id="how-the-box-model-works">How the Box Model Works</h2>
+<p>The Box Model follows a simple principle: the total width and height of an element are the sum of its content, padding, border, and margin. Understanding this concept is crucial for precise control of layout and spacing in web design.</p>
+<p>For example, if you have an HTML element with the following CSS properties:</p>
+<pre><code>`div {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #333;
+  margin: 10px;
+}`
+</code></pre>
+<ul>
+<li>The content width and height of the <code>&lt;div&gt;</code> are 200 pixels and 100 pixels, respectively, as defined by the <code>width</code> and <code>height</code> properties.</li>
+<li>The total width of the element, including padding and border, will be 244 pixels (200px content width + 20px padding-left + 20px padding-right + 2px border-left + 2px border-right).</li>
+<li>The total height of the element, including padding and border, will be 124 pixels (100px content height + 20px padding-top + 20px padding-bottom + 2px border-top + 2px border-bottom).</li>
+<li>The margin, which creates space around the element, is 10 pixels on all sides.</li>
+</ul>
+<h2 id="practical-use-cases_1">Practical Use Cases</h2>
+<p>Understanding the Box Model is essential for various aspects of web development and design:</p>
+<h3 id="1-layout-control">1. Layout Control</h3>
+<ul>
+<li>The Box Model allows developers to precisely control the placement and spacing of elements on a web page. By adjusting the padding, margin, and border properties, designers can create visually appealing layouts.</li>
+</ul>
+<h3 id="2-responsive-design">2. Responsive Design</h3>
+<ul>
+<li>In responsive web design, the Box Model plays a crucial role in adjusting element sizes and spacing to fit different screen sizes and devices. CSS media queries are commonly used to modify the Box Model properties based on the viewport width.</li>
+</ul>
+<h3 id="3-debugging-and-troubleshooting">3. Debugging and Troubleshooting</h3>
+<ul>
+<li>When elements don't appear as expected on a web page, understanding the Box Model can help in debugging. Developers can inspect elements using browser developer tools to see how the Box Model properties are affecting layout.</li>
+</ul>
+<h3 id="4-box-sizing">4. Box Sizing</h3>
+<ul>
+<li>The default behavior of the Box Model is "content-box," where the width and height properties apply only to the content area. CSS introduces the <code>box-sizing</code> property, which allows designers to change this behavior to "border-box." In "border-box" mode, the width and height include padding and border, making it easier to create predictable layouts.</li>
+</ul>
+<h2 id="box-model-example">Box Model Example</h2>
+<p>Let's illustrate the Box Model with a simple HTML and CSS example:</p>
+<pre><code>`&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt; .box {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 2px solid #333;
+      margin: 10px;
+    } &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="box"&gt;This is a box with content.&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;`
+</code></pre>
+<p>In this example, we have a <code>&lt;div&gt;</code> element with a class of "box." It has defined values for width, height, padding, border, and margin. When you view this in a web browser, you'll see how the Box Model components work together to create the element's appearance and spacing.</p>
+<h2 id="javascript-introduction">JavaScript Introduction</h2>
+<p>JavaScript is a versatile and essential programming language for web development. It enables developers to add interactivity, dynamic behavior, and client-side scripting to web applications. In this comprehensive guide, we'll explore the elements of JavaScript, including its applications, advantages, popup boxes, programming details, and concepts like classes and objects.</p>
+<h3 id="javascript-an-essential-web-technology">JavaScript: An Essential Web Technology</h3>
+<p>JavaScript, often abbreviated as JS, is a high-level, interpreted, and dynamically typed scripting language. It was initially created by Brendan Eich in just ten days while working at Netscape Communications Corporation in 1995. JavaScript has since become a fundamental technology for web development alongside HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets).</p>
+<h2 id="application-of-javascript">Application of JavaScript</h2>
+<p>JavaScript is primarily used for client-side web development, meaning it runs within a user's web browser. Its main applications include:</p>
+<ol>
+<li><strong>Enhancing User Interfaces</strong>: JavaScript can be used to create interactive and dynamic user interfaces. Developers can respond to user actions like clicks, mouse movements, and keyboard inputs to provide a more engaging experience.</li>
+<li><strong>Form Validation</strong>: JavaScript can validate user input in web forms before submitting data to the server. This ensures that data is accurate and meets specific criteria.</li>
+<li><strong>Manipulating HTML and CSS</strong>: JavaScript can modify the structure and style of a web page in real-time. This capability allows for features like image sliders, accordions, and collapsible menus.</li>
+<li><strong>Handling Asynchronous Operations</strong>: JavaScript supports asynchronous programming, enabling web applications to fetch data from servers, update content without refreshing the entire page, and create responsive web applications.</li>
+<li><strong>Creating Web Games</strong>: JavaScript, along with HTML5 and CSS, has opened the door to web-based gaming. It can be used to build browser games and interactive simulations.</li>
+<li><strong>Building Web Applications</strong>: Modern web applications, including single-page applications (SPAs) and progressive web apps (PWAs), heavily rely on JavaScript to provide a seamless user experience.</li>
+</ol>
+<h2 id="advantages-of-javascript">Advantages of JavaScript</h2>
+<p>JavaScript offers numerous advantages that make it a popular choice for web development:</p>
+<ol>
+<li><strong>Versatility</strong>: JavaScript can be used on both the client and server sides, thanks to technologies like Node.js. This versatility allows developers to use the same language throughout the entire stack.</li>
+<li><strong>Interactivity</strong>: JavaScript brings web pages to life by enabling interactive features. Users can click buttons, submit forms, and receive immediate feedback.</li>
+<li><strong>Wide Adoption</strong>: JavaScript is supported by all major web browsers, making it accessible to a vast audience. This ubiquity ensures that web applications work consistently for users.</li>
+<li><strong>Large Ecosystem</strong>: JavaScript has a rich ecosystem of libraries and frameworks, such as React, Angular, and Vue.js, that simplify web development and provide ready-made solutions for common tasks.</li>
+<li><strong>Speed</strong>: Modern JavaScript engines are highly optimized, delivering fast execution times and responsiveness in web applications.</li>
+<li><strong>Community Support</strong>: JavaScript has a massive and active developer community. This means abundant resources, tutorials, and support for developers.</li>
+</ol>
+<h3 id="popup-boxes-in-javascript">Popup Boxes in JavaScript</h3>
+<p>JavaScript provides a way to interact with users through popup boxes, also known as dialog boxes. These popup boxes are essential for displaying messages, gathering user input, or confirming actions. There are three types of popup boxes in JavaScript:</p>
+<ol>
+<li>
+<p><strong>Alert Box</strong>: The <code>alert()</code> function displays a simple message to the user in a dialog box with an "OK" button. It's commonly used for informational messages or to provide critical alerts.</p>
+<p><code>alert("This is an alert message!");</code></p>
+</li>
+<li>
+<p><strong>Confirm Box</strong>: The <code>confirm()</code> function presents a dialog box with "OK" and "Cancel" buttons. It allows users to confirm or cancel an action. The function returns <code>true</code> if the user clicks "OK" and <code>false</code> if they click "Cancel."</p>
+</li>
+</ol>
+<p><code>if (confirm("Are you sure you want to delete this item?")) {
+      // User clicked OK, perform the delete action
+  } else {
+      // User clicked Cancel, do nothing
+  }</code></p>
+<ul>
+<li>
+<p><strong>Prompt Box</strong>: The <code>prompt()</code> function displays a dialog box with an input field, "OK," and "Cancel" buttons. It's used for collecting user input. The function returns the text entered by the user or <code>null</code> if they click "Cancel."</p>
+</li>
+<li>
+<p><code>const username = prompt("Please enter your username:");
+if (username !== null) {
+    // User provided a username, do something with it
+} else {
+    // User clicked Cancel, handle accordingly
+}</code></p>
+</li>
+</ul>
+<p>Popup boxes are a straightforward way to interact with users, gather information, and make sure they are aware of important messages or actions.</p>
+<h3 id="programming-details-in-javascript">Programming Details in JavaScript</h3>
+<p>JavaScript is a versatile and expressive language with various programming constructs and concepts. Here are some essential programming details in JavaScript:</p>
+<h3 id="variables-and-data-types">Variables and Data Types</h3>
+<p>JavaScript uses the <code>var</code>, <code>let</code>, or <code>const</code> keywords to declare variables. It supports various data types, including:</p>
+<ul>
+<li><strong>Primitive Data Types</strong>: Number, String, Boolean, Null, Undefined, Symbol, and BigInt.</li>
+<li><strong>Reference Data Types</strong>: Object (includes arrays, functions, and more).</li>
+</ul>
+<h3 id="conditional-statements">Conditional Statements</h3>
+<p>JavaScript provides conditional statements like <code>if</code>, <code>else if</code>, and <code>else</code> to make decisions based on conditions.</p>
+<pre><code>`const age = 25;
+if (age &gt;= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are not yet an adult.");
+}`
+</code></pre>
+<h3 id="loops">Loops</h3>
+<p>JavaScript supports various loops, including <code>for</code>, <code>while</code>, and <code>do...while</code>, for iterating over data or performing repetitive tasks.</p>
+<pre><code>`for (let i = 0; i &lt; 5; i++) {
+    console.log("Iteration " + i);
+}`
+</code></pre>
+<h3 id="functions">Functions</h3>
+<p>Functions in JavaScript are blocks of reusable code that can be called with different arguments. They are defined using the <code>function</code> keyword.</p>
+<pre><code>`function greet(name) {
+    return "Hello, " + name + "!";
+}
+const greeting = greet("Alice");
+console.log(greeting); // Output: "Hello, Alice!"`
+</code></pre>
+<h2 id="arrays-and-objects">Arrays and Objects</h2>
+<p>Arrays and objects are fundamental data structures in JavaScript. Arrays store collections of values, while objects store collections of key-value pairs.</p>
+<pre><code>`const colors = ["red", "green", "blue"];
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30
+};`
+</code></pre>
+<h3 id="dom-manipulation">DOM Manipulation</h3>
+<p>JavaScript can manipulate the Document Object Model (DOM) to change the content and behavior of web pages dynamically.</p>
+<pre><code>`// Change the text of an HTML element with the id "myElement"
+document.getElementById("myElement").innerHTML = "New Text";`
+</code></pre>
+<h3 id="event-handling">Event Handling</h3>
+<p>JavaScript can respond to user interactions and events, such as clicks and keyboard input, by attaching event handlers to HTML elements.</p>
+<pre><code>`// Add a click event listener to a button element
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button clicked!");
+});`
+</code></pre>
+<h3 id="error-handling">Error Handling</h3>
+<p>JavaScript provides mechanisms for error handling using <code>try</code>, <code>catch</code>, and <code>finally</code> blocks.</p>
+<pre><code>`try {
+    // Code that might throw an error
+    const result = 10 / 0; // Division by zero
+    console.log(result);
+} catch (error) {
+    // Handle the error
+    console.error("An error occurred: " + error.message);
+} finally {
+    // Optional: Code that always runs, whether there's an error or not
+}`
+</code></pre>
+<p>These are just a few programming details in JavaScript. The language offers a wide range of features and tools for building complex web applications.</p>
+<h2 id="class-and-object-in-javascript">Class and Object in JavaScript</h2>
+<p>JavaScript is an object-oriented programming (OOP) language, and it supports object-oriented concepts like classes and objects. However, JavaScript's approach to OOP is prototype-based, which is different from the class-based inheritance found in languages like Java or C++.</p>
+<h3 id="objects-in-javascript">Objects in JavaScript</h3>
+<p>In JavaScript, objects are collections of key-value pairs. They can represent real-world entities or abstract concepts. Objects are created using object literals or constructed using constructor functions.</p>
+<pre><code>`// Object literal
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    greet: function() {
+        console.log("Hello, " + this.firstName + "!");
+    }
+};
+
+// Constructor function
+function Person(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.greet = function() {
+        console.log("Hello, " + this.firstName + "!");
+    };
+}
+</code></pre>
+<p>const john = new Person("John", "Doe", 30);`</p>
+<h3 id="classes-in-javascript-es6-and-later">Classes in JavaScript (ES6 and Later)</h3>
+<p>Starting with ECMAScript 6 (ES6), JavaScript introduced the <code>class</code> syntax to provide a more structured way to define and work with objects in an object-oriented manner. It's important to note that under the hood, JavaScript's class system is still based on prototypes.</p>
+<p>Here's an example of defining a class in JavaScript:</p>
+<pre><code>`class Person {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    greet() {
+        console.log("Hello, " + this.firstName + "!");
+    }
+}
+</code></pre>
+<p>const john = new Person("John", "Doe", 30);`</p>
+<p>In this example, the <code>Person</code> class has a constructor for initializing object properties and a <code>greet</code> method for displaying a greeting message.</p>
+<h3 id="prototypes-in-javascript">Prototypes in JavaScript</h3>
+<p>Prototypes play a crucial role in JavaScript's object-oriented model. Every object in JavaScript has a prototype, which is a reference to another object. When a property or method is accessed on an object, JavaScript looks for that property or method on the object itself. If it doesn't find it, it looks up the prototype chain until it finds the property or method or reaches the end of the chain.</p>
+<p>This mechanism allows for inheritance in JavaScript. Objects can inherit properties and methods from their prototypes.</p>
+<pre><code>`// Define a prototype object
+const personPrototype = {
+    greet: function() {
+        console.log("Hello, " + this.firstName + "!");
+    }
+};
+
+// Create an object that inherits from the prototype
+const john = Object.create(personPrototype);
+john.firstName = "John";
+john.lastName = "Doe";
+
+john.greet(); // Output: "Hello, John!"`
+</code></pre>
+<p>In this example, <code>john</code> inherits the <code>greet</code> method from <code>personPrototype</code>.</p>
+<h3 id="es6-class-vs-prototype-based-objects">ES6 Class vs. Prototype-Based Objects</h3>
+<p>ES6 classes provide a more intuitive and structured way to work with objects in JavaScript, especially for developers familiar with class-based languages. However, both prototype-based objects and ES6 classes are used in modern JavaScript development, depending on the context and developer preference.</p>
+<p>To summarize, JavaScript is a versatile programming language used for web development. It enables the creation of dynamic and interactive web applications through its capabilities such as popup boxes, conditional statements, loops, functions, and DOM manipulation. Additionally, JavaScript supports object-oriented programming concepts, including objects, classes, and prototypes, making it a powerful tool for building modern web applications.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Unit3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit3" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit3
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Unit5/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit5" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit5
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Gautam Patil
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gautampatil1" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/in/gautampatil1" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>
