@@ -1,0 +1,3090 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../UNIT_2/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Unit1 - SYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-LR5FRPWN9S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-LR5FRPWN9S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-LR5FRPWN9S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#definition-of-algorithm" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SYMaterials" class="md-header__button md-logo" aria-label="SYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SYMaterials" class="md-nav__button md-logo" aria-label="SYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    SYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DAR/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DAR
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            DAR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../AMM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    AMM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            AMM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae2.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../OS/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            OS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DAA
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            DAA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-of-the-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use of the Algorithms:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm-specification-introduction-in-data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm Specification-Introduction in Data Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithm Specification-Introduction in Data Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recursive-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Algorithms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-analysis-of-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Analysis of Algorithms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-algorithm-control-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing Algorithm Control Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzing Algorithm Control Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sequencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Sequencing:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-then-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. If-then-else:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. For loop:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-of-for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity of for loop:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complexity of for loop:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. While loop:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asymptotic-notations-and-how-to-calculate-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asymptotic Notations and how to calculate them
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Space complexity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Space Complexity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Space Complexity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savitchs-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Savitch's Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship-among-complexity-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship Among Complexity Classes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time complexity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance measurement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance measurement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key terminology
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-performance-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of performance measures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-control-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing Control Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzing Control Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sequencing_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Sequencing:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-then-else_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. If-then-else:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-loop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. For loop:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-of-for-loop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity of for loop:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complexity of for loop:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-while-loop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. While loop:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worst-average-and-best-case-analysis-of-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worst, Average and Best Case Analysis of Algorithms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Worst, Average and Best Case Analysis of Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#popular-notations-in-complexity-analysis-of-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Notations in Complexity Analysis of Algorithms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popular Notations in Complexity Analysis of Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-big-o-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      *1. Big-O Notation*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-omega-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      *2. Omega Notation*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-theta-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      *3. Theta Notation*
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-of-complexity-of-an-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measurement of Complexity of an Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measurement of Complexity of an Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-worst-case-analysis-mostly-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      *1. Worst Case Analysis (Mostly used)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-best-case-analysis-very-rarely-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      *2. Best Case Analysis (Very Rarely used)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-average-case-analysis-rarely-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      *3. Average Case Analysis (Rarely used)*
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iterative-algorithm-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterative Algorithm Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TNM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TNM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            TNM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../CN/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CN
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            CN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition-of-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Algorithm
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-of-the-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use of the Algorithms:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithm-specification-introduction-in-data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm Specification-Introduction in Data Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithm Specification-Introduction in Data Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recursive-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursive Algorithms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-analysis-of-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Analysis of Algorithms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-algorithm-control-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing Algorithm Control Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzing Algorithm Control Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sequencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Sequencing:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-then-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. If-then-else:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. For loop:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-of-for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity of for loop:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complexity of for loop:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. While loop:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asymptotic-notations-and-how-to-calculate-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asymptotic Notations and how to calculate them
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Space complexity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Space Complexity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Space Complexity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savitchs-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Savitch's Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relationship-among-complexity-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationship Among Complexity Classes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time complexity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance measurement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance measurement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-terminology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key terminology
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-performance-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of performance measures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-control-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing Control Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Analyzing Control Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sequencing_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Sequencing:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-then-else_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. If-then-else:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-loop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. For loop:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complexity-of-for-loop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity of for loop:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complexity of for loop:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-while-loop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. While loop:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worst-average-and-best-case-analysis-of-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worst, Average and Best Case Analysis of Algorithms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Worst, Average and Best Case Analysis of Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#popular-notations-in-complexity-analysis-of-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular Notations in Complexity Analysis of Algorithms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popular Notations in Complexity Analysis of Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-big-o-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      *1. Big-O Notation*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-omega-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      *2. Omega Notation*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-theta-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      *3. Theta Notation*
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-of-complexity-of-an-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measurement of Complexity of an Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measurement of Complexity of an Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-worst-case-analysis-mostly-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      *1. Worst Case Analysis (Mostly used)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-best-case-analysis-very-rarely-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      *2. Best Case Analysis (Very Rarely used)*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-average-case-analysis-rarely-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      *3. Average Case Analysis (Rarely used)*
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iterative-algorithm-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterative Algorithm Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h2 id="definition-of-algorithm">Definition of Algorithm</h2>
+<blockquote>
+<p>The word <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/"><strong><em>*Algorithm</em></strong>*</a> means ” <strong>A set of finite rules or instructions to be followed in calculations or other problem-solving operations</strong> ”<br />
+Or<br />
+” <strong>A procedure for solving a mathematical problem in a finite number of steps that frequently involves recursive operations”</strong>.</p>
+</blockquote>
+<p>Therefore Algorithm refers to a sequence of finite steps to solve a particular problem.</p>
+<p><img alt="What is Algorithm" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191016135223/What-is-Algorithm_-1024x631.jpg" /></p>
+<h2 id="use-of-the-algorithms">Use of the Algorithms:</h2>
+<p>Algorithms play a crucial role in various fields and have many applications. Some of the key areas where algorithms are used include:</p>
+<ol>
+<li><strong><em>*Computer Science:</em></strong>* Algorithms form the basis of computer programming and are used to solve problems ranging from simple sorting and searching to complex tasks such as artificial intelligence and machine learning.</li>
+<li><strong><em>*Mathematics:</em></strong>* Algorithms are used to solve mathematical problems, such as finding the optimal solution to a system of linear equations or finding the shortest path in a graph.</li>
+<li><strong><em>*Operations Research</em></strong>*: Algorithms are used to optimize and make decisions in fields such as transportation, logistics, and resource allocation.</li>
+<li><strong><em>*Artificial Intelligence:</em></strong>* Algorithms are the foundation of artificial intelligence and machine learning, and are used to develop intelligent systems that can perform tasks such as image recognition, natural language processing, and decision-making.</li>
+<li><strong><em>*Data Science:</em></strong>* Algorithms are used to analyze, process, and extract insights from large amounts of data in fields such as marketing, finance, and healthcare.
+behavior.</li>
+</ol>
+<h1 id="algorithm-specification-introduction-in-data-structure">Algorithm Specification-Introduction in Data Structure</h1>
+<p>An algorithm is defined as a finite set of instructions that, if followed, performs a particular task. All algorithms must satisfy the following criteria</p>
+<p>Input. An algorithm has zero or more inputs, taken or collected from a specified set of objects.</p>
+<p>Output. An algorithm has one or more outputs having a specific relation to the inputs.</p>
+<p>Definiteness. Each step must be clearly defined; Each instruction must be clear and unambiguous.</p>
+<p>Finiteness. The algorithm must always finish or terminate after a finite number of steps.</p>
+<p>Effectiveness. All operations to be accomplished must be sufficiently basic that they can be done exactly and in finite length.</p>
+<p>We can depict an algorithm in many ways.</p>
+<ul>
+<li>Natural language: implement a natural language like English</li>
+<li>Flow charts: Graphic representations denoted flowcharts, only if the algorithm is small and simple.</li>
+<li>Pseudo code: This pseudo code skips most issues of ambiguity; no particularity regarding syntax programming language.</li>
+</ul>
+<p>Example 1: Algorithm for calculating factorial value of a number</p>
+<p>Step 1: a number n is inputted
+Step 2: variable final is set as 1
+Step 3: final&lt;= final * n
+Step 4: decrease n
+Step 5: verify if n is equal to 0
+Step 6: if n is equal to zero, goto step 8 (break out of loop)
+Step 7: else goto step 3
+Step 8: the result final is printed</p>
+<h2 id="recursive-algorithms">Recursive Algorithms</h2>
+<p>A recursive algorithm calls itself which generally passes the return value as a parameter to the algorithm again. This parameter indicates the input while the return value indicates the output.</p>
+<p>Recursive algorithm is defined as a method of simplification that divides the problem into sub-problems of the same nature. The result of one recursion is treated as the input for the next recursion. The repletion is in the self-similar fashion manner. The algorithm calls itself with smaller input values and obtains the results by simply accomplishing the operations on these smaller values. Generation of factorial, Fibonacci number series are denoted as the examples of recursive algorithms.</p>
+<p>Example: Writing factorial function using recursion</p>
+<p>intfactorialA(int n)
+{
+   return n * factorialA(n-1);
+}</p>
+<h1 id="introduction-to-analysis-of-algorithms">Introduction to Analysis of Algorithms</h1>
+<p>In theoretical analysis of algorithms, it is common to estimate their complexity in the asymptotic sense, i.e., to estimate the complexity function for arbitrarily large input. The term  <strong>"analysis of algorithms"</strong>  was coined by Donald Knuth.</p>
+<p>Algorithm analysis is an important part of computational complexity theory, which provides theoretical estimation for the required resources of an algorithm to solve a specific computational problem. Most algorithms are designed to work with inputs of arbitrary length. Analysis of algorithms is the determination of the amount of time and space resources required to execute it.</p>
+<p>Usually, the efficiency or running time of an algorithm is stated as a function relating the input length to the number of steps, known as  <strong>time complexity</strong>, or volume of memory, known as  <strong>space complexity</strong>.</p>
+<h1 id="analyzing-algorithm-control-structure">Analyzing Algorithm Control Structure</h1>
+<p>To analyze a programming code or algorithm, we must notice that each instruction affects the overall performance of the algorithm and therefore, each instruction must be analyzed separately to analyze overall performance. However, there are some algorithm control structures which are present in each programming code and have a specific asymptotic analysis.</p>
+<p>Some Algorithm Control Structures are:</p>
+<ol>
+<li>Sequencing</li>
+<li>If-then-else</li>
+<li>for loop</li>
+<li>While loop</li>
+</ol>
+<hr />
+<h3 id="1-sequencing">1. Sequencing:</h3>
+<p>Suppose our algorithm consists of two parts A and B. A takes time tA  and B takes time tB  for computation. The total computation "tA  + tB" is according to the sequence rule. According to maximum rule, this computation time is (max (tA,tB)).</p>
+<p><strong>Example:</strong></p>
+<p>Suppose tA =O (n) and tB = θ (n2). 
+Then, the  total computation time can be calculated as
+<img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/daa-analyzing-algorithm-control-structure-total-computation.png" />
+Computation Time = tA + tB
+ = (max (tA,tB)
+ = (max (O (n), θ (n2)) = θ (n2)</p>
+<h3 id="2-if-then-else">2. If-then-else:</h3>
+<p><img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/daa-analyzing-algorithm-control-structure.png" />  </p>
+<p>The total time computation is according to the condition rule-"if-then-else." According to the maximum rule, this computation time is max (tA,tB).</p>
+<p><strong>Example:</strong></p>
+<p>Suppose tA = O (n2) and tB = θ (n2)
+Calculate the total computation time for the following:</p>
+<p><img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/daa-analyzing-algorithm-control-structure2.png" /></p>
+<p>Total Computation = (max (tA,tB))
+                  = max (O (n2), θ (n2) = θ (n2)</p>
+<h3 id="3-for-loop">3. For loop:</h3>
+<p>The general format of for loop is:</p>
+<ol>
+<li>
+<p>For (initialization; condition; updation)</p>
+</li>
+<li>
+<p>Statement(s);</p>
+</li>
+</ol>
+<h2 id="complexity-of-for-loop">Complexity of for loop:</h2>
+<p>The outer loop executes N times. Every time the outer loop executes, the inner loop executes M times. As a result, the statements in the  <strong>inner</strong>  loop execute a total of N * M times. Thus, the total complexity for the two loops is O (N2)</p>
+<p>Consider the following loop:</p>
+<ol>
+<li>for i ← 1 to n</li>
+<li>{</li>
+<li>P (i)</li>
+<li>}</li>
+</ol>
+<p>If the computation time ti  for ( PI) various as a function of "i", then the total computation time for the loop is given not by a multiplication but by a sum i.e.</p>
+<ol>
+<li>For i ← 1 to n</li>
+<li>{</li>
+<li>P (i)</li>
+<li>}</li>
+</ol>
+<p>Takes  <img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/complexity-of-for-loop.png" /></p>
+<p>If the algorithms consist of nested "for" loops, then the total computation time is</p>
+<p>For i ← 1 to n
+ {
+      For j ←  1 to n       <img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/complexity-of-for-loop2.png" />
+    {
+      P (ij)
+    }
+ }  </p>
+<p><strong>Example:</strong></p>
+<p>Consider the following "for" loop, Calculate the total computation time for the following:</p>
+<ol>
+<li>For i ← 2 to n-1</li>
+<li>{</li>
+<li>For j ← 3 to i</li>
+<li>{</li>
+<li>Sum ← Sum+A [i] [j]</li>
+<li>}</li>
+<li>}</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<p>The total Computation time is:</p>
+<p><img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/complexity-of-for-loop3.png" /></p>
+<h3 id="4-while-loop">4. While loop:</h3>
+<p>The Simple technique for analyzing the loop is to determine the function of variable involved whose value decreases each time around. Secondly, for terminating the loop, it is necessary that value must be a positive integer. By keeping track of how many times the value of function decreases, one can obtain the number of repetition of the loop. The other approach for analyzing "while" loop is to treat them as recursive algorithms.</p>
+<h2 id="algorithm">Algorithm:</h2>
+<ol>
+<li>
+<ol>
+<li>[Initialize] Set k: =1, LOC: =1 and MAX: = DATA [1]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Repeat steps 3 and 4  while K≤N</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>if MAX&lt;DATA [k],then:</li>
+</ol>
+</li>
+<li>Set LOC: = K and MAX: = DATA [k]</li>
+<li>
+<ol>
+<li>Set k: = k+1</li>
+</ol>
+</li>
+<li>[End of step 2 loop]</li>
+<li>
+<ol>
+<li>Write: LOC, MAX</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>EXIT</li>
+</ol>
+</li>
+</ol>
+<p><strong>Example:</strong></p>
+<p>The running time of algorithm array Max of computing the maximum element in an array of n integer is O (n).</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>array Max (A, n)</li>
+<li>
+<ol>
+<li>Current max ← A [0]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>For i ← 1 to n-1</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>do  if current max &lt; A [i]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>then current max ← A [i]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>return current max.</li>
+</ol>
+</li>
+</ol>
+<p>The number of primitive operation t (n) executed by this algorithm is at least.</p>
+<ol>
+<li>2 + 1 + n +4 (n-1) + 1=5n</li>
+<li>2 + 1 + n + 6 (n-1) + 1=7n-2</li>
+</ol>
+<p>The best case T(n) =5n occurs when A [0] is the maximum element. The worst case T(n) = 7n-2 occurs when element are sorted in increasing order.</p>
+<p>We may, therefore, apply the big-Oh definition with c=7 and n0=1 and conclude the running time of this is O (n).</p>
+<h1 id="asymptotic-notations-and-how-to-calculate-them">Asymptotic Notations and how to calculate them</h1>
+<p>In mathematics, <a href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/"><strong><em>*asymptotic analysis</em></strong>*</a>, also known as <strong><em>*asymptotics</em></strong><em>, is a method of describing the limiting behavior of a function. In computing, <a href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/">asymptotic analysis of an algorithm</a> refers to defining the mathematical boundation of its run-time performance based on the input size. For example, the running time of one operation is computed as  _</em><strong><em>f</em></strong><em>_</em><strong><em>(n)</em></strong><em>, and maybe for another operation, it is computed as _</em><strong><em>g</em></strong><em>_</em><strong><em>(n</em></strong><strong><em>*</em>2</strong><strong><em>*</em>*)</strong><strong>. This means the first operation running time will increase linearly with the increase in </strong><strong>n</strong><strong> and the running time of the second operation will increase exponentially when </strong><strong>n</strong><strong> increases. Similarly, the running time of both operations will be nearly the same if </strong><strong>n</strong>** is small in value.</p>
+<p>Usually, the <a href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/">analysis of an algorithm is done based on three cases</a>:</p>
+<ol>
+<li><strong><em>*Best Case (Omega Notation (Ω))</em></strong>*</li>
+<li><strong><em>*Average Case (Theta Notation (Θ))</em></strong>*</li>
+<li><strong><em>*Worst Case (O Notation(O))</em></strong>*</li>
+</ol>
+<p>All of these notations are discussed below in detail:</p>
+<p><strong><em>*Omega (Ω) Notation:</em></strong>*</p>
+<p>Omega  (Ω) notation specifies the asymptotic lower bound for a function f(n). For a given function g(n), Ω(g(n)) is denoted by:</p>
+<blockquote>
+<p>Ω (g(n)) = {f(n): there exist positive constants c and n0 such that 0 ≤ c*g(n) ≤ f(n) for all n ≥ n0}.</p>
+<p>This means that, f(n) = Ω(g(n)), If there are positive constants n0 and c such that, to the right of n0 the f(n) always lies on or above c*g(n).</p>
+</blockquote>
+<p><img alt="Calculating Asymptotic Notations" src="https://media.geeksforgeeks.org/wp-content/uploads/20210310031853/Untitled-300x229.png" /></p>
+<p>Graphical representation</p>
+<p>Follow the steps below to calculate Ω for a program:</p>
+<ol>
+<li>Break the program into smaller segments.</li>
+<li>Find the number of operations performed for each segment(in terms of the input size) assuming the given input is such that the program takes the least amount of time.</li>
+<li>Add up all the operations and simplify it, let’s say it is f(n).</li>
+<li>Remove all the constants and choose the term having the least order or any other function which is always less than f(n) when n tends to infinity, let say it is g(n) then, Omega (Ω) of f(n) is Ω(g(n)).</li>
+</ol>
+<p>Omega notation doesn’t really help to analyze an algorithm because it is bogus to evaluate an algorithm for the best cases of inputs.</p>
+<p><strong><em>*Theta (Θ) Notation:</em></strong>*</p>
+<p>Big-Theta(Θ) notation specifies a bound for a function f(n). For a given function g(n), Θ(g(n)) is denoted by:</p>
+<blockquote>
+<p>Θ (g(n)) = {f(n): there exist positive constants c1, c2 and n0 such that 0 ≤ c1<em>g(n) ≤ f(n) ≤ c2</em>g(n) for all n ≥ n0}.</p>
+<p>This means that, f(n) = Θ(g(n)), If there are positive constants n0 and c such that, to the right of n0 the f(n) always lies on or above c1<em>g(n) and below c2</em>g(n).</p>
+</blockquote>
+<p><img alt="Asymptotic Notations and how to calculate them" src="https://media.geeksforgeeks.org/wp-content/uploads/20210310034322/Untitled-300x229.png" /></p>
+<p>Graphical representation</p>
+<p>Follow the steps below to calculate Θ for a program:</p>
+<ol>
+<li>Break the program into smaller segments.</li>
+<li>Find all types of inputs and calculate the number of operations they take to be executed. Make sure that the input cases are equally distributed.</li>
+<li>Find the sum of all the calculated values and divide the sum by the total number of inputs let say the function of n obtained is g(n) after removing all the constants, then in Θ notation, it’s represented as Θ(g(n)).</li>
+</ol>
+<p><strong><em>*Example:</em></strong>* In a <a href="https://www.geeksforgeeks.org/linear-search/">linear search problem</a>, let’s assume that all the cases are <a href="https://www.geeksforgeeks.org/python-uniform-discrete-distribution-in-statistics/">uniformly distributed</a> (including the case when the key is absent in the array). So, sum all the cases when the key is present at positions 1, 2, 3, ……, n and not present, and divide the sum by n + 1.</p>
+<blockquote>
+<p>Average case time complexity = <img alt="\frac{\sum_{i=1}^{n+1}\theta(i)}{n + 1} " src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-07a890b8f37fbf1092346c3903efaf0d_l3.svg" title="Rendered by QuickLaTeX.com" /></p>
+<p>⇒ <img alt="\frac{\theta((n+1)*(n+2)/2)}{n+1} " src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-324e56d69f8333a96a57994a7e6835cb_l3.svg" title="Rendered by QuickLaTeX.com" /></p>
+<p>⇒ <img alt="\theta(1 + n/2) " src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-9207b94c83af1fcdb0977c13b23e20b4_l3.svg" title="Rendered by QuickLaTeX.com" /></p>
+<p>⇒ <img alt="\theta(n) " src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-343bb8f0e0ea6183942653fc979182a2_l3.svg" title="Rendered by QuickLaTeX.com" /></p>
+</blockquote>
+<p>Since all the types of inputs are considered while calculating the average time complexity, it is one of the best analysis methods for an algorithm.</p>
+<p><strong><em>*Big – O Notation:</em></strong>*</p>
+<p>Big – O (O) notation specifies the asymptotic upper bound for a function f(n). For a given function g(n), O(g(n)) is denoted by:</p>
+<blockquote>
+<p>O (g(n)) = {f(n): there exist positive constants c and n0 such that f(n) ≤ c*g(n) for all n ≥ n0}.</p>
+<p>This means that, f(n) = O(g(n)), If there are positive constants n0 and c such that, to the right of n0 the f(n) always lies on or below c*g(n).</p>
+</blockquote>
+<p><img alt="Asymptotic Notations" src="https://media.geeksforgeeks.org/wp-content/uploads/20210310041315/Untitled-300x229.png" /></p>
+<p>Graphical representation</p>
+<p>Follow the steps below to calculate O for a program:</p>
+<ol>
+<li>Break the program into smaller segments.</li>
+<li>Find the number of operations performed for each segment (in terms of the input size) assuming the given input is such that the program takes the maximum time i.e the worst-case scenario.</li>
+<li>Add up all the operations and simplify it, let’s say it is <strong><em>*f(n).</em></strong>*</li>
+<li>Remove all the constants and choose the term having the highest order because for <strong><em>*n</em></strong><em> tends to infinity the constants and the lower order terms in </em><strong><em>f(n)</em></strong><em> will be insignificant, let say the function is </em><strong><em>g(n)</em></strong><em> then, <a href="https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/">big-O notation</a> is </em><strong><em>O(g(n)).</em></strong>*</li>
+</ol>
+<p>It is the most widely used notation as it is easier to calculate since there is no need to check for every type of input as it was in the case of theta notation, also since the worst case of input is taken into account it pretty much gives the upper bound of the time the program will take to execute.</p>
+<h1 id="space-complexity">Space complexity</h1>
+<h1 id="space-complexity_1">Space Complexity</h1>
+<p>Space complexity is a function describing the amount of memory (space) an algorithm takes in terms of the amount of input to the algorithm.</p>
+<p>We often speak of extra memory needed, not counting the memory needed to store the input itself. Again, we use natural (but fixed-length) units to measure this.</p>
+<p>We can use bytes, but it's easier to use, say, the number of integers used, the number of fixed-sized structures, etc.</p>
+<p>In the end, the function we come up with will be independent of the actual number of bytes needed to represent the unit.</p>
+<p>Space complexity is sometimes ignored because the space used is minimal and/or obvious, however sometimes it becomes as important an issue as time complexity.</p>
+<h2 id="definition">Definition</h2>
+<p>Let M be a deterministic Turing machine (TM) that halts on all inputs. The space complexity of M is the function f: N -&gt; N, where f(n) is the maximum number of cells of tape and M scans any input of length M. If the space complexity of M is f(n), we can say that M runs in space f(n).</p>
+<p>We estimate the space complexity of a Turing machine by using asymptotic notation.</p>
+<p>Let f: N -&gt; R⁺ be a function. The space complexity classes can be defined as follows:</p>
+<ul>
+<li>SPACE = {L | L is a language decided by an O(f(n)) space deterministic TM}</li>
+<li>SPACE = {L | L is a language decided by an O(f(n)) space non-deterministic TM}</li>
+<li>PSPACE is the class of languages that are decidable in polynomial space on a deterministic Turing machine. In other words, PSPACE = ⋃ SPACE (nᵏ)</li>
+</ul>
+<h2 id="savitchs-theorem">Savitch's Theorem</h2>
+<p>One of the earliest theorems related to space complexity is Savitch’s theorem. According to this theorem, a deterministic machine can simulate non-deterministic machines using a small amount of space.</p>
+<p>For time complexity, such a simulation seems to require an exponential increase in time. For space complexity, this theorem shows that any non-deterministic Turing machine that uses f(n) space can be converted to a deterministic TM that uses f²(n) space.</p>
+<p>Hence, Savitch’s theorem states that, for any function, f: N -&gt; R⁺, where f(n) ≥ n:
+NSPACE(f(n)) ⊆ SPACE(f(n))</p>
+<h2 id="relationship-among-complexity-classes">Relationship Among Complexity Classes</h2>
+<p>The following diagram depicts the relationship among different complexity classes.</p>
+<p><img alt="Relationship" src="https://www.tutorialspoint.com/design_and_analysis_of_algorithms/images/relationship.jpg" /></p>
+<p>Till now, we have not discussed P and NP classes in this tutorial. These will be discussed later.</p>
+<h1 id="time-complexity">Time complexity</h1>
+<p>Time complexity of an algorithm signifies the total time required by the program to run till its completion.</p>
+<p>The time complexity of algorithms is most commonly expressed using the  <strong>big O notation</strong>. It's an asymptotic notation to represent the time complexity. We will study about it in detail in the next tutorial.</p>
+<p>Time Complexity is most commonly estimated by counting the number of elementary steps performed by any algorithm to finish execution. Like in the example above, for the first code the loop will run  <code>n</code>  number of times, so the time complexity will be  <code>n</code>  atleast and as the value of  <code>n</code>  will increase the time taken will also increase. While for the second code, time complexity is constant, because it will never be dependent on the value of  <code>n</code>, it will always give the result in 1 step.</p>
+<p>And since the algorithm's performance may vary with different types of input data, hence for an algorithm we usually use the  <strong>worst-case Time complexity</strong>  of an algorithm because that is the maximum time taken for any input size.</p>
+<h1 id="performance-measurement">Performance measurement</h1>
+<p>Performance measurement is the process used to assess the efficiency and effectiveness of projects, programs and initiatives. It is a systematic approach to collecting, analyzing and evaluating how “on track” a project/program is to achieve its desired outcomes, goals and objectives.</p>
+<p>Performance measurement is typically done by an organization to demonstrate accountability, support decision making and improve processes. Note that It is not an approach that prescribes what must be measured; organizations need to develop their own performance measures based on their project plans and situation.</p>
+<p>Performance measurement should be treated as an integral part of any planning process from the outset and should be built into any plan or project that has clear goals and objectives.</p>
+<p>Performance measures provide the information to assist in making strategic decisions about what an organization does and how it performs. Performance measurement frameworks are flexible and can be used to measure the effectiveness of a pilot project, a multi-year program or a strategic planning process and can be applied to a new or existing initiative.</p>
+<h4 id="key-terminology">Key terminology</h4>
+<p>Performance measures are also called performance metrics and performance indicators, and the terms can be used interchangeably</p>
+<h2 id="benefits-of-performance-measures">Benefits of performance measures</h2>
+<p>The benefits of measuring performance are numerous and range from measuring the effectiveness of a single project to contributing to a culture of continuous improvement throughout an organization.</p>
+<p>Using performance measures on a regular basis helps to inform decisions and means a plan can be adjusted mid-course or priorities can be reset to take advantage of emerging opportunities. An internal performance measurement system will drive results and enable an organization to learn from its successes and failures.</p>
+<p>Other benefits of performance measures include:</p>
+<ul>
+<li>Creates “buy-in” through stakeholders setting targets and goals together.</li>
+<li>Develops “best practices” and “lessons learned” that can be applied to future initiatives.</li>
+<li>Increases accountability by demonstrating the effectiveness and value of plans and activities in achieving desired goals/outcomes.</li>
+<li>Informs decision-making including budgeting and resource allocation in an environment where there may be competition over limited resources.</li>
+<li>Helps to demonstrate and document changes over time.</li>
+<li>Helps to communicate an organization’s story.</li>
+<li>Develops relationships through engaging stakeholders and building a common understanding of the process.</li>
+</ul>
+<h1 id="analyzing-control-structure">Analyzing Control Structure</h1>
+<p>To analyze a programming code or algorithm, we must notice that each instruction affects the overall performance of the algorithm and therefore, each instruction must be analyzed separately to analyze overall performance. However, there are some algorithm control structures which are present in each programming code and have a specific asymptotic analysis.</p>
+<p>Some Algorithm Control Structures are:</p>
+<ol>
+<li>Sequencing</li>
+<li>If-then-else</li>
+<li>for loop</li>
+<li>While loop</li>
+</ol>
+<hr />
+<h3 id="1-sequencing_1">1. Sequencing:</h3>
+<p>Suppose our algorithm consists of two parts A and B. A takes time tA  and B takes time tB  for computation. The total computation "tA  + tB" is according to the sequence rule. According to maximum rule, this computation time is (max (tA,tB)).</p>
+<p><strong>Example:</strong></p>
+<p>Suppose tA =O (n) and tB = θ (n2). 
+Then, the  total computation time can be calculated as
+<img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/daa-analyzing-algorithm-control-structure-total-computation.png" />
+Computation Time = tA + tB
+ = (max (tA,tB)
+ = (max (O (n), θ (n2)) = θ (n2)</p>
+<h3 id="2-if-then-else_1">2. If-then-else:</h3>
+<p><img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/daa-analyzing-algorithm-control-structure.png" />  </p>
+<p>The total time computation is according to the condition rule-"if-then-else." According to the maximum rule, this computation time is max (tA,tB).</p>
+<p><strong>Example:</strong></p>
+<p>Suppose tA = O (n2) and tB = θ (n2)
+Calculate the total computation time for the following:</p>
+<p><img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/daa-analyzing-algorithm-control-structure2.png" /></p>
+<p>Total Computation = (max (tA,tB))
+                  = max (O (n2), θ (n2) = θ (n2)</p>
+<h3 id="3-for-loop_1">3. For loop:</h3>
+<p>The general format of for loop is:</p>
+<ol>
+<li>
+<p>For (initialization; condition; updation)</p>
+</li>
+<li>
+<p>Statement(s);</p>
+</li>
+</ol>
+<h2 id="complexity-of-for-loop_1">Complexity of for loop:</h2>
+<p>The outer loop executes N times. Every time the outer loop executes, the inner loop executes M times. As a result, the statements in the  <strong>inner</strong>  loop execute a total of N * M times. Thus, the total complexity for the two loops is O (N2)</p>
+<p>Consider the following loop:</p>
+<ol>
+<li>for i ← 1 to n</li>
+<li>{</li>
+<li>P (i)</li>
+<li>}</li>
+</ol>
+<p>If the computation time ti  for ( PI) various as a function of "i", then the total computation time for the loop is given not by a multiplication but by a sum i.e.</p>
+<ol>
+<li>For i ← 1 to n</li>
+<li>{</li>
+<li>P (i)</li>
+<li>}</li>
+</ol>
+<p>Takes  <img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/complexity-of-for-loop.png" /></p>
+<p>If the algorithms consist of nested "for" loops, then the total computation time is</p>
+<p>For i ← 1 to n
+ {
+      For j ←  1 to n       <img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/complexity-of-for-loop2.png" />
+    {
+      P (ij)
+    }
+ }  </p>
+<p><strong>Example:</strong></p>
+<p>Consider the following "for" loop, Calculate the total computation time for the following:</p>
+<ol>
+<li>For i ← 2 to n-1</li>
+<li>{</li>
+<li>For j ← 3 to i</li>
+<li>{</li>
+<li>Sum ← Sum+A [i] [j]</li>
+<li>}</li>
+<li>}</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<p>The total Computation time is:</p>
+<p><img alt="DAA Analyzing Algorithm Control Structure" src="https://static.javatpoint.com/tutorial/daa/images/complexity-of-for-loop3.png" /></p>
+<h3 id="4-while-loop_1">4. While loop:</h3>
+<p>The Simple technique for analyzing the loop is to determine the function of variable involved whose value decreases each time around. Secondly, for terminating the loop, it is necessary that value must be a positive integer. By keeping track of how many times the value of function decreases, one can obtain the number of repetition of the loop. The other approach for analyzing "while" loop is to treat them as recursive algorithms.</p>
+<h2 id="algorithm_1">Algorithm:</h2>
+<ol>
+<li>
+<ol>
+<li>[Initialize] Set k: =1, LOC: =1 and MAX: = DATA [1]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Repeat steps 3 and 4  while K≤N</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>if MAX&lt;DATA [k],then:</li>
+</ol>
+</li>
+<li>Set LOC: = K and MAX: = DATA [k]</li>
+<li>
+<ol>
+<li>Set k: = k+1</li>
+</ol>
+</li>
+<li>[End of step 2 loop]</li>
+<li>
+<ol>
+<li>Write: LOC, MAX</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>EXIT</li>
+</ol>
+</li>
+</ol>
+<p><strong>Example:</strong></p>
+<p>The running time of algorithm array Max of computing the maximum element in an array of n integer is O (n).</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>array Max (A, n)</li>
+<li>
+<ol>
+<li>Current max ← A [0]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>For i ← 1 to n-1</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>do  if current max &lt; A [i]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>then current max ← A [i]</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>return current max.</li>
+</ol>
+</li>
+</ol>
+<p>The number of primitive operation t (n) executed by this algorithm is at least.</p>
+<ol>
+<li>2 + 1 + n +4 (n-1) + 1=5n</li>
+<li>2 + 1 + n + 6 (n-1) + 1=7n-2</li>
+</ol>
+<p>The best case T(n) =5n occurs when A [0] is the maximum element. The worst case T(n) = 7n-2 occurs when element are sorted in increasing order.</p>
+<p>We may, therefore, apply the big-Oh definition with c=7 and n0=1 and conclude the running time of this is O (n).</p>
+<h1 id="worst-average-and-best-case-analysis-of-algorithms">Worst, Average and Best Case Analysis of Algorithms</h1>
+<h2 id="popular-notations-in-complexity-analysis-of-algorithms">Popular Notations in Complexity Analysis of Algorithms</h2>
+<h3 id="1-big-o-notation"><strong><em>*1. Big-O Notation</em></strong>*</h3>
+<p>We define an algorithm’s <strong><em>*worst-case</em></strong>* time complexity by using the Big-O notation, which determines the set of functions grows slower than or at the same rate as the expression. Furthermore, it explains the maximum amount of time an algorithm requires to consider all input values.</p>
+<h3 id="2-omega-notation"><strong><em>*2. Omega Notation</em></strong>*</h3>
+<p>It defines the <strong><em>*best case</em></strong>* of an algorithm’s time complexity, the Omega notation defines whether the set of functions will grow faster or at the same rate as the expression. Furthermore, it explains the minimum amount of time an algorithm requires to consider all input values.</p>
+<h3 id="3-theta-notation"><strong><em>*3. Theta Notation</em></strong>*</h3>
+<p>It defines the <strong><em>*average case</em></strong><em> of an algorithm’s time complexity, the Theta notation defines when the set of functions lies in both </em><strong><em>O(expression)</em></strong><em> and </em><strong><em>Omega(expression)</em></strong>*, then Theta notation is used. This is how we define a time complexity average case for an algorithm.</p>
+<h2 id="measurement-of-complexity-of-an-algorithm">Measurement of Complexity of an Algorithm</h2>
+<p>Based on the above three notations of Time Complexity there are three cases to analyze an algorithm:</p>
+<h3 id="1-worst-case-analysis-mostly-used"><strong><em>*1. Worst Case Analysis (Mostly used)</em></strong>*</h3>
+<p>In the worst-case analysis, we calculate the upper bound on the running time of an algorithm. We must know the case that causes a maximum number of operations to be executed. For Linear Search, the worst case happens when the element to be searched (x) is not present in the array. When x is not present, the search()  function compares it with all the elements of arr[] one by one. Therefore, the worst-case time complexity of the linear search would be <strong><em>*O(n)</em></strong>*.</p>
+<h3 id="2-best-case-analysis-very-rarely-used"><strong><em>*2. Best Case Analysis (Very Rarely used)</em></strong>*</h3>
+<p>In the best-case analysis, we calculate the lower bound on the running time of an algorithm. We must know the case that causes a minimum number of operations to be executed. In the linear search problem, the best case occurs when x is present at the first location. The number of operations in the best case is constant (not dependent on n). So time complexity in the best case would be ?(1)</p>
+<h3 id="3-average-case-analysis-rarely-used"><strong><em>*3. Average Case Analysis (Rarely used)</em></strong>*</h3>
+<p>In average case analysis, we take all possible inputs and calculate the computing time for all of the inputs. Sum all the calculated values and divide the sum by the total number of inputs. We must know (or predict) the distribution of cases. For the linear search problem, let us assume that all cases are <a href="http://en.wikipedia.org/wiki/Uniform_distribution_%28discrete%29">uniformly distributed</a> (including the case of x not being present in the array). So we sum all the cases and divide the sum by (n+1). Following is the value of average-case time complexity.</p>
+<h1 id="iterative-algorithm-analysis">Iterative Algorithm Analysis</h1>
+<p>Iterative algorithms are a class of algorithms that repeat a set of instructions or operations until a specific condition is met. These algorithms use iteration, which involves repeating a process multiple times, often with the aim of converging to a solution or achieving a desired result. Iterative algorithms are common in various fields, including computer science, optimization, numerical analysis, and machine learning.</p>
+<p>When analyzing iterative algorithms, several key factors are typically considered:</p>
+<ol>
+<li>
+<p><strong>Termination Condition:</strong> Iterative algorithms continue executing until a certain condition is satisfied. This condition is known as the termination condition. It is crucial to ensure that the algorithm terminates, preventing an infinite loop.</p>
+</li>
+<li>
+<p><strong>Convergence:</strong> For many iterative algorithms, especially those used in optimization or numerical methods, convergence is a critical aspect. Convergence refers to the algorithm's ability to approach a specific solution or a desired accuracy as the number of iterations increases.</p>
+</li>
+<li>
+<p><strong>Time Complexity:</strong> Time complexity measures the amount of time an algorithm takes to complete as a function of the size of its input. Analyzing the time complexity of an iterative algorithm helps determine its efficiency in terms of execution time.</p>
+</li>
+<li>
+<p><strong>Space Complexity:</strong> Space complexity measures the amount of memory an algorithm uses as a function of its input size. It helps assess the algorithm's efficiency in terms of memory usage.</p>
+</li>
+<li>
+<p><strong>Initialization:</strong> The initial conditions or starting values can significantly affect the performance and convergence of an iterative algorithm. Proper initialization is often crucial for achieving accurate and efficient results.</p>
+</li>
+<li>
+<p><strong>Optimality:</strong> In some cases, iterative algorithms are designed to find optimal solutions. Analyzing whether an algorithm consistently converges to the optimal solution is essential.</p>
+</li>
+<li>
+<p><strong>Stability:</strong> Stability is important in iterative algorithms, especially in numerical methods. It ensures that small changes in input or initial conditions do not result in drastic changes in the output.</p>
+</li>
+<li>
+<p><strong>Convergence Rate:</strong> The speed at which an iterative algorithm converges to a solution is known as the convergence rate. Faster convergence is generally desirable, especially in real-time or resource-constrained applications.</p>
+</li>
+<li>
+<p><strong>Trade-offs:</strong> Consideration of trade-offs between time complexity, space complexity, and accuracy is often necessary. Some algorithms may be more computationally expensive but offer higher accuracy, while others may prioritize speed with some compromise in precision.</p>
+</li>
+<li>
+<p><strong>Parallelization:</strong> Assessing the potential for parallelization is crucial, especially in the context of modern computing architectures. Some iterative algorithms can be parallelized to take advantage of multiple processing units, improving overall performance.</p>
+</li>
+</ol>
+<p>Analyzing these aspects helps in understanding the behavior, efficiency, and limitations of iterative algorithms, enabling practitioners to choose the most suitable algorithm for a specific problem.</p>
+<h1 id="references">References</h1>
+<p>https://www.geeksforgeeks.org/introduction-to-algorithms/
+https://www.tutorialspoint.com/algorithm-specification-introduction-in-data-structure
+https://www.tutorialspoint.com/introduction-to-analysis-of-algorithms
+https://www.javatpoint.com/daa-analyzing-algorithm-control-structure
+https://www.geeksforgeeks.org/asymptotic-notations-and-how-to-calculate-them/
+https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_space_complexities.htm
+https://www.studytonight.com/data-structures/time-complexity-of-algorithms
+https://www.ontario.ca/document/performance-measurement-agriculture-agri-food-and-economic-development-organizations/what-performance-measurement
+https://www.javatpoint.com/daa-analyzing-algorithm-control-structure
+https://www.geeksforgeeks.org/worst-average-and-best-case-analysis-of-algorithms/</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: DESIGN ANALYSIS AND ALGORITHM">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                DESIGN ANALYSIS AND ALGORITHM
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../UNIT_2/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit2">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit2
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Vishal Pise
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Vishal2vsp" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/vishal-pise-9b79b1244/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+        <script src="../../lol.js"></script>
+      
+    
+  </body>
+</html>

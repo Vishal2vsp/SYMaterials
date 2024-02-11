@@ -1,13 +1,14 @@
 # Welcome to SYMaterials
 
 
-Get Third Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
+Get Second Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
 
-Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](mailto:vishalpise734@gmail.com).
+Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](https://www.linkedin.com/in/vishal-pise-9b79b1244/).
+Also visit [Tymaterials](https://tymaterials.live/) for Third Year Notes
 
 ## Subjects
 - First Sem:
-      ## Comming Soon
+    Comming Soon
 - Second Sem:
     - [Apllication of Microprocessor and Microcontroller](AMM/index.md)
     - [Computer Network](CN/index.md)
@@ -15,10 +16,6 @@ Only Computer Department notes, if anyone from any other department is intereste
     - [Operating System](OS/index.md)
     - [Transform Numerical Method](TNM/index.md)
     
-
-## End Sem Time Table
-
-![Sem Time Table](https://drive.google.com/uc?id=1menPTtVms2BC6rVT5P3pFdd8zNEOhXE-)
 
 ## About
 

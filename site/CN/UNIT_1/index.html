@@ -1,0 +1,3467 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../UNIT_2/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Unit1 - SYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-LR5FRPWN9S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-LR5FRPWN9S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-LR5FRPWN9S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#computer-network" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SYMaterials" class="md-header__button md-logo" aria-label="SYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SYMaterials" class="md-nav__button md-logo" aria-label="SYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    SYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DAR/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DAR
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            DAR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../AMM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    AMM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            AMM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae2.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../OS/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            OS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DAA/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DAA
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            DAA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DAA/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TNM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TNM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            TNM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CN
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            CN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#computer-network-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computer Network Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Network Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peer-to-peer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer-To-Peer network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peer-To-Peer network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-peer-to-peer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages Of Peer-To-Peer Network:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-peer-to-peer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disadvantages Of Peer-To-Peer Network:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clientserver-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client/Server Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client/Server Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-clientserver-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages Of Client/Server network:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-clientserver-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disadvantages Of Client/Server network:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osi-model-layers-of-osi-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSI Model – Layers of OSI Model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OSI Model – Layers of OSI Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osi-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSI Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-7-layers-of-the-osi-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The 7 layers of the OSI Model?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-layer-layer-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Layer – Layer 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physical Layer – Layer 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-physical-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Physical Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-link-layer-dll-layer-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Link Layer (DLL) – Layer 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Link Layer (DLL) – Layer 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-data-link-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Data Link Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-layer-layer-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Layer – Layer 3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Layer – Layer 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-network-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Network Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-layer-layer-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transport Layer – Layer 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transport Layer – Layer 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-transport-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Transport Layer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions of the Transport Layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#services-provided-by-transport-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services Provided by Transport Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-layer-layer-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Layer – Layer 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Layer – Layer 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-session-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Session Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentation-layer-layer-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Layer – Layer 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation Layer – Layer 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-presentation-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Presentation Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-layer-layer-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Layer – Layer 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Layer – Layer 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-application-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Application Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tcpip-reference-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The TCP/IP Reference Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difference-between-osi-and-tcpip-reference-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference between OSI and TCP/IP Reference Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-input-to-the-code-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Input to the code generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-target-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Target program:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Memory management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-instruction-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Instruction selection:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Instruction selection:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-register-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Register allocation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Register allocation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      For example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-evaluation-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Evaluation order
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switching-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switching Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Switching Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circuit-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circuit Switching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit Switching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-circuit-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages of Circuit Switching
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-circuit-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disadvantages of Circuit Switching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Packet Switching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-oriented-and-connectionless-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection-Oriented and Connectionless Service
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection-Oriented and Connectionless Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-oriented-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection-Oriented Service
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection-Oriented Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectionless-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connectionless Service
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connectionless Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#udp" class="md-nav__link">
+    <span class="md-ellipsis">
+      UDP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-circuit-in-computer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Circuit in Computer Network
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datagram-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datagram Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datagram Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-of-datagram-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features of Datagram Networks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autonomous-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autonomous System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#computer-network-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Computer Network Architecture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Computer Network Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peer-to-peer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer-To-Peer network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peer-To-Peer network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-peer-to-peer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages Of Peer-To-Peer Network:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-peer-to-peer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disadvantages Of Peer-To-Peer Network:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clientserver-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client/Server Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client/Server Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-clientserver-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages Of Client/Server network:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-clientserver-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disadvantages Of Client/Server network:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osi-model-layers-of-osi-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSI Model – Layers of OSI Model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OSI Model – Layers of OSI Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#osi-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSI Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-7-layers-of-the-osi-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The 7 layers of the OSI Model?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-layer-layer-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Layer – Layer 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physical Layer – Layer 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-physical-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Physical Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-link-layer-dll-layer-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Link Layer (DLL) – Layer 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Link Layer (DLL) – Layer 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-data-link-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Data Link Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-layer-layer-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Layer – Layer 3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Layer – Layer 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-network-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Network Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transport-layer-layer-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transport Layer – Layer 4
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transport Layer – Layer 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-transport-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Transport Layer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions of the Transport Layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#services-provided-by-transport-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Services Provided by Transport Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-layer-layer-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Layer – Layer 5
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Layer – Layer 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-session-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Session Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentation-layer-layer-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Layer – Layer 6
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation Layer – Layer 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-presentation-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Presentation Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-layer-layer-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Layer – Layer 7
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Layer – Layer 7">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-of-the-application-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions of the Application Layer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-tcpip-reference-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The TCP/IP Reference Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#difference-between-osi-and-tcpip-reference-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference between OSI and TCP/IP Reference Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-input-to-the-code-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Input to the code generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-target-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Target program:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Memory management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-instruction-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Instruction selection:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Instruction selection:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-register-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Register allocation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Register allocation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      For example:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-evaluation-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Evaluation order
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#switching-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switching Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Switching Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#circuit-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circuit Switching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit Switching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advantages-of-circuit-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advantages of Circuit Switching
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disadvantages-of-circuit-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disadvantages of Circuit Switching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packet-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Packet Switching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-oriented-and-connectionless-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection-Oriented and Connectionless Service
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection-Oriented and Connectionless Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-oriented-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection-Oriented Service
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection-Oriented Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectionless-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connectionless Service
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connectionless Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#udp" class="md-nav__link">
+    <span class="md-ellipsis">
+      UDP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-circuit-in-computer-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Virtual Circuit in Computer Network
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datagram-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datagram Network
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Datagram Network">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-of-datagram-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features of Datagram Networks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autonomous-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autonomous System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="computer-network">Computer Network</h1>
+<h2 id="computer-network-architecture">Computer Network Architecture</h2>
+<p>Computer Network Architecture is defined as the physical and logical design of the software, hardware, protocols, and media of the transmission of data. Simply we can say that how computers are organized and how tasks are allocated to the computer.</p>
+<p><strong>The two types of network architectures are used:</strong></p>
+<p><img alt="Computer Network Architecture" src="https://static.javatpoint.com/tutorial/computer-network/images/computer-network-architecture.png" /></p>
+<ul>
+<li>Peer-To-Peer network</li>
+<li>Client/Server network</li>
+</ul>
+<hr />
+<h3 id="peer-to-peer-network">Peer-To-Peer network</h3>
+<ul>
+<li>Peer-To-Peer network is a network in which all the computers are linked together with equal privilege and responsibilities for processing the data.</li>
+<li>Peer-To-Peer network is useful for small environments, usually up to 10 computers.</li>
+<li>Peer-To-Peer network has no dedicated server.</li>
+<li>Special permissions are assigned to each computer for sharing the resources, but this can lead to a problem if the computer with the resource is down.</li>
+</ul>
+<p><img alt="Computer Network Architecture" src="https://static.javatpoint.com/tutorial/computer-network/images/peer-to-peer-network.png" /></p>
+<h4 id="advantages-of-peer-to-peer-network">Advantages Of Peer-To-Peer Network:</h4>
+<ul>
+<li>It is less costly as it does not contain any dedicated server.</li>
+<li>If one computer stops working but, other computers will not stop working.</li>
+<li>It is easy to set up and maintain as each computer manages itself.</li>
+</ul>
+<h4 id="disadvantages-of-peer-to-peer-network">Disadvantages Of Peer-To-Peer Network:</h4>
+<ul>
+<li>In the case of Peer-To-Peer network, it does not contain the centralized system . Therefore, it cannot back up the data as the data is different in different locations.</li>
+<li>It has a security issue as the device is managed itself.</li>
+</ul>
+<hr />
+<h3 id="clientserver-network">Client/Server Network</h3>
+<ul>
+<li>Client/Server network is a network model designed for the end users called clients, to access the resources such as songs, video, etc. from a central computer known as Server.</li>
+<li>The central controller is known as a  <strong>server</strong>  while all other computers in the network are called  <strong>clients</strong>.</li>
+<li>A server performs all the major operations such as security and network management.</li>
+<li>A server is responsible for managing all the resources such as files, directories, printer, etc.</li>
+<li>All the clients communicate with each other through a server. For example, if client1 wants to send some data to client 2, then it first sends the request to the server for the permission. The server sends the response to the client 1 to initiate its communication with the client 2.</li>
+</ul>
+<p><img alt="Computer Network Architecture" src="https://static.javatpoint.com/tutorial/computer-network/images/client-server-network.png" /></p>
+<h4 id="advantages-of-clientserver-network">Advantages Of Client/Server network:</h4>
+<ul>
+<li>A Client/Server network contains the centralized system. Therefore we can back up the data easily.</li>
+<li>A Client/Server network has a dedicated server that improves the overall performance of the whole system.</li>
+<li>Security is better in Client/Server network as a single server administers the shared resources.</li>
+<li>It also increases the speed of the sharing resources.</li>
+</ul>
+<h4 id="disadvantages-of-clientserver-network">Disadvantages Of Client/Server network:</h4>
+<ul>
+<li>Client/Server network is expensive as it requires the server with large memory.</li>
+<li>A server has a Network Operating System(NOS) to provide the resources to the clients, but the cost of NOS is very high.</li>
+<li>It requires a dedicated network administrator to manage all the resources.</li>
+</ul>
+<h2 id="osi-model-layers-of-osi-model">OSI Model – Layers of OSI Model</h2>
+<p><strong>OSI stands for Open Systems Interconnection</strong>. It was developed by ISO – ‘International Organization for Standardization’, in the year 1984. It is a 7-layer architecture with each layer having specific functionality to perform. All these 7 layers work collaboratively to transmit the data from one person to another across the globe.</p>
+<blockquote>
+<p>Prerequisite:  <a href="https://www.geeksforgeeks.org/basics-computer-networking/">Basics of Computer Networking</a></p>
+</blockquote>
+<h3 id="osi-model">OSI Model</h3>
+<p>The OSI model, created in 1984 by ISO, is a reference framework that explains the process of transmitting data between computers. It is divided into seven layers that work together to carry out specialised network functions, allowing for a more systematic approach to networking.</p>
+<p><img alt="OSI Model" src="https://media.geeksforgeeks.org/wp-content/uploads/20210220204638/cn1.png" /></p>
+<h3 id="the-7-layers-of-the-osi-model">The 7 layers of the OSI Model?</h3>
+<p>The OSI model consists of seven abstraction layers arranged in a top-down order:</p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/physical-layer-in-osi-model/">Physical Layer</a></li>
+<li><a href="https://www.geeksforgeeks.org/data-link-layer/">Data Link Layer</a></li>
+<li><a href="https://www.geeksforgeeks.org/network-layer-services-packetizing-routing-and-forwarding/">Network Layer</a></li>
+<li><a href="https://www.geeksforgeeks.org/transport-layer-responsibilities/">Transport Layer</a></li>
+<li><a href="https://www.geeksforgeeks.org/session-layer-in-osi-model/">Session Layer</a></li>
+<li><a href="https://www.geeksforgeeks.org/presentation-layer-in-osi-model/">Presentation Layer</a></li>
+<li><a href="https://www.geeksforgeeks.org/application-layer-in-osi-model/">Application Layer</a></li>
+</ol>
+<h3 id="physical-layer-layer-1"><strong>Physical Layer – Layer 1</strong></h3>
+<p>The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of <strong>bits.</strong>  It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.</p>
+<p><img alt="Data Bits in the Physical Layer" src="https://media.geeksforgeeks.org/wp-content/uploads/20230405124830/data-bits.jpg" /></p>
+<h4 id="functions-of-the-physical-layer">Functions of the Physical Layer</h4>
+<ul>
+<li><strong>Bit synchronization:</strong>  The physical layer provides the synchronization of the bits by providing a clock. This clock controls both sender and receiver thus providing synchronization at the bit level.</li>
+<li><strong>Bit rate control:</strong>  The Physical layer also defines the transmission rate i.e. the number of bits sent per second.</li>
+<li><strong>Physical topologies:</strong>  Physical layer specifies how the different, devices/nodes are arranged in a network i.e. bus, star, or mesh topology.</li>
+<li><strong>Transmission mode:</strong>  Physical layer also defines how the data flows between the two connected devices. The various transmission modes possible are Simplex, half-duplex and full-duplex.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ol>
+<li>Hub, Repeater, Modem, and Cables are Physical Layer devices.</li>
+<li>Network Layer, Data Link Layer, and Physical Layer are also known as  <strong>Lower Layers</strong>  or  <strong>Hardware Layers</strong>.</li>
+</ol>
+</blockquote>
+<h3 id="data-link-layer-dll-layer-2"><strong>Data Link Layer (DLL) – Layer 2</strong></h3>
+<p>The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of the DLL to transmit it to the Host using its MAC address.<br />
+The Data Link Layer is divided into two sublayers:</p>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/logical-link-control-llc-protocol-data-unit/">Logical Link Control (LLC)</a></li>
+<li><a href="https://www.geeksforgeeks.org/introduction-of-mac-address-in-computer-network/">Media Access Control (MAC)</a></li>
+</ol>
+<p>The packet received from the Network layer is further divided into frames depending on the frame size of the NIC(Network Interface Card). DLL also encapsulates Sender and Receiver’s MAC address in the header.</p>
+<p>The Receiver’s MAC address is obtained by placing an  <a href="https://www.geeksforgeeks.org/how-address-resolution-protocol-arp-works/">ARP(Address Resolution Protocol)</a> request onto the wire asking “Who has that IP address?” and the destination host will reply with its MAC address.</p>
+<h4 id="functions-of-the-data-link-layer">Functions of the Data Link Layer</h4>
+<ul>
+<li><strong>Framing:</strong> Framing is a function of the data link layer. It provides a way for a sender to transmit a set of bits that are meaningful to the receiver. This can be accomplished by attaching special bit patterns to the beginning and end of the frame.</li>
+<li><strong>Physical addressing:</strong>  After creating frames, the Data link layer adds physical addresses (MAC addresses) of the sender and/or receiver in the header of each frame.</li>
+<li><strong>Error control:</strong>  The data link layer provides the mechanism of error control in which it detects and retransmits damaged or lost frames.</li>
+<li><strong>Flow Control:</strong>  The data rate must be constant on both sides else the data may get corrupted thus, flow control coordinates the amount of data that can be sent before receiving an acknowledgment.</li>
+<li><strong>Access control:</strong> When a single communication channel is shared by multiple devices, the MAC sub-layer of the data link layer helps to determine which device has control over the channel at a given time.</li>
+</ul>
+<p><img alt="Function of DLL" src="https://media.geeksforgeeks.org/wp-content/uploads/20230405130015/DatalinkLayer-660x335.jpg" /></p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ol>
+<li>Packet in the Data Link layer is referred to as  <strong>Frame.</strong></li>
+<li>Data Link layer is handled by the NIC (Network Interface Card) and device drivers of host machines.</li>
+<li>Switch &amp; Bridge are Data Link Layer devices.</li>
+</ol>
+</blockquote>
+<h3 id="network-layer-layer-3"><strong>Network Layer – Layer 3</strong></h3>
+<p>The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet, from the number of routes available. The sender &amp; receiver’s IP addresses are placed in the header by the network layer.</p>
+<h4 id="functions-of-the-network-layer">Functions of the Network Layer</h4>
+<ul>
+<li><strong>Routing:</strong>  The network layer protocols determine which route is suitable from source to destination. This function of the network layer is known as routing.</li>
+<li><strong>Logical Addressing:</strong> To identify each device on Internetwork uniquely, the network layer defines an addressing scheme. The sender &amp; receiver’s IP addresses are placed in the header by the network layer. Such an address distinguishes each device uniquely and universally.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ol>
+<li>Segment in the Network layer is referred to as  <strong>Packet</strong>.</li>
+<li>Network layer is implemented by networking devices such as routers and switches.</li>
+</ol>
+</blockquote>
+<h3 id="transport-layer-layer-4"><strong>Transport Layer – Layer 4</strong></h3>
+<p>The transport layer provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as  <em>Segments</em>. It is responsible for the End to End Delivery of the complete message. The transport layer also provides the acknowledgment of the successful data transmission and re-transmits the data if an error is found.</p>
+<p><strong>At the sender’s side:</strong> The transport layer receives the formatted data from the upper layers, performs  <strong>Segmentation</strong>, and also implements  <strong>Flow &amp; Error control</strong>  to ensure proper data transmission. It also adds Source and Destination port numbers in its header and forwards the segmented data to the Network Layer.</p>
+<blockquote>
+<p><strong>Note:</strong>  The sender needs to know the port number associated with the receiver’s application.</p>
+<p>Generally, this destination port number is configured, either by default or manually. For example, when a web application requests a web server, it typically uses port number 80, because this is the default port assigned to web applications. Many applications have default ports assigned.</p>
+<p><strong>At the receiver’s side:</strong> Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data.</p>
+</blockquote>
+<h4 id="functions-of-the-transport-layer">Functions of the Transport Layer</h4>
+<ul>
+<li><strong>Segmentation and Reassembly:</strong>  This layer accepts the message from the (session) layer, and breaks the message into smaller units. Each of the segments produced has a header associated with it. The transport layer at the destination station reassembles the message.</li>
+<li><strong>Service Point Addressing:</strong>  To deliver the message to the correct process, the transport layer header includes a type of address called service point address or port address. Thus by specifying this address, the transport layer makes sure that the message is delivered to the correct process.</li>
+</ul>
+<h5 id="services-provided-by-transport-layer">Services Provided by Transport Layer</h5>
+<ol>
+<li><a href="https://www.geeksforgeeks.org/connection-oriented-service/">Connection-Oriented Service</a></li>
+<li><a href="https://www.geeksforgeeks.org/connection-less-service/">Connectionless Service</a></li>
+</ol>
+<p><strong>1. Connection-Oriented Service:</strong>  It is a three-phase process that includes</p>
+<ul>
+<li>Connection Establishment</li>
+<li>Data Transfer</li>
+<li>Termination/disconnection</li>
+</ul>
+<p>In this type of transmission, the receiving device sends an acknowledgment, back to the source after a packet or group of packets is received. This type of transmission is reliable and secure.</p>
+<p><strong>2. Connectionless service:</strong>  It is a one-phase process and includes Data Transfer. In this type of transmission, the receiver does not acknowledge receipt of a packet. This approach allows for much faster communication between devices. Connection-oriented service is more reliable than connectionless Service.</p>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ol>
+<li>Data in the Transport Layer is called  <strong>Segments</strong>.</li>
+<li>Transport layer is operated by the Operating System. It is a part of the OS and communicates with the Application Layer by making system calls.</li>
+<li>The transport layer is called as  <strong>Heart of the OSI</strong>  model.</li>
+<li><strong>Device or Protocol Use :</strong>  TCP, UDP NetBIOS, PPTP</li>
+</ol>
+</blockquote>
+<h3 id="session-layer-layer-5"><strong>Session Layer – Layer 5</strong></h3>
+<p>This layer is responsible for the establishment of connection, maintenance of sessions, and authentication, and also ensures security.</p>
+<h4 id="functions-of-the-session-layer">Functions of the Session Layer</h4>
+<ul>
+<li><strong>Session establishment, maintenance, and termination:</strong>  The layer allows the two processes to establish, use and terminate a connection.</li>
+<li><strong>Synchronization:</strong>  This layer allows a process to add checkpoints that are considered synchronization points in the data. These synchronization points help to identify the error so that the data is re-synchronized properly, and ends of the messages are not cut prematurely and data loss is avoided.</li>
+<li><strong>Dialog Controller:</strong>  The session layer allows two systems to start communication with each other in half-duplex or full-duplex.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong></p>
+<ol>
+<li>All the below 3 layers(including Session Layer) are integrated as a single layer in the TCP/IP model as the ????pplication Layer”.</li>
+<li>Implementation of these 3 layers is done by the network application itself. These are also known as  <strong>Upper Layers or</strong>  <strong>Software Layers.</strong></li>
+<li><strong>Device or Protocol Use :</strong>  NetBIOS, PPTP.</li>
+</ol>
+</blockquote>
+<p><strong>for Example:-</strong></p>
+<p>Let us consider a scenario where a user wants to send a message through some Messenger application running in his browser. The “Messenger” here acts as the application layer which provides the user with an interface to create the data. This message or so-called Data is compressed, encrypted (if any secure data), and converted into bits (0’s and 1’s) so that it can be transmitted.</p>
+<p><img alt="Communication in Session Layer" src="https://media.geeksforgeeks.org/wp-content/uploads/20230405124947/communication.jpg" /></p>
+<p>Communication in Session Layer</p>
+<h3 id="presentation-layer-layer-6"><strong>Presentation Layer – Layer 6</strong></h3>
+<p>The presentation layer is also called the  <strong>Translation layer</strong>. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network.</p>
+<h4 id="functions-of-the-presentation-layer">Functions of the Presentation Layer</h4>
+<ul>
+<li><strong>Translation:</strong>  For example, ASCII to EBCDIC.</li>
+<li><strong>Encryption/ Decryption:</strong>  Data encryption translates the data into another form or code. The encrypted data is known as the ciphertext and the decrypted data is known as plain text. A key value is used for encrypting as well as decrypting data.</li>
+<li><strong>Compression:</strong>  Reduces the number of bits that need to be transmitted on the network.</li>
+</ul>
+<p>Note:  <strong>Device or Protocol Use :</strong>  JPEG, MPEG, GIF</p>
+<h3 id="application-layer-layer-7"><strong>Application Layer – Layer 7</strong></h3>
+<p>At the very top of the OSI Reference Model stack of layers, we find the Application layer which is implemented by the network applications. These applications produce the data, which has to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user.</p>
+<p><strong>Example</strong>: Application – Browsers, Skype Messenger, etc.</p>
+<blockquote>
+<p><strong>Note:</strong>  1. The application Layer is also called Desktop Layer.</p>
+<ol>
+<li><strong>Device or Protocol Use :</strong>  SMTP</li>
+</ol>
+</blockquote>
+<h4 id="functions-of-the-application-layer">Functions of the Application Layer</h4>
+<p>The main functions of application layer are given below.</p>
+<ul>
+<li>Network Virtual Terminal: It allows a user to log on to a remote host.</li>
+<li>FTAM- File transfer access and management : This application allows a user to<br />
+    access file in a remote host, retrieve files in remote host and manage or<br />
+    control files from a remote computer.</li>
+<li>Mail Services : Provide email service.</li>
+<li>Directory Services : This application provides distributed database sources<br />
+    and access for global information about various objects and services.</li>
+</ul>
+<blockquote>
+<h2 id="the-tcpip-reference-model">The TCP/IP Reference Model</h2>
+</blockquote>
+<p><a href="https://www.tutorialspoint.com/tcp-ip-in-computer-networking">TCP/IP</a>  Reference Model is a four-layered suite of communication protocols. It was developed by the DoD (Department of Defence) in the 1960s. It is named after the two main protocols that are used in the model, namely, TCP and IP.  <strong>TCP</strong>  stands for "<strong>Transmission Control Protocol</strong>" and  <strong>IP</strong>  stands for "<strong>Internet Protocol</strong>".</p>
+<p>The four layers in the TCP/IP protocol suite are −</p>
+<ol>
+<li><strong>Host-to- Network Layer −</strong>It is the lowest layer that is concerned with the physical transmission of data. TCP/IP does not specifically define any protocol here but supports all the standard protocols.</li>
+<li><strong>Internet Layer −</strong>It defines the protocols for logical transmission of data over the network. The main protocol in this layer is  <a href="https://www.tutorialspoint.com/internet_technologies/internet_protocols.htm">Internet Protocol (IP)</a>  and it is supported by the protocols  <a href="https://www.tutorialspoint.com/what-is-icmp-protocol">ICMP</a>,  <a href="https://www.tutorialspoint.com/what-is-igmp-in-the-computer-network">IGMP</a>,  <a href="https://www.tutorialspoint.com/what-is-reverse-address-resolution-protocol-rarp">RARP</a>, and  <a href="https://www.tutorialspoint.com/what-is-address-resolution-protocol-arp">ARP</a>.</li>
+<li><strong>Transport Layer −</strong>  It is responsible for error-free end-to-end delivery of data. The protocols defined here are Transmission Control Protocol (TCP) and  <a href="https://www.tutorialspoint.com/data_communication_computer_network/user_datagram_protocol.htm">User Datagram Protocol (UDP)</a>.</li>
+<li><strong>Application Layer −</strong>  This is the topmost layer and defines the interface of host programs with the transport layer services. This layer includes all high-level protocols like  <a href="https://www.tutorialspoint.com/introduction-to-telnet">Telnet</a>,  <a href="https://www.tutorialspoint.com/what-is-a-domain-name-system">DNS</a>,  <a href="https://www.tutorialspoint.com/http/http_overview.htm">HTTP</a>,  <a href="https://www.tutorialspoint.com/what-is-ftp">FTP</a>,  <a href="https://www.tutorialspoint.com/what-is-smtp">SMTP</a>, etc.</li>
+</ol>
+<p>The following diagram shows the layers and the protocols in each of the layers −</p>
+<p><img alt="" src="https://www.tutorialspoint.com/assets/questions/images/30037-1531479425.png" /></p>
+<p>[  </p>
+<h2 id="difference-between-osi-and-tcpip-reference-model">Difference between OSI and TCP/IP Reference Model</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>OSI</th>
+<th>TCP/IP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Representation</td>
+<td>Open System Interconnection (OSI)</td>
+<td>Transmission Control Protocol/Internet Protocol</td>
+</tr>
+<tr>
+<td>Independence</td>
+<td>Generic, protocol independent</td>
+<td>Depends on standard protocols</td>
+</tr>
+<tr>
+<td>Development</td>
+<td>Model first, protocols created later</td>
+<td>Protocols first, then built the model</td>
+</tr>
+<tr>
+<td>Quality of Services</td>
+<td>Provides quality services</td>
+<td>Does not provide quality services</td>
+</tr>
+<tr>
+<td>Administration and Conventions</td>
+<td>Defines administration, interfaces, and conventions</td>
+<td>Does not mention services, interfaces, and protocols</td>
+</tr>
+<tr>
+<td>Protocol Visibility</td>
+<td>Protocols are hidden and can be replaced easily</td>
+<td>Protocols are not hidden and cannot be easily replaced</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>More complex than TCP/IP</td>
+<td>Simpler than OSI</td>
+</tr>
+<tr>
+<td>Connection Types in Network Layer</td>
+<td>Both connection and connectionless oriented transmission</td>
+<td>Connectionless transmission</td>
+</tr>
+<tr>
+<td>Connection Types in Transport Layer</td>
+<td>Connection-oriented transmission</td>
+<td>Supports both connection and connectionless-oriented transmission</td>
+</tr>
+<tr>
+<td>Approach</td>
+<td>Vertical</td>
+<td>Horizontal</td>
+</tr>
+<tr>
+<td>Header Size (Minimum)</td>
+<td>5 bytes</td>
+<td>20 bytes</td>
+</tr>
+<tr>
+<td>Protocol Handling</td>
+<td>Protocols may be unknown and replaced as technology evolves</td>
+<td>Returning protocol is not difficult</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="https://www.tutorialspoint.com/assets/questions/media/51877/reference_model.jpg" /></p>
+<h2 id="design-issues">Design Issues</h2>
+<p>In the code generation phase, various issues can arises:</p>
+<ol>
+<li>Input to the code generator</li>
+<li>Target program</li>
+<li>Memory management</li>
+<li>Instruction selection</li>
+<li>Register allocation</li>
+<li>Evaluation order</li>
+</ol>
+<h3 id="1-input-to-the-code-generator">1. Input to the code generator</h3>
+<ul>
+<li>The input to the code generator contains the intermediate representation of the source program and the information of the symbol table. The source program is produced by the front end.</li>
+<li>Intermediate representation has the several choices:<br />
+    a) Postfix notation<br />
+    b) Syntax tree<br />
+    c) Three address code</li>
+<li>We assume front end produces low-level intermediate representation i.e. values of names in it can directly manipulated by the machine instructions.</li>
+<li>The code generation phase needs complete error-free intermediate code as an input requires.</li>
+</ul>
+<h3 id="2-target-program">2. Target program:</h3>
+<p>The target program is the output of the code generator. The output can be:</p>
+<p>a)  <strong>Assembly language:</strong>  It allows subprogram to be separately compiled.</p>
+<p>b)  <strong>Relocatable machine language:</strong>  It makes the process of code generation easier.</p>
+<p>c)  <strong>Absolute machine language:</strong>  It can be placed in a fixed location in memory and can be executed immediately.</p>
+<h3 id="3-memory-management">3. Memory management</h3>
+<ul>
+<li>During code generation process the symbol table entries have to be mapped to actual p addresses and levels have to be mapped to instruction address.</li>
+<li>Mapping name in the source program to address of data is co-operating done by the front end and code generator.</li>
+<li>Local variables are stack allocation in the activation record while global variables are in static area.</li>
+</ul>
+<h3 id="4-instruction-selection">4. Instruction selection:</h3>
+<ul>
+<li>Nature of instruction set of the target machine should be complete and uniform.</li>
+<li>When you consider the efficiency of target machine then the instruction speed and machine idioms are important factors.</li>
+<li>The quality of the generated code can be determined by its speed and size.</li>
+</ul>
+<h4 id="example">Example:</h4>
+<p>The Three address code is:</p>
+<ol>
+<li>a:= b + c</li>
+<li>d:= a + e</li>
+</ol>
+<p>Inefficient assembly code is:</p>
+<ol>
+<li>MOV b, R0 R0→b</li>
+<li>ADD c, R0 R0 c + R0</li>
+<li>MOV R0, a a → R0</li>
+<li>MOV a, R0 R0→ a</li>
+<li>ADD e, R0 R0 → e + R0</li>
+<li>MOV R0, d d → R0</li>
+</ol>
+<h3 id="5-register-allocation">5. Register allocation</h3>
+<p>Register can be accessed faster than memory. The instructions involving operands in register are shorter and faster than those involving in memory operand.</p>
+<p>The following sub problems arise when we use registers:</p>
+<p><strong>Register allocation:</strong>  In register allocation, we select the set of variables that will reside in register.</p>
+<p><strong>Register assignment:</strong>  In Register assignment, we pick the register that contains variable.</p>
+<p>Certain machine requires even-odd pairs of registers for some operands and result.</p>
+<h4 id="for-example">For example:</h4>
+<p>Consider the following division instruction of the form:</p>
+<ol>
+<li>D x, y</li>
+</ol>
+<p>Where,</p>
+<p><strong>x</strong>  is the dividend even register in even/odd register pair</p>
+<p><strong>y</strong>  is the divisor</p>
+<p><strong>Even register</strong>  is used to hold the reminder.</p>
+<p><strong>Old register</strong>  is used to hold the quotient.</p>
+<h2 id="6-evaluation-order">6. Evaluation order</h2>
+<p>The efficiency of the target code can be affected by the order in which the computations are performed. Some computation orders need fewer registers to hold results of intermediate than others.</p>
+<h2 id="switching-techniques">Switching Techniques</h2>
+<p>In large networks, there may be more than one paths for transmitting data from  <strong>sender</strong>  to receiver. Selecting a path that data must take out of the available options is called  <strong>switching</strong>. There are two popular switching techniques – circuit switching and packet switching.</p>
+<p><img alt="Switching" src="https://www.tutorialspoint.com/communication_technologies/images/switching.jpg" /></p>
+<h3 id="circuit-switching">Circuit Switching</h3>
+<p>When a dedicated path is established for data transmission between sender and receiver, it is called circuit switching. When any network node wants to send data, be it audio, video, text or any other type of information, a  <strong>call request signal</strong>  is sent to the receiver and acknowledged back to ensure availability of dedicated path. This dedicated path is then used to send data. ARPANET used circuit switching for communication over the network.</p>
+<h4 id="advantages-of-circuit-switching">Advantages of Circuit Switching</h4>
+<p>Circuit switching provides these advantages over other switching techniques −</p>
+<ul>
+<li>Once path is set up, the only delay is in data transmission speed</li>
+<li>No problem of congestion or garbled message</li>
+</ul>
+<h4 id="disadvantages-of-circuit-switching">Disadvantages of Circuit Switching</h4>
+<p>Circuit switching has its disadvantages too −</p>
+<ul>
+<li>
+<p>Long set up time is required</p>
+</li>
+<li>
+<p>A request token must travel to the receiver and then acknowledged before any transmission can happen</p>
+</li>
+<li>
+<p>Line may be held up for a long time</p>
+</li>
+</ul>
+<h3 id="packet-switching">Packet Switching</h3>
+<p>As we discussed, the major problem with circuit switching is that it needs a dedicated line for transmission. In packet switching, data is broken down into small packets with each packet having source and destination addresses, travelling from one router to the next router.</p>
+<h2 id="connection-oriented-and-connectionless-service">Connection-Oriented and Connectionless Service</h2>
+<p>Data communication is a telecommunication network to send and receive data between two or more computers over the same or different network. There are two ways to establish a connection before sending data from one device to another, that are  <strong>Connection-Oriented</strong>  and  <strong>Connectionless Service</strong>. Connection-oriented service involves the creation and termination of the connection for sending the data between two or more devices. In contrast, connectionless service does not require establishing any connection and termination process for transferring the data over a network.</p>
+<h3 id="connection-oriented-service">Connection-Oriented Service</h3>
+<p>A connection-oriented service is a network service that was designed and developed after the telephone system. A connection-oriented service is used to create an end to end connection between the sender and the receiver before transmitting the data over the same or different networks. In connection-oriented service, packets are transmitted to the receiver in the same order the sender has sent them. It uses a handshake method that creates a connection between the user and sender for transmitting the data over the network. Hence it is also known as a reliable network service.</p>
+<p><img alt="Connection-Oriented vs Connectionless Service" src="https://static.javatpoint.com/tutorial/computer-network/images/connection-oriented-vs-connectionless-service.png" /></p>
+<p>Suppose, a sender wants to send data to the receiver. Then, first, the sender sends a request packet to a receiver in the form of an  <strong>SYN</strong>  packet. After that, the receiver responds to the sender's request with an (SYN-ACK) signal/packets. That represents the confirmation is received by the receiver to start the communication between the sender and the receiver. Now a sender can send the message or data to the receiver.</p>
+<p>Similarly, a receiver can respond or send the data to the sender in the form of packets. After successfully exchanging or transmitting data, a sender can terminate the connection by sending a signal to the receiver. In this way, we can say that it is a reliable network service.</p>
+<h4 id="tcp">TCP</h4>
+<p><a href="https://www.javatpoint.com/tcp">TCP (Transmission Control Protocol)</a>  is a connection-oriented protocol that allows communication between two or more computer devices by establishing connections in the same or different networks. It is the most important protocol that uses  <strong>internet protocol</strong>  to transfer the data from one end to another. Hence, it is sometimes referred to as TCP/IP. It ensures that the connection is established and maintained until the data packet is transferring between the sender and receiver is complete.</p>
+<h3 id="connectionless-service">Connectionless Service</h3>
+<p>A connection is similar to a  <strong>postal system</strong>, in which each letter takes along different route paths from the source to the destination address. Connectionless service is used in the network system to transfer data from one end to another end without creating any connection. So it does not require establishing a connection before sending the data from the sender to the receiver. It is not a reliable network service because it does not guarantee the transfer of data packets to the receiver, and data packets can be received in any order to the receiver. Therefore we can say that the data packet does not follow a  <strong>defined</strong>  path. In connectionless service, the transmitted data packet is not received by the receiver due to network congestion, and the data may be lost.</p>
+<p><img alt="Connection-Oriented vs Connectionless Service" src="https://static.javatpoint.com/tutorial/computer-network/images/connection-oriented-vs-connectionless-service2.png" /></p>
+<p>For example, a sender can directly send any data to the receiver without establishing any connection because it is a connectionless service. Data sent by the sender will be in the packet or data streams containing the receiver's address. In connectionless service, the data can be travelled and received in any order. However, it does not guarantee to transfer of the packets to the right destination.</p>
+<h4 id="udp">UDP</h4>
+<p>The  <a href="https://www.javatpoint.com/udp-protocol">UDP (User Datagram Protocol)</a>  is a connectionless protocol that allows communication between two or more devices without establishing any connection. In this protocol, a sender sends the data packets to the receiver that holds the destination address. A UDP does not ensure to deliver the data packets to the correct destination, and it does not generate any acknowledgment about the sender's data. Similarly, it does not acknowledge the receiver about the data. Hence, it is an unreliable protocol.</p>
+<table>
+<thead>
+<tr>
+<th>S. No</th>
+<th>Comparison Parameter</th>
+<th>Connection-oriented Service</th>
+<th>Connectionless Service</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.</td>
+<td>Related System</td>
+<td>Designed and developed based on the telephone system.</td>
+<td>Service based on the postal system.</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Definition</td>
+<td>Used to create an end-to-end connection between the senders and receivers before transmitting data over the same or different networks.</td>
+<td>Used to transfer data packets between senders and receivers without creating any connection.</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Virtual Path</td>
+<td>Creates a virtual path between the sender and receiver.</td>
+<td>Does not create any virtual connection or path between the sender and receiver.</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Authentication</td>
+<td>Requires authentication before transmitting data packets to the receiver.</td>
+<td>Does not require authentication before transferring data packets.</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>Data Packets Path</td>
+<td>All data packets are received in the same order as sent by the sender.</td>
+<td>Not all data packets are received in the same order as sent by the sender.</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>Bandwidth Requirement</td>
+<td>Requires higher bandwidth to transfer data packets.</td>
+<td>Requires low bandwidth to transfer data packets.</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>Data Reliability</td>
+<td>More reliable connection service, guarantees data packet transfer from one end to the other end with a connection.</td>
+<td>Not a reliable connection service, does not guarantee the transfer of data packets from one end to another for establishing a connection.</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>Congestion</td>
+<td>No congestion as it provides an end-to-end connection between sender and receiver during data transmission.</td>
+<td>May be congestion due to not providing an end-to-end connection between the source and receiver for data packet transmission.</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>Examples</td>
+<td>Transmission Control Protocol (TCP) is an example of a connection-oriented service.</td>
+<td>User Datagram Protocol (UDP), Internet Protocol (IP), and Internet Control Message Protocol (ICMP) are examples of connectionless service.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="virtual-circuit-in-computer-network">Virtual Circuit in Computer Network</h2>
+<p><strong>Virtual Circuit</strong>  is the computer network providing connection-oriented service. It is a connection-oriented network. In virtual circuit resource are reserve for the time interval of data transmission between two nodes. This network is a highly reliable medium of transfer. Virtual circuits are costly to implement.</p>
+<p><img alt="" src="https://media.geeksforgeeks.org/wp-content/uploads/20200512113141/Untitled-Diagram-166.png" /></p>
+<p><strong>Working of Virtual Circuit:</strong></p>
+<ul>
+<li>In the first step a medium is set up between the two end nodes.</li>
+<li>Resources are reserved for the transmission of packets.</li>
+<li>Then a signal is sent to sender to tell the medium is set up and transmission can be started.</li>
+<li>It ensures the transmission of all packets.</li>
+<li>A global header is used in the first packet of the connection.</li>
+<li>Whenever data is to be transmitted a new connection is set up.</li>
+</ul>
+<p><strong>Congestion Control in Virtual Circuit:</strong><br />
+Once the congestion is detected in virtual circuit network, closed-loop techniques is used. There are different approaches in this technique:</p>
+<ul>
+<li><strong>No new connection –</strong><br />
+    No new connections are established when the congestion is detected. This approach is used in telephone networks where no new calls are established when the exchange is overloaded.</li>
+<li><strong>Participation of congested router invalid –</strong><br />
+    Another approach to control congestion is allow all new connections but route these new connections in such a way that congested router is not part of this route.</li>
+<li><strong>Negotiation –</strong><br />
+    To negotiate different parameters between sender and receiver of the network, when the connection is established. During the set up time, host specifies the shape and volume of the traffic, quality of service and other parameters.</li>
+</ul>
+<p><strong>Advantages of Virtual Circuit:</strong></p>
+<ol>
+<li>Packets are delivered to the receiver in the same order sent by the sender.</li>
+<li>Virtual circuit is a reliable network circuit.</li>
+<li>There is no need for overhead in each packet.</li>
+<li>Single global packet overhead is used in virtual circuit.</li>
+</ol>
+<p><strong>Disadvantages of Virtual Circuit:</strong></p>
+<ol>
+<li>Virtual circuit is costly to implement.</li>
+<li>It provides only connection-oriented service.</li>
+<li>Always a new connection set up is required for transmission.</li>
+</ol>
+<h2 id="datagram-network">Datagram Network</h2>
+<p>In a connectionless communication systems, datagram refers to the smallest unit via which data is transmitted. Datagrams are data packets which contain adequate header information so that they can be individually routed by all intermediate network switching devices to the destination. These networks are called datagram networks since communication occurs via datagrams. They exist in packet switching networks.</p>
+<h3 id="features-of-datagram-networks">Features of Datagram Networks</h3>
+<ul>
+<li>
+<p>Datagram switching is done at the network layer of the communication system.</p>
+</li>
+<li>
+<p>In datagram networks, each data packet or datagram is routed independently from the source to the destination even if they belong to the same message. The network treats the packet as if it exists alone.</p>
+</li>
+<li>
+<p>Since the datagrams are treated as independent units, no dedicated path is fixed for data transfer. Each datagram is routed by the intermediate routers using dynamically changing routing tables. So two successive packets from the source may follow completely separate routes to reach destination.</p>
+</li>
+<li>
+<p>In these networks, no prior resource allocation is done for the individual packets. This implies that no resources like buffers, processors, bandwidth, etc. are reserved before the communication commences.</p>
+</li>
+<li>
+<p>In datagram networks, resources are allocated on demand on a First−Come First−Serve (FCFS) basis. When a packet arrives at a router, the packet must wait if there are other packets being processed, irrespective of its source or destination.</p>
+</li>
+<li>
+<p>Datagram communication is generally guided by User Datagram Protocol or UDP.</p>
+</li>
+</ul>
+<p>The following diagram shows datagram packets being send by host H1 to host H2. The four datagram packets labelled as A, B, C and D, all belonging to same message are being routed separately via separate routes. The packets in the message arrives in the destination out of order. It is the responsibility of H2 to reorder the packets in order to retrieve the original message.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/assets/questions/media/46035/host2.jpg" /></p>
+<h2 id="autonomous-system">Autonomous System</h2>
+<p><strong>Autonomous System (AS)</strong>  is a group of routers and networks working under a single administrative domain. It is a 16-bit value that defines the routing domain of the routers. These numbers range from 1 to 65535.  </p>
+<ul>
+<li>
+<p><strong>Public Autonomous System Number –</strong><br />
+    These are 16-bit values that range from 1 to 64511. The service provider will provide a public AS if the customer is connected to more than one ISPs such as multihoming. A global autonomous number, which will be unique, is provided when the customer wants to propagate its BGP routes through 2 ISPs.  </p>
+</li>
+<li>
+<p><strong>Private Autonomous system Number –</strong><br />
+    Private Autonomous System Number are 16-bit values that range from 64512 to 65535. The service provider will provide a private autonomous system number to the customer when the customer wants multi-connection to a single ISP (single home or dual home network) but not to more than one ISPs. These are provided in order to conserve the autonomous system numbers.  </p>
+</li>
+<li>
+<p><strong>Assigning of AS numbers –</strong><br />
+    The Autonomous numbers are first assigned by IANA (Internet Assign Number Authority) to the respective regional registries. Further, the regional registry distribute these autonomous numbers (from the block of autonomous numbers provided by IANA) to entities within their designated area.  </p>
+</li>
+<li>
+<p>Source IP address: The source is the one who is sending the data.</p>
+</li>
+<li>Destination IP address: The destination is a host that receives the data from the sender.</li>
+<li>Header length</li>
+<li>Packet length</li>
+<li>TTL (Time to Live): The number of hops occurs before the packet gets discarded.</li>
+<li>Transport protocol: The transport protocol used by the internet protocol, either it can be TCP or UDP.</li>
+</ul>
+<p>There is a total of 14 fields exist in the IP header, and one of them is optional.</p>
+<p><strong>Payload:</strong>  Payload is the data that is to be transported.</p>
+<h2 id="references">References</h2>
+<p>https://www.javatpoint.com/computer-network-architecture
+https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/
+https://www.tutorialspoint.com/The-TCP-IP-Reference-Model
+https://www.tutorialspoint.com/difference-between-osi-and-tcp-ip-reference-model
+https://www.javatpoint.com/design-issues
+https://www.tutorialspoint.com/communication_technologies/communication_technologies_switching_techniques.htm
+https://www.javatpoint.com/connection-oriented-vs-connectionless-service
+https://www.geeksforgeeks.org/virtual-circuit-in-computer-network/
+https://www.tutorialspoint.com/datagram-network
+https://www.geeksforgeeks.org/administrative-distance-ad-and-autonomous-system-as/</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: COMPUTER NETWORK">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                COMPUTER NETWORK
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../UNIT_2/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit2">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit2
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Vishal Pise
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Vishal2vsp" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/vishal-pise-9b79b1244/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+        <script src="../../lol.js"></script>
+      
+    
+  </body>
+</html>

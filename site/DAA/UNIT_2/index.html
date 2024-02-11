@@ -1,0 +1,2764 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../UNIT_1/">
+      
+      
+        <link rel="next" href="../UNIT_3/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+    
+    
+      
+        <title>Unit2 - SYMaterials</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-LR5FRPWN9S"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-LR5FRPWN9S",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-LR5FRPWN9S",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#recurrence-relation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SYMaterials" class="md-header__button md-logo" aria-label="SYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SYMaterials
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unit2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SYMaterials" class="md-nav__button md-logo" aria-label="SYMaterials" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    SYMaterials
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../DAR/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DAR
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            DAR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../AMM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    AMM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            AMM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae2.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AMM/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../OS/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OS
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            OS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    DAA
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            DAA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recurance-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recurance Relation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recurance Relation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-substitution-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Substitution Method:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-iteration-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Iteration Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solutions-of-recurrence-relations-by-master-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions of recurrence relations by Master Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solutions of recurrence relations by Master Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#master-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Master Theorem:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#divide-and-conquer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Divide and Conquer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Divide and Conquer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arrays-as-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrays as Input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Binary Search Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-search-algorithm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Binary Search Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pseudocode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pseudocode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partition-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partition Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-sort-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merge Sort Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merge Sort Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algorithm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-of-merge-sort-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working of Merge sort Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-sort-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merge sort complexity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merge sort complexity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-time-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Time Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Space Complexity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximum-and-minimum-finding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum and Minimum finding
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maximum and Minimum finding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maximum-and-minimum-finding_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum and Minimum finding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naive-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naive Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../TNM/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    TNM
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            TNM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TNM/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../CN/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    CN
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            CN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/UNIT_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/cae1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-1_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/cae2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-2_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CN/cae3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAE-3_Question_Bank
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#recurance-relation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recurance Relation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recurance Relation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-substitution-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Substitution Method:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-iteration-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Iteration Methods
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solutions-of-recurrence-relations-by-master-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solutions of recurrence relations by Master Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solutions of recurrence relations by Master Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#master-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Master Theorem:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#divide-and-conquer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Divide and Conquer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Divide and Conquer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arrays-as-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arrays as Input
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#binary-search-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Binary Search Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binary-search-algorithm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binary Search Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Binary Search Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pseudocode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pseudocode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-sort" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick sort
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick sort">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partition-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Partition Algorithm:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-sort-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merge Sort Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merge Sort Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algorithm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-of-merge-sort-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Working of Merge sort Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-sort-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Merge sort complexity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Merge sort complexity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-time-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Time Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Space Complexity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximum-and-minimum-finding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum and Minimum finding
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maximum and Minimum finding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maximum-and-minimum-finding_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum and Minimum finding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naive-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naive Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="recurrence-relation">Recurrence Relation</h1>
+<h2 id="recurance-relation">Recurance Relation</h2>
+<p>A recurrence is an equation or inequality that describes a function in terms of its values on smaller inputs. To solve a Recurrence Relation means to obtain a function defined on the natural numbers that satisfy the recurrence.</p>
+<p><strong>For Example</strong>, the Worst Case Running Time T(n) of the MERGE SORT Procedures is described by the recurrence.</p>
+<p>T (n) = θ (1) if n=1
+ 2T<img alt="DAA Recurrence Relation" src="https://static.javatpoint.com/tutorial/daa/images/daa-recurrence-relation.png" /> + θ (n) if n&gt;1</p>
+<p>There are four methods for solving Recurrence:</p>
+<ol>
+<li><a href="https://www.javatpoint.com/daa-recurrence-relation#substitution-method">Substitution Method</a></li>
+<li><a href="https://www.javatpoint.com/daa-recurrence-relation#iteration-method">Iteration Method</a></li>
+<li><a href="https://www.javatpoint.com/daa-recursion-tree-method">Recursion Tree Method</a></li>
+<li><a href="https://www.javatpoint.com/daa-master-method">Master Method</a></li>
+</ol>
+<hr />
+<h3 id="1-substitution-method">1. Substitution Method:</h3>
+<p>The Substitution Method Consists of two main steps:</p>
+<ol>
+<li>Guess the Solution.</li>
+<li>Use the mathematical induction to find the boundary condition and shows that the guess is correct.</li>
+</ol>
+<p><strong>For Example1</strong>  Solve the equation by Substitution Method.</p>
+<pre><code>T (n) = T![DAA Recurrence Relation](https://static.javatpoint.com/tutorial/daa/images/daa-recurrence-relation.png) + n
+</code></pre>
+<p>We have to show that it is asymptotically bound by O (log n).</p>
+<p><strong>Solution:</strong></p>
+<p>For T (n) = O (log n)</p>
+<p>We have to show that for some constant c</p>
+<ol>
+<li>T (n) ≤c logn.</li>
+</ol>
+<p>Put this in given Recurrence Equation.</p>
+<pre><code>T (n) ≤c log![DAA Recurrence Relation](https://static.javatpoint.com/tutorial/daa/images/daa-recurrence-relation.png)+ 1
+        ≤c log![DAA Recurrence Relation](https://static.javatpoint.com/tutorial/daa/images/daa-recurrence-relation.png)+ 1 = c logn-clog2 2+1
+        ≤c logn for c≥1
+</code></pre>
+<p>Thus <strong>T (n) =O logn</strong>.</p>
+<p><strong>Example2</strong>  Consider the Recurrence</p>
+<p>T (n) = 2T<img alt="DAA Recurrence Relation" src="https://static.javatpoint.com/tutorial/daa/images/daa-recurrence-relation.png" />+ n n&gt;1</p>
+<p>Find an Asymptotic bound on T.</p>
+<p><strong>Solution:</strong></p>
+<p>We guess the solution is O (n (logn)).Thus for constant 'c'.
+ T (n) ≤c n logn
+Put this in given Recurrence Equation.
+Now,
+  T (n) ≤2c<img alt="DAA Recurrence Relation" src="https://static.javatpoint.com/tutorial/daa/images/daa-recurrence-relation.png" />log <img alt="DAA Recurrence Relation" src="https://static.javatpoint.com/tutorial/daa/images/daa-recurrence-relation.png" />+n
+      ≤cnlogn-cnlog2+n
+      =cn logn-n (clog2-1)
+      ≤cn logn for (c≥1)
+Thus <strong>T (n) = O (n logn)</strong>.</p>
+<hr />
+<h3 id="2-iteration-methods">2. Iteration Methods</h3>
+<p>It means to expand the recurrence and express it as a summation of terms of n and initial condition.</p>
+<p><strong>Example1:</strong>  Consider the Recurrence</p>
+<ol>
+<li>T (n) = 1  if n=1</li>
+<li>= 2T (n-1) if n&gt;1</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<p>T (n) = 2T (n-1)
+      = 2[2T (n-2)] = 22T (n-2)
+      = 4[2T (n-3)] = 23T (n-3)
+      = 8[2T (n-4)] = 24T (n-4)   (Eq.1)</p>
+<p>Repeat the procedure for i times</p>
+<p>T (n) = 2i T (n-i)
+Put n-i=1 or i= n-1 in    (Eq.1)
+T (n) = 2n-1 T (1)
+      = 2n-1 .1    {T (1) =1 .....given}
+      = 2n-1 </p>
+<p><strong>Example2:</strong>  Consider the Recurrence</p>
+<ol>
+<li>T (n) = T (n-1) +1 and T (1) = θ (1).</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<p>T (n) = T (n-1) +1
+       = (T (n-2) +1) +1 = (T (n-3) +1) +1+1
+       = T (n-4) +4 = T (n-5) +1+4
+       = T (n-5) +5= T (n-k) + k
+Where k = n-1
+   T (n-k) = T (1) = θ (1)
+   T (n) = θ (1) + (n-1) = 1+n-1=n= θ (n).</p>
+<h2 id="solutions-of-recurrence-relations-by-master-methods">Solutions of recurrence relations by Master Methods</h2>
+<p>The Master Method is used for solving the following types of recurrence</p>
+<p>T (n) = a T<img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method.png" />+ f (n) with a≥1 and b≥1 be constant &amp; f(n) be a function and  <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method2.png" />can be interpreted as</p>
+<p>Let T (n) is defined on non-negative integers by the recurrence.</p>
+<p>T (n) = a T<img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method.png" />+ f (n)</p>
+<p>In the function to the analysis of a recursive algorithm, the constants and function take on the following significance:</p>
+<ul>
+<li>n is the size of the problem.</li>
+<li>a is the number of subproblems in the recursion.</li>
+<li>n/b is the size of each subproblem. (Here it is assumed that all subproblems are essentially the same size.)</li>
+<li>f (n) is the sum of the work done outside the recursive calls, which includes the sum of dividing the problem and the sum of combining the solutions to the subproblems.</li>
+<li>It is not possible always bound the function according to the requirement, so we make three cases which will tell us what kind of bound we can apply on the function.</li>
+</ul>
+<h3 id="master-theorem">Master Theorem:</h3>
+<p>It is possible to complete an asymptotic tight bound in these three cases:</p>
+<p><img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method3.png" /></p>
+<p><strong>Case1:</strong>  If f (n) =  <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method4.png" />  for some constant ε &gt;0, then it follows that:</p>
+<p>T (n) = Θ <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method5.png" /></p>
+<p><strong>Example:</strong></p>
+<p>T (n) = 8 T <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method6.png" /> apply master theorem on it.</p>
+<p><strong>Solution:</strong></p>
+<p>Compare T (n) = 8 T <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method6.png" /> with 
+ T (n) = a T <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method7.png" />
+ a = 8, b=2, f (n) = 1000 n2, logba = log28 = 3
+ Put all the values in: f (n) = <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method8.png" />
+     1000 n2 = O (n3-ε ) 
+     If we choose ε=1, we get: 1000 n2 = O (n3-1) = O (n2)</p>
+<p>Since this equation holds, the first case of the master theorem applies to the given recurrence relation, thus resulting in the conclusion:</p>
+<p>T (n) = Θ <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method9.png" />
+   Therefore: T (n) = Θ (n3) </p>
+<p><strong>Case 2:</strong>  If it is true, for some constant k ≥ 0 that:</p>
+<p>F (n) = Θ <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method10.png" /> then it follows that: T (n) = Θ <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method11.png" /></p>
+<p><strong>Example:</strong></p>
+<p>T (n) = 2 <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method12.png" />, solve the recurrence by using the master method.
+As compare the given problem with T (n) = a T<img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method13.png" /> a = 2, b=2, k=0, f (n) = 10n, logba = log22 =1 
+Put all the values in f (n) =Θ <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method14.png" />, we will get 
+    10n = Θ (n1) = Θ (n) which is true.
+<strong>Therefore:</strong> T (n) = Θ <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method15.png" />
+      = Θ (n log n)</p>
+<p><strong>Case 3:</strong>  If it is true f(n) = Ω  <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method16.png" />  for some constant ε &gt;0 and it also true that: a f  <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method17.png" />  for some constant c&lt;1 for large value of n ,then :</p>
+<ol>
+<li>T (n) = Θ((f (n))</li>
+</ol>
+<p><strong>Example:</strong>  Solve the recurrence relation:</p>
+<p>T (n) = 2 <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method18.png" /></p>
+<p><strong>Solution:</strong></p>
+<p>Compare the given problem with T (n) = a T <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method19.png" />
+a= 2, b =2, f (n) = n2, logba = log22 =1 
+Put all the values in f (n) = Ω <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method20.png" /> ..... (Eq. 1)
+If we insert all the value in (Eq.1), we will get 
+  n2 = Ω(n1+ε) put ε =1, then the equality will hold.
+  n2 = Ω(n1+1) = Ω(n2)
+Now we will also check the second condition:
+  2 <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method21.png" />
+If we will choose c =1/2, it is true:
+  <img alt="DAA Master Method" src="https://static.javatpoint.com/tutorial/daa/images/daa-master-method22.png" />  ∀ n ≥1 
+So it follows: T (n) = Θ ((f (n))
+    T (n) = Θ(n2)</p>
+<h2 id="divide-and-conquer">Divide and Conquer</h2>
+<p>To understand the divide and conquer design strategy of algorithms, let us use a simple real world example. Consider an instance where we need to brush a type C curly hair and remove all the knots from it. To do that, the first step is to section the hair in smaller strands to make the combing easier than combing the hair altogether. The same technique is applied on algorithms.</p>
+<p>Divide and conquer approach breaks down a problem into multiple sub-problems recursively until it cannot be divided further. These sub-problems are solved first and the solutions are merged together to form the final solution.</p>
+<p>The common procedure for the divide and conquer design technique is as follows −</p>
+<ul>
+<li>
+<p><strong>Divide</strong>  − We divide the original problem into multiple sub-problems until they cannot be divided further.</p>
+</li>
+<li>
+<p><strong>Conquer</strong>  − Then these subproblems are solved separately with the help of recursion</p>
+</li>
+<li>
+<p><strong>Combine</strong>  − Once solved, all the subproblems are merged/combined together to form the final solution of the original problem.</p>
+</li>
+</ul>
+<p>There are several ways to give input to the divide and conquer algorithm design pattern. Two major data structures used are −  <strong>arrays</strong>  and  <strong>linked lists</strong>. Their usage is explained as</p>
+<h3 id="arrays-as-input">Arrays as Input</h3>
+<p>There are various ways in which various algorithms can take input such that they can be solved using the divide and conquer technique. Arrays are one of them. In algorithms that require input to be in the form of a list, like various sorting algorithms, array data structures are most commonly used.</p>
+<p>In the input for a sorting algorithm below, the array input is divided into subproblems until they cannot be divided further.</p>
+<p><img alt="Arrays as input" src="https://www.tutorialspoint.com/data_structures_algorithms/images/arrays_as_input.jpg" /></p>
+<p>Then, the subproblems are sorted (the conquer step) and are merged to form the solution of the original array back (the combine step).</p>
+<p><img alt="the conquer step" src="https://www.tutorialspoint.com/data_structures_algorithms/images/the_conquer_step.jpg" /></p>
+<p>Since arrays are indexed and linear data structures, sorting algorithms most popularly use array data structures to receive input.</p>
+<h2 id="binary-search-algorithm">Binary Search Algorithm</h2>
+<p>Binary search is a fast search algorithm with run-time complexity of Ο(log n). This search algorithm works on the principle of divide and conquer, since it divides the array into half before searching. For this algorithm to work properly, the data collection should be in the sorted form.</p>
+<p>Binary search looks for a particular key value by comparing the middle most item of the collection. If a match occurs, then the index of item is returned. But if the middle item has a value greater than the key value, the right sub-array of the middle item is searched. Otherwise, the left sub-array is searched. This process continues recursively until the size of a subarray reduces to zero.</p>
+<p><img alt="binary_search_algorithm" src="https://www.tutorialspoint.com/design_and_analysis_of_algorithms/images/binary_search_algorithm.jpg" /></p>
+<h3 id="binary-search-algorithm_1">Binary Search Algorithm</h3>
+<p>Binary Search algorithm is an interval searching method that performs the searching in intervals only. The input taken by the binary search algorithm must always be in a sorted array since it divides the array into subarrays based on the greater or lower values. The algorithm follows the procedure below −</p>
+<p><strong>Step 1</strong>  − Select the middle item in the array and compare it with the key value to be searched. If it is matched, return the position of the median.</p>
+<p><strong>Step 2</strong>  − If it does not match the key value, check if the key value is either greater than or less than the median value.</p>
+<p><strong>Step 3</strong>  − If the key is greater, perform the search in the right sub-array; but if the key is lower than the median value, perform the search in the left sub-array.</p>
+<p><strong>Step 4</strong>  − Repeat Steps 1, 2 and 3 iteratively, until the size of sub-array becomes 1.</p>
+<p><strong>Step 5</strong>  − If the key value does not exist in the array, then the algorithm returns an unsuccessful search.</p>
+<h4 id="pseudocode">Pseudocode</h4>
+<p>The pseudocode of binary search algorithms should look like this −</p>
+<p>Procedure binary_search
+   A ← sorted array
+   n ← size of array
+   x ← value to be searched</p>
+<p>Set lowerBound = 1
+   Set upperBound = n</p>
+<p>while x not found
+      if upperBound &lt; lowerBound
+         EXIT: x does not exists.</p>
+<pre><code>  set midPoint = lowerBound + ( upperBound - lowerBound ) / 2
+
+  if A[midPoint] &lt; x
+     set lowerBound = midPoint + 1
+
+  if A[midPoint] &gt; x
+     set upperBound = midPoint - 1
+
+  if A[midPoint] = x
+     EXIT: x found at location midPoint
+</code></pre>
+<p>end while
+end procedure</p>
+<h4 id="analysis">Analysis</h4>
+<p>Since the binary search algorithm performs searching iteratively, calculating the time complexity is not as easy as the linear search algorithm.</p>
+<p>The input array is searched iteratively by dividing into multiple sub-arrays after every unsuccessful iteration. Therefore, the recurrence relation formed would be of a dividing function.</p>
+<h2 id="quick-sort">Quick sort</h2>
+<p>It is an algorithm of Divide &amp; Conquer type.</p>
+<p><strong>Divide:</strong>  Rearrange the elements and split arrays into two sub-arrays and an element in between search that each element in left sub array is less than or equal to the average element and each element in the right sub- array is larger than the middle element.</p>
+<p><strong>Conquer:</strong>  Recursively, sort two sub arrays.</p>
+<p><strong>Combine:</strong>  Combine the already sorted array.</p>
+<h3 id="algorithm">Algorithm:</h3>
+<ol>
+<li>QUICKSORT (array A, int m, int n)</li>
+<li>1  if (n &gt; m)</li>
+<li>2 then</li>
+<li>3 i ← a random index from [m,n]</li>
+<li>4 swap A [i] with A[m]</li>
+<li>5 o ← PARTITION (A, m, n)</li>
+<li>6 QUICKSORT (A, m, o - 1)</li>
+<li>7 QUICKSORT (A, o + 1, n)</li>
+</ol>
+<h3 id="partition-algorithm">Partition Algorithm:</h3>
+<p>Partition algorithm rearranges the sub arrays in a place.</p>
+<ol>
+<li>PARTITION (array A, int m, int n)</li>
+<li>1 x ← A[m]</li>
+<li>2 o ← m</li>
+<li>3  for p ← m + 1 to n</li>
+<li>4  do  if (A[p] &lt; x)</li>
+<li>5 then o ← o + 1</li>
+<li>6 swap A[o] with A[p]</li>
+<li>7 swap A[m] with A[o]</li>
+<li>8  return o</li>
+</ol>
+<p><strong>Figure: shows the execution trace partition algorithm</strong></p>
+<p><img alt="DAA Quick sort" src="https://static.javatpoint.com/tutorial/daa/images/daa-quick-sort-partition-algorithm.png" /></p>
+<h2 id="merge-sort-algorithm">Merge Sort Algorithm</h2>
+<p>In this article, we will discuss the merge sort Algorithm. Merge sort is the sorting technique that follows the divide and conquer approach. This article will be very helpful and interesting to students as they might face merge sort as a question in their examinations. In coding or technical interviews for software engineers, sorting algorithms are widely asked. So, it is important to discuss the topic.</p>
+<p>Merge sort is similar to the quick sort algorithm as it uses the divide and conquer approach to sort the elements. It is one of the most popular and efficient sorting algorithm. It divides the given list into two equal halves, calls itself for the two halves and then merges the two sorted halves. We have to define the  <strong>merge()</strong>  function to perform the merging.</p>
+<p>The sub-lists are divided again and again into halves until the list cannot be divided further. Then we combine the pair of one element lists into two-element lists, sorting them in the process. The sorted two-element pairs is merged into the four-element lists, and so on until we get the sorted list.</p>
+<p>Now, let's see the algorithm of merge sort.</p>
+<h3 id="algorithm_1">Algorithm</h3>
+<p>In the following algorithm,  <strong>arr</strong>  is the given array,  <strong>beg</strong>  is the starting element, and  <strong>end</strong>  is the last element of the array.</p>
+<ol>
+<li>
+<p>MERGE_SORT(arr, beg, end)</p>
+</li>
+<li>
+<p>if beg &lt; end</p>
+</li>
+<li>set mid = (beg + end)/2</li>
+<li>MERGE_SORT(arr, beg, mid)</li>
+<li>MERGE_SORT(arr, mid + 1, end)</li>
+<li>MERGE (arr, beg, mid, end)</li>
+<li>
+<p>end of if</p>
+</li>
+<li>
+<p>END MERGE_SORT</p>
+</li>
+</ol>
+<p>The important part of the merge sort is the  <strong>MERGE</strong>  function. This function performs the merging of two sorted sub-arrays that are  <strong>A[beg…mid]</strong>  and  <strong>A[mid+1…end]</strong>, to build one sorted array  <strong>A[beg…end]</strong>. So, the inputs of the  <strong>MERGE</strong>  function are  <strong>A[], beg, mid,</strong>  and  <strong>end</strong>.</p>
+<p>The implementation of the  <strong>MERGE</strong>  function is given as follows -</p>
+<ol>
+<li>/<em> Function to merge the subarrays of a[] </em>/</li>
+<li>void merge(int a[], int beg, int mid, int end)</li>
+<li>{</li>
+<li>int i, j, k;</li>
+<li>int n1 = mid - beg + 1;</li>
+<li>
+<p>int n2 = end - mid;</p>
+</li>
+<li>
+<p>int LeftArray[n1], RightArray[n2]; //temporary arrays</p>
+</li>
+<li>
+<p>/<em> copy data to temp arrays </em>/</p>
+</li>
+<li>for (int i = 0; i &lt; n1; i++)</li>
+<li>LeftArray[i] = a[beg + i];</li>
+<li>for (int j = 0; j &lt; n2; j++)</li>
+<li>
+<p>RightArray[j] = a[mid + 1 + j];</p>
+</li>
+<li>
+<p>i = 0, /<em> initial index of first sub-array </em>/</p>
+</li>
+<li>j = 0; /<em> initial index of second sub-array </em>/</li>
+<li>
+<p>k = beg; /<em> initial index of merged sub-array </em>/</p>
+</li>
+<li>
+<p>while (i &lt; n1 &amp;&amp; j &lt; n2)</p>
+</li>
+<li>{</li>
+<li>if(LeftArray[i] &lt;= RightArray[j])</li>
+<li>{</li>
+<li>a[k] = LeftArray[i];</li>
+<li>i++;</li>
+<li>}</li>
+<li>else</li>
+<li>{</li>
+<li>a[k] = RightArray[j];</li>
+<li>j++;</li>
+<li>}</li>
+<li>k++;</li>
+<li>}</li>
+<li>while (i&lt;n1)</li>
+<li>{</li>
+<li>a[k] = LeftArray[i];</li>
+<li>i++;</li>
+<li>k++;</li>
+<li>
+<p>}</p>
+</li>
+<li>
+<p>while (j&lt;n2)</p>
+</li>
+<li>{</li>
+<li>a[k] = RightArray[j];</li>
+<li>j++;</li>
+<li>k++;</li>
+<li>}</li>
+<li>}</li>
+</ol>
+<h3 id="working-of-merge-sort-algorithm">Working of Merge sort Algorithm</h3>
+<p>Now, let's see the working of merge sort Algorithm.</p>
+<p>To understand the working of the merge sort algorithm, let's take an unsorted array. It will be easier to understand the merge sort via an example.</p>
+<p>Let the elements of array are -</p>
+<p><img alt="Merge sort" src="https://static.javatpoint.com/ds/images/merge-sort.png" /></p>
+<p>According to the merge sort, first divide the given array into two equal halves. Merge sort keeps dividing the list into equal parts until it cannot be further divided.</p>
+<p>As there are eight elements in the given array, so it is divided into two arrays of size 4.</p>
+<p><img alt="Merge sort" src="https://static.javatpoint.com/ds/images/merge-sort2.png" /></p>
+<p>Now, again divide these two arrays into halves. As they are of size 4, so divide them into new arrays of size 2.</p>
+<p><img alt="Merge sort" src="https://static.javatpoint.com/ds/images/merge-sort3.png" /></p>
+<p>Now, again divide these arrays to get the atomic value that cannot be further divided.</p>
+<p><img alt="Merge sort" src="https://static.javatpoint.com/ds/images/merge-sort4.png" /></p>
+<p>Now, combine them in the same manner they were broken.</p>
+<p>In combining, first compare the element of each array and then combine them into another array in sorted order.</p>
+<p>So, first compare 12 and 31, both are in sorted positions. Then compare 25 and 8, and in the list of two values, put 8 first followed by 25. Then compare 32 and 17, sort them and put 17 first followed by 32. After that, compare 40 and 42, and place them sequentially.</p>
+<p><img alt="Merge sort" src="https://static.javatpoint.com/ds/images/merge-sort5.png" /></p>
+<p>In the next iteration of combining, now compare the arrays with two data values and merge them into an array of found values in sorted order.</p>
+<p><img alt="Merge sort" src="https://static.javatpoint.com/ds/images/merge-sort6.png" /></p>
+<p>Now, there is a final merging of the arrays. After the final merging of above arrays, the array will look like -</p>
+<p><img alt="Merge sort" src="https://static.javatpoint.com/ds/images/merge-sort7.png" /></p>
+<p>Now, the array is completely sorted.</p>
+<h3 id="merge-sort-complexity">Merge sort complexity</h3>
+<p>Now, let's see the time complexity of merge sort in best case, average case, and in worst case. We will also see the space complexity of the merge sort.</p>
+<h4 id="1-time-complexity">1. Time Complexity</h4>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Time Complexity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Best Case</td>
+<td>O(n * log n)</td>
+</tr>
+<tr>
+<td>Average Case</td>
+<td>O(n * log n)</td>
+</tr>
+<tr>
+<td>Worst Case</td>
+<td>O(n * log n)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Best Case Complexity -</strong>  It occurs when there is no sorting required, i.e. the array is already sorted. The best-case time complexity of merge sort is  <strong>O(n*logn)</strong>.</li>
+<li><strong>Average Case Complexity -</strong>  It occurs when the array elements are in jumbled order that is not properly ascending and not properly descending. The average case time complexity of merge sort is  <strong>O(n*logn)</strong>.</li>
+<li><strong>Worst Case Complexity -</strong>  It occurs when the array elements are required to be sorted in reverse order. That means suppose you have to sort the array elements in ascending order, but its elements are in descending order. The worst-case time complexity of merge sort is  <strong>O(n*logn)</strong>.</li>
+</ul>
+<h4 id="2-space-complexity">2. Space Complexity</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Space Complexity</strong></td>
+<td>O(n)</td>
+</tr>
+<tr>
+<td><strong>Stable</strong></td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The space complexity of merge sort is O(n). It is because, in merge sort, an extra variable is required for swapping.</li>
+</ul>
+<h2 id="maximum-and-minimum-finding">Maximum and Minimum finding</h2>
+<p>Let us consider a simple problem that can be solved by divide and conquer technique.</p>
+<h3 id="maximum-and-minimum-finding_1">Maximum and Minimum finding</h3>
+<p>The Max-Min Problem in algorithm analysis is finding the maximum and minimum value in an array.</p>
+<h3 id="solution">Solution</h3>
+<p>To find the maximum and minimum numbers in a given array  <strong><em>numbers[]</em></strong>  of size  <strong>n</strong>, the following algorithm can be used. First we are representing the  <strong>naive method</strong>  and then we will present  <strong>divide and conquer approach</strong>.</p>
+<h3 id="naive-method">Naive Method</h3>
+<p>Naive method is a basic method to solve any problem. In this method, the maximum and minimum number can be found separately. To find the maximum and minimum numbers, the following straightforward algorithm can be used.</p>
+<p>Algorithm: Max-Min-Element (numbers[]) 
+max := numbers[1] 
+min := numbers[1] </p>
+<p>for i = 2 to n do 
+   if numbers[i] &gt; max then<br />
+      max := numbers[i] 
+   if numbers[i] &lt; min then<br />
+      min := numbers[i] 
+return (max, min) </p>
+<h3 id="example">Example</h3>
+<p>Following are the implementations of the above approach in various programming languages −</p>
+<h4 id="c">C</h4>
+<h1 id="include">include <stdio.h></h1>
+<p>struct Pair {
+    int max;
+    int min;
+};
+// Function to find maximum and minimum using the naive algorithm
+struct Pair maxMinNaive(int arr[], int n) {
+    struct Pair result;
+    result.max = arr[0];
+    result.min = arr[0];
+    // Loop through the array to find the maximum and minimum values
+    for (int i = 1; i &lt; n; i++) {
+        if (arr[i] &gt; result.max) {
+            result.max = arr[i]; // Update the maximum value if a larger element is found
+        }
+        if (arr[i] &lt; result.min) {
+            result.min = arr[i]; // Update the minimum value if a smaller element is found
+        }
+    }
+    return result; // Return the pair of maximum and minimum values
+}
+int main() {
+    int arr[] = {6, 4, 26, 14, 33, 64, 46};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    struct Pair result = maxMinNaive(arr, n);
+    printf("Maximum element is: %d\n", result.max);
+    printf("Minimum element is: %d\n", result.min);
+    return 0;
+}</p>
+<h4 id="output">Output</h4>
+<p>Maximum element is: 64
+Minimum element is: 4</p>
+<h2 id="reference">Reference</h2>
+<p>https://www.javatpoint.com/daa-recurrence-relation
+https://www.javatpoint.com/daa-master-method
+https://www.tutorialspoint.com/data_structures_algorithms/divide_and_conquer.htm
+https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_binary_search_method.htm
+https://www.javatpoint.com/daa-quick-sort
+https://www.javatpoint.com/merge-sort
+https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_max_min_problem.htm</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../UNIT_1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unit1">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Unit1
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../UNIT_3/" class="md-footer__link md-footer__link--next" aria-label="Next: Unit3">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Unit3
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Vishal Pise
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Vishal2vsp" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/vishal-pise-9b79b1244/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      
+        <script src="../../lol.js"></script>
+      
+    
+  </body>
+</html>
