@@ -4,7 +4,7 @@
 Get Second Year Notes, Question Bank Solutions, etc for GHRCEM Pune. 
 
 Only Computer Department notes, if anyone from any other department is interested to share their notes feel free to contact [me](https://www.linkedin.com/in/vishal-pise-9b79b1244/).
-Also visit [Tymaterials](https://tymaterials.live/) for Third Year Notes
+Also visit my friend's site [Tymaterials](https://tymaterials.live/) for Third Year Notes
 
 ## Subjects
 - First Sem:
