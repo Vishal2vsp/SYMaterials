@@ -206,7 +206,7 @@ DNS operates primarily over UDP on port 53, but it can also use TCP for large qu
 
 DNS employs caching at various levels to improve performance and reduce the load on authoritative DNS servers.
 
-12. **Discuss in detail the Simple Mail Transfer Protocol (SMTP).**
+## 12. **Discuss in detail the Simple Mail Transfer Protocol (SMTP).**
 
 - **Definition:** SMTP, or Simple Mail Transfer Protocol, is a standard protocol used for sending email messages between servers over the internet. It works alongside other protocols such as POP (Post Office Protocol) and IMAP (Internet Message Access Protocol) which are used for retrieving emails from a server.
 
@@ -230,7 +230,7 @@ DNS employs caching at various levels to improve performance and reduce the load
 
 SMTP is a fundamental protocol in email communication, enabling the reliable transmission of messages across the internet.
 
-13. **Elaborate Multipurpose Internet Mail Extension Protocol (MIME) and Post Office Protocol version 3 (POP3) protocol.**
+## 13. **Elaborate Multipurpose Internet Mail Extension Protocol (MIME) and Post Office Protocol version 3 (POP3) protocol.**
 
 - **Multipurpose Internet Mail Extension Protocol (MIME):**
   - **Definition:** MIME is an extension to SMTP that allows email messages to include non-textual content such as images, audio, video, and binary files.
@@ -253,7 +253,7 @@ SMTP is a fundamental protocol in email communication, enabling the reliable tra
 
 MIME and POP3 are integral components of email communication, enabling the exchange of multimedia-rich messages and efficient retrieval of emails from remote servers.
 
-14. **Discuss remote login.**
+## 14. **Discuss remote login.**
 
 - **Definition:** Remote login, also known as remote access or remote terminal access, is a process that enables users to log in to a computer or network from a different location over a network connection.
 - **Protocols:** Remote login is facilitated by protocols such as Telnet, SSH (Secure Shell), and Remote Desktop Protocol (RDP), depending on the type of system being accessed and the level of security required.
@@ -269,7 +269,7 @@ MIME and POP3 are integral components of email communication, enabling the excha
 
 Remote login is widely used in various scenarios, including remote work, system administration, technical support, and collaborative projects, providing flexibility and efficiency in accessing remote systems.
 
-15. **Explain the working of Dynamic Host Configuration Protocol (DHCP).**
+## 15. **Explain the working of Dynamic Host Configuration Protocol (DHCP).**
 
 - **Dynamic Host Configuration Protocol (DHCP):**
   - **Definition:** DHCP is a network protocol used to automatically assign IP addresses and other network configuration parameters to devices on a network.
@@ -281,7 +281,7 @@ Remote login is widely used in various scenarios, including remote work, system 
   
   Let's address each question with detailed explanations:
 
-16. **Elaborate BOOTP Protocol.**
+## 16. **Elaborate BOOTP Protocol.**
 
 - **BOOTP Protocol (Bootstrap Protocol):**
   - The Bootstrap Protocol (BOOTP) is a network protocol used to assign IP addresses and other configuration information to network devices, particularly diskless workstations, during the boot process.
@@ -292,7 +292,7 @@ Remote login is widely used in various scenarios, including remote work, system 
   - BOOTP uses UDP as the transport protocol and operates on port 67 for server-side communication and port 68 for client-side communication.
   - Although BOOTP was widely used in the past, it has largely been superseded by DHCP (Dynamic Host Configuration Protocol), which offers more advanced features and flexibility.
 
-17. **Discuss Simple Network Management Protocol (SNMP).**
+## 17. **Discuss Simple Network Management Protocol (SNMP).**
 
 - **Simple Network Management Protocol (SNMP):**
   - SNMP is an application layer protocol used for managing and monitoring network devices and systems.
@@ -304,7 +304,7 @@ Remote login is widely used in various scenarios, including remote work, system 
   - SNMP uses UDP as the transport protocol and operates on port 161 for receiving SNMP requests and port 162 for receiving SNMP traps (asynchronous notifications).
   - SNMP versions include SNMPv1, SNMPv2c, and SNMPv3, each offering different levels of security and functionality.
 
-18. **Elaborate on how the Hyper Text Transfer Protocol (HTTP) works.**
+## 18. **Elaborate on how the Hyper Text Transfer Protocol (HTTP) works.**
 
 - **Hyper Text Transfer Protocol (HTTP):**
   - HTTP is an application layer protocol used for transmitting and receiving hypertext documents on the World Wide Web.
@@ -316,7 +316,7 @@ Remote login is widely used in various scenarios, including remote work, system 
     - Upon receiving the response, the client renders the content, displays it to the user, and may issue additional requests for embedded resources (e.g., images, scripts, stylesheets) referenced in the original document.
   - HTTP is stateless, meaning each request-response cycle is independent of previous interactions. To maintain session state and user identity, techniques like cookies and session tokens are commonly used.
 
-19. **Compare DHCP and BOOTP.**
+## 19. **Compare DHCP and BOOTP.**
 
 - **DHCP (Dynamic Host Configuration Protocol) and BOOTP (Bootstrap Protocol):**
   - **Functionality:**
@@ -330,7 +330,7 @@ Remote login is widely used in various scenarios, including remote work, system 
     - DHCP operates on ports 67 and 68, while BOOTP uses the same ports for server and client communication.
     - In practical terms, DHCP has largely replaced BOOTP due to its enhanced features and scalability.
 
-20. **Compare HTTP and HTTPS.**
+## 20. **Compare HTTP and HTTPS.**
 
 
 | Point of Comparison   | HTTP                                            | HTTPS                                                  |
